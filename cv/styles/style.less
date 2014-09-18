@@ -1,0 +1,93 @@
+.normal {
+	font-family: 'dejavu_sans_monobook';
+}
+body {
+	background-color: #23241F;
+	font-size: 12px;
+	.normal;
+
+}
+.wrapper {
+	margin: 0 auto;
+	width: 850px;
+}
+
+
+/* Header */
+
+header {
+	background-color: #474747;
+	color: white;
+	height: 33px;
+	margin-bottom: 30px;
+	min-width: 610px;
+	position: relative;
+
+	.lang-switcher {
+		display: inline-block;
+	}
+
+	.home, .title {
+		float: left;
+		line-height: 33px;
+	}
+
+	.home {
+		margin-right: 90px;
+	}
+}
+
+.title2 {	
+	float: right;
+	line-height: 33px;
+}
+.title2 span {
+	display: inline;
+	margin-right: 15px;
+}
+.title2 .menu {
+	margin-right: 15px;
+}
+
+code {
+	counter-reset: line;
+	position: relative;
+
+	a {
+		color: white;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	p {
+		line-height: 16px;
+
+		&:before{
+			color: #8F908A;
+			content: counter(line);
+			counter-increment: line;
+			display: block;
+			font-size: 12px;
+			left: -35px;
+			text-align: center;
+			position: absolute;
+		}
+
+		&:hover{
+			background-color: #49483E;
+		}
+	}
+}
+
+@media print {
+	.css {
+		color: #000 !important;
+	}
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}

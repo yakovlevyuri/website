@@ -1,0 +1,9 @@
+body {
+	background: #FFF;
+}
+* {
+	color: #000;
+}
+.noprint {
+	display: none;
+}
