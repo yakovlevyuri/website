@@ -16,15 +16,35 @@ body {
 /* Header */
 
 header {
-	background-color: #474747;
+	background-color: #171714;
 	color: white;
-	height: 33px;
+	height: 50px;
 	margin-bottom: 30px;
 	min-width: 610px;
 	position: relative;
+	border-bottom: 1px solid #3C3D38;
 
 	.lang-switcher {
 		display: inline-block;
+		position: relative;
+		margin-left: -30px;
+		background: url("../images/button-inactive.png");
+		width: 185px;
+		height: 32px;
+		top: 22px;
+
+		&.active {
+			background: url("../images/button-active.png");
+			z-index: 999;
+		}
+
+		a {
+			display: block;
+			padding-left: 30px;
+			text-decoration: none;
+			color: #8F908A;
+			font-size: 11px;
+		}
 	}
 
 	.home, .title {

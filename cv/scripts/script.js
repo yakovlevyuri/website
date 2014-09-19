@@ -119,16 +119,22 @@ $(document).ready(function() {
 
 	$('#english').click(function() {
 		loadJson("english");
+		$(".lang-switcher").removeClass('active');
+		$(this).parents(".lang-switcher").addClass('active');
 		return false;
 	});
 
 	$('#russian').click(function() {
 		loadJson("russian");
+		$(".lang-switcher").removeClass('active');
+		$(this).parents(".lang-switcher").addClass('active');
 		return false;
 	});
 
 	$('#czech').click(function() {
 		loadJson("czech");
+		$(".lang-switcher").removeClass('active');
+		$(this).parents(".lang-switcher").addClass('active');
 		return false;
 	});
 });
