@@ -1,16 +1,10 @@
-.normal {
-  font-family: 'dejavu_sans_monobook';
-}
 body {
   background-color: #23241F;
-  font-size: 12px;
-  font-family: 'dejavu_sans_monobook';
 }
 .wrapper {
   margin: 0 auto;
   width: 850px;
 }
-/* Header */
 header {
   background-color: #171714;
   color: white;
@@ -34,11 +28,13 @@ header .lang-switcher.active {
   z-index: 999;
 }
 header .lang-switcher a {
+  font-family: 'liberation_monoregular';
   display: block;
   padding-left: 30px;
   text-decoration: none;
   color: #8F908A;
   font-size: 11px;
+  line-height: 30px;
 }
 header .home,
 header .title {
@@ -50,7 +46,6 @@ header .home {
 }
 .title2 {
   float: right;
-  line-height: 33px;
 }
 .title2 span {
   display: inline;
@@ -71,6 +66,7 @@ code a:hover {
   text-decoration: underline;
 }
 code p {
+  font-size: 12px;
   line-height: 16px;
 }
 code p:before {

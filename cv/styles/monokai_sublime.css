@@ -1,11 +1,12 @@
 /* Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/ */
 
 .hljs {
-	/* display: block; */
+	/* display: block; 
+	padding: 0.5em; */
 	overflow-x: auto;
-	/* padding: 0.5em; */
-	background: #23241f;
+	background: #272822;
 	-webkit-text-size-adjust: none;
+	font-family: 'liberation_monoregular';
 }
 
 .hljs,
@@ -21,6 +22,8 @@
 /* If you want to change padding of attribute that's right place to do that */
 .css .hljs-attribute {
 	padding-left: 35px;
+	/* font-family: 'anonymous_proitalic'; */
+	font-family: 'liberation_monoitalic';
 }
 
 .hljs-strongemphasis,
@@ -60,7 +63,7 @@
 .hljs-emphasis,
 .hljs-strongemphasis,
 .hljs-class .hljs-title:last-child {
-	font-style: italic;
+	font-family: 'anonymous_probold_italic';
 }
 
 .hljs-keyword,
