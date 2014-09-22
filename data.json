@@ -22,6 +22,11 @@
 				"russian": "Lundegaard",
 				"czech": "Lundegaard"
 			},
+			"link": {
+				"english": "http://www.lundegaard.eu/en/",
+				"russian": "http://www.lundegaard.eu/en/",
+				"czech": "http://www.lundegaard.eu/cs/"				
+			},
 			"position": {
 				"english": "front-end developer",
 				"russian": "front-end разработчик",
@@ -39,7 +44,7 @@
 			},
 			"end-year": {
 				"english": "present",
-				"russian": "",
+				"russian": "по настоящее время",
 				"czech": "současnost"
 			},
 			"responsibilities": {
@@ -47,16 +52,19 @@
 					"implementation of the front-end part of internet solutions (coding using HTML, CSS, JavaScript)",
 					"cooperation in a team with web consultants, designers and programmers",
 					"responsibility for quality of code, accuracy of displaying and functioning of front-end code in various browsers",
-					"working for 3M projects mainly"
+					"working for 3M corporation projects mainly"
 				],
 				"russian": [
-					"",
-					""
+					"реализация фронт-энд части (использование HTML, CSS, JavaScript)",
+					"сотрудничество в команде, состоящей из программистов, дизайнеров и веб-консультантов",
+					"ответственность за качество, точности отображения и функционирования кода в различных браузерах",
+					"в основном работа над проектами корпорации 3М"
 				],
 				"czech": [
 					"realizace front-endové části internetových řešení (kódování za použití HTML, CSS, Javascriptu)",
 					"spolupráce v týmu s webovými konzultanty, designéry a programátory",
-					"odpovědnost za validitu kódu, správnost zobrazení a fungování front-end kódu v různých prohlížečích"
+					"odpovědnost za validitu kódu, správnost zobrazení a fungování front-end kódu v různých prohlížečích",
+					"řešení firemních projektů pro 3M hlavně"
 				]
 			}
 		},
@@ -70,6 +78,11 @@
 				"english": "Electronic Tour Guide",
 				"russian": "Electronic Tour Guide",
 				"czech": "Electronic Tour Guide"
+			},
+			"link": {
+				"english": "http://electronictourguide.com/",
+				"russian": "http://electronictourguide.com/ru/",
+				"czech": "http://electronictourguide.com/"				
 			},
 			"position": {
 				"english": "product manager",
@@ -88,7 +101,7 @@
 			},
 			"end-year": {
 				"english": "present",
-				"russian": "",
+				"russian": "по настоящее время",
 				"czech": "současnost"
 			},
 			"responsibilities": {
@@ -131,7 +144,7 @@
 			},
 			"end-year": {
 				"english": "present",
-				"russian": "",
+				"russian": "по настоящее время",
 				"czech": "současnost"
 			},
 			"field": {
@@ -219,12 +232,12 @@
 			},
 			"english": {
 				"english": "upper-intermediate",
-				"russian": "",
+				"russian": "выше среднего",
 				"czech": "pokročilá"
 			},
 			"czech": {
 				"english": "intermediate",
-				"russian": "",
+				"russian": "средний уровень",
 				"czech": "středně pokročilá"
 			}
 		},

@@ -39,8 +39,12 @@ function loadJson(lang) {
 		$.each(data.workExperience, function(workplaceNumber) {
 			html += '<p>#work-experience ' + data.workExperience[workplaceNumber].classname[lang] + ' {</p>';
 			$.each(data.workExperience[workplaceNumber], function(key) {
-				if (key != "classname") {
-					if (key == "responsibilities") {
+				if (key != "classname" && key != "link") {
+					if (key == "work-place") {
+						console.log();
+						html += '<p>' + key +': ' + '<a href="' + data.workExperience[workplaceNumber].link[lang] + '">' + this[lang] + '</a>' + ';</p>';
+					}
+					else if (key == "responsibilities") {
 						html += '<p>' + key +': ';
 						/*for (var i in this.responsibilities[lang]) {*/
 						for (var i = 0; i <= this[lang].length - 1; i++ ) {
@@ -51,7 +55,8 @@ function loadJson(lang) {
 							}
 						}
 						html += '</p>';
-					} else {
+					}
+					else {
 						html += '<p>' + key +': ' + this[lang] + ';</p>';
 					}
 				}
