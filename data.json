@@ -25,7 +25,7 @@
 			"link": {
 				"english": "http://www.lundegaard.eu/en/",
 				"russian": "http://www.lundegaard.eu/en/",
-				"czech": "http://www.lundegaard.eu/cs/"				
+				"czech": "http://www.lundegaard.eu/cs/"
 			},
 			"position": {
 				"english": "front-end developer",
@@ -82,7 +82,7 @@
 			"link": {
 				"english": "http://electronictourguide.com/",
 				"russian": "http://electronictourguide.com/ru/",
-				"czech": "http://electronictourguide.com/"				
+				"czech": "http://electronictourguide.com/"
 			},
 			"position": {
 				"english": "product manager",
@@ -100,9 +100,9 @@
 				"czech": "2012px"
 			},
 			"end-year": {
-				"english": "present",
-				"russian": "по настоящее время",
-				"czech": "současnost"
+				"english": "2014px",
+				"russian": "2014px",
+				"czech": "2014px"
 			},
 			"responsibilities": {
 				"english": [
