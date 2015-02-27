@@ -1,6 +1,6 @@
 function loadJson(lang) {
 	$.getJSON('data.json', function(data) {
-		console.log( "Json loaded successfully" );
+		console.log( "Json in " + lang + " loaded successfully" );
 
 		var html = '',
 		container = $('code');
@@ -116,7 +116,7 @@ function loadJson(lang) {
 $(document).ready(function() {
 	loadJson("english");
 	$('#code-box').slimScroll({
-		height: '420px',
+		height: '490px',
 		size: '8px',
 		color: '#fff',
 		alwaysVisible: true,
@@ -146,6 +146,10 @@ $(document).ready(function() {
 		loadJson("czech");
 		$(".lang-switcher").removeClass('active');
 		$(this).parents(".lang-switcher").addClass('active');
+		return false;
+	});
+
+	$('.top-bar-button').click(function() {
 		return false;
 	});
 });
