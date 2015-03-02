@@ -1,4 +1,5 @@
 @import url("../bower_components/normalize-css/normalize.css");
+@import url("../bower_components/animate.css/animate.min.css");
 /* Liberation Mono (http://www.fontsquirrel.com/fonts/Liberation-Mono) */
 @font-face {
   font-family: 'liberation_monoregular';
@@ -150,6 +151,11 @@
 .php .xml {
   opacity: 0.5;
 }
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 html,
 body {
   height: 100%;
@@ -160,18 +166,32 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-.wrapper {
-  margin: 0 auto;
-  padding-top: 60px;
-  width: 883px;
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
 }
-@media (min-width: 440px) {
+.wrapper {
+  max-width: 308px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (min-width: 768px) {
   .wrapper {
-    padding-top: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 751px;
+    width: 751px;
+    padding-top: 100px;
   }
 }
-@media (min-width: 540px) {
+@media (min-width: 992px) {
   .wrapper {
+    max-width: 963px;
+    width: 963px;
     padding-top: 100px;
   }
 }
@@ -199,13 +219,27 @@ header h2 {
   text-transform: uppercase;
   color: #a5acb0;
   margin-top: 4px;
-  font-weight: 300;
+  font-weight: 400;
 }
 header h2 em {
   padding: 2px 4px 3px;
   border-radius: 3px;
   border: 1px solid #c0c5c8;
   font-style: normal;
+}
+header a {
+  color: #404649;
+  font-weight: 600;
+  padding: 1px 2px 2px 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  /*-webkit-transition: all ease .3s;
+		-moz-transition: all ease .3s;
+		transition: all ease .3s;*/
+}
+header a:hover {
+  border: 1px solid #c0c5c8;
 }
 #editor {
   width: 883px;
@@ -352,6 +386,74 @@ header h2 em {
   -moz-background-clip: padding;
   border-bottom-left-radius: 5px;
   background-clip: padding-box;
+}
+#four a {
+  color: black;
+}
+.instafeed-wrapper {
+  background-color: #262721;
+  margin-top: 100px;
+}
+.instafeed-wrapper .wrapper {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.instafeed-wrapper .wrapper #instafeed {
+  display: table;
+}
+.instafeed-wrapper .wrapper h2 {
+  color: #ffffff;
+}
+.instafeed-wrapper .wrapper a {
+  display: block;
+  float: left;
+}
+.instafeed-wrapper .wrapper a img {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 3px 3px 13px 3px;
+  margin-right: 0;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  /*.border-radius(4px);*/
+  border-radius: 4px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .instafeed-wrapper .wrapper a img {
+    width: 219px;
+    height: 219px;
+    margin-right: 7px;
+  }
+}
+@media (min-width: 992px) {
+  .instafeed-wrapper .wrapper a img {
+    width: 171px;
+    height: 171px;
+  }
+}
+@media (min-width: 768px) {
+  .instafeed-wrapper .wrapper a:nth-child(3n) img {
+    margin-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .instafeed-wrapper .wrapper a:nth-child(3n) img {
+    margin-right: 7px;
+  }
+}
+@media (min-width: 992px) {
+  .instafeed-wrapper .wrapper a:nth-last-child(2) img {
+    margin-right: 0;
+  }
+}
+.instafeed-wrapper .wrapper a:last-child {
+  display: block;
+}
+@media (min-width: 992px) {
+  .instafeed-wrapper .wrapper a:last-child {
+    display: none;
+  }
 }
 footer {
   font-size: 0.8em;

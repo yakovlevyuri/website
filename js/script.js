@@ -1,4 +1,4 @@
-function loadJson(lang) {
+function loadCV(lang) {
 	$.getJSON('js/data.json', function(data) {
 		console.log( "Json in " + lang + " loaded successfully" );
 
@@ -113,9 +113,64 @@ function loadJson(lang) {
 	});
 }
 
+function loadInstragramPhotos() {
+
+	var userFeed = new Instafeed({
+		get: 'user',
+		userId: 1632422781,
+		accessToken: '1632422781.0cf4cd7.a07484a4a5dd4ef3a0f6a0cd004235a5',
+		resolution: 'low_resolution',
+		template: '<a href="{{link}}" rel="nofollow" target="_blank"><img src="{{image}}" /></a>',
+		limit: 6,
+		after: function () {
+			var images = $("#instafeed a");
+			$.each(images, function(index, image) {
+				var delay = (index * 75) + 'ms';
+				$(image).css('-webkit-animation-delay', delay);
+				$(image).css('-moz-animation-delay', delay);
+				$(image).css('-ms-animation-delay', delay);
+				$(image).css('-o-animation-delay', delay);
+				$(image).css('animation-delay', delay);
+				$(image).addClass('animated flipInX');
+			});
+		}
+	});	
+
+	userFeed.run();
+}
+
+function getFoursquareLocation() {
+	var accessToken = "OIYPE4RLDTJ0VADWQZ5143V02Q2MEG0NNYBO0HCJBJFVFS4M",
+	userID = "18827111",
+	startUrl = "https://api.foursquare.com/v2/users/self/checkins?oauth_token=" + accessToken + "&v=20150301&limit=1";
+
+	$(function() {
+		$.ajax({
+			type: "GET",
+			dataType: "jsonp",
+			cache: false,
+			url: startUrl,
+			success: function(data) {
+				$("#foursquare").attr({
+					href: "https:\/\/foursquare.com\/user\/" + userID + "\/checkin\/" + data.response.checkins.items[0].id,
+					title: data.response.checkins.items[0].venue.name
+				}).text(
+					data.response.checkins.items[0].venue.name
+				);
+			}			
+		}).done(function() {
+			console.log( startUrl);
+		});
+	});
+}
+
 $(document).ready(function() {
 	console.log('Smile! You\'re on camera :)');
-	loadJson("english");
+
+	getFoursquareLocation();
+	loadInstragramPhotos();
+	loadCV("english");
+
 	$('#code-box').slimScroll({
 		height: '490px',
 		size: '8px',
@@ -128,25 +183,25 @@ $(document).ready(function() {
 		allowPageScroll: false,
 		disableFadeOut: false
 	});
-
+	
 	$('footer').html('<p>&copy; ' + new Date().getFullYear() + '. All Rights Reserved.</p>');
 
 	$('#english').click(function() {
-		loadJson("english");
+		loadCV("english");
 		$(".lang-switcher").removeClass('active');
 		$(this).parents(".lang-switcher").addClass('active');
 		return false;
 	});
 
 	$('#russian').click(function() {
-		loadJson("russian");
+		loadCV("russian");
 		$(".lang-switcher").removeClass('active');
 		$(this).parents(".lang-switcher").addClass('active');
 		return false;
 	});
 
 	$('#czech').click(function() {
-		loadJson("czech");
+		loadCV("czech");
 		$(".lang-switcher").removeClass('active');
 		$(this).parents(".lang-switcher").addClass('active');
 		return false;
