@@ -256,67 +256,80 @@ header {
 
 		#instafeed {
 			display: table;
+			position: relative;
 		}
 
 		h2 {
 			color: @white;
 		}
 
-		a {
+		.instagram_container {
+			position: relative;
 			display: block;
 			float: left;
-
-			img {
-				max-width: 100%;
-				max-height: 100%;
-				padding: 3px 3px 13px 3px;
-				margin-right: 0;
-				border: 1px solid @white;
-				background-color: @white;
-				/*.border-radius(4px);*/
-				border-radius: 4px;
-				position: relative;
-
-				@media (min-width: @screen-sm-min) { 
-					.size(219px);
-					margin-right: 7px;
-				}
-
-				@media (min-width: @screen-md-min) { 
-					.size(171px);
-				}
-			}
+			margin-right: 7px;
+			margin-bottom: 7px;
+			padding: 3px 3px 13px 3px;
+			background-color: @white;
+			border-radius: 4px;
 
 			&:nth-child(3n) {
 				@media (min-width: @screen-sm-min) {
-					img {
-						margin-right: 0;
-					}
+					margin-right: 0;
 				}
 
 				@media (min-width: @screen-md-min) {
-					img {
-						margin-right: 7px;
-					}
+					margin-right: 7px;
 				}
 			}
 			
 			&:nth-last-child(2) {
 				@media (min-width: @screen-md-min) {
-					img {
-						margin-right: 0;
-					}
+					margin-right: 0;
 				}
 			}
 
-			&:last-child {
+			&:last-child,
+			&:nth-last-child(2) {
 				display: block;
 
 				@media (min-width: @screen-md-min) { 
 					display: none;
 				}
-			}	
-		}
+			}
+
+			@media (min-width: @screen-lg-min) { 
+					margin-bottom: 0;
+				}
+
+			a {
+				display: block;
+
+				img {
+					max-width: 100%;
+					max-height: 100%;
+					margin-right: 0;
+					/*.border-radius(4px);*/
+
+					@media (min-width: @screen-sm-min) { 
+						.size(213px);
+					}
+
+					@media (min-width: @screen-md-min) { 
+						.size(207px);
+					}
+				}	
+			}
+
+			p {
+				position: absolute;
+				top: 0;
+				left: 0;
+				color: white;
+				padding: 0;
+				margin: 0;
+			}
+		}		
 	}
 }
 footer {

@@ -15,6 +15,32 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?-o3n0rn');
+  src: url('../fonts/icomoon.eot?#iefix-o3n0rn') format('embedded-opentype'), url('../fonts/icomoon.woff?-o3n0rn') format('woff'), url('../fonts/icomoon.ttf?-o3n0rn') format('truetype'), url('../fonts/icomoon.svg?-o3n0rn#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-heart:before {
+  content: "\e600";
+}
+.icon-bubble:before {
+  content: "\e601";
+}
 /* Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/ */
 .hljs {
   /* display: block; 
@@ -400,60 +426,79 @@ header a:hover {
 }
 .instafeed-wrapper .wrapper #instafeed {
   display: table;
+  position: relative;
 }
 .instafeed-wrapper .wrapper h2 {
   color: #ffffff;
 }
-.instafeed-wrapper .wrapper a {
+.instafeed-wrapper .wrapper .instagram_container {
+  position: relative;
   display: block;
   float: left;
-}
-.instafeed-wrapper .wrapper a img {
-  max-width: 100%;
-  max-height: 100%;
+  margin-right: 7px;
+  margin-bottom: 7px;
   padding: 3px 3px 13px 3px;
-  margin-right: 0;
-  border: 1px solid #ffffff;
   background-color: #ffffff;
-  /*.border-radius(4px);*/
   border-radius: 4px;
-  position: relative;
 }
 @media (min-width: 768px) {
-  .instafeed-wrapper .wrapper a img {
-    width: 219px;
-    height: 219px;
-    margin-right: 7px;
-  }
-}
-@media (min-width: 992px) {
-  .instafeed-wrapper .wrapper a img {
-    width: 171px;
-    height: 171px;
-  }
-}
-@media (min-width: 768px) {
-  .instafeed-wrapper .wrapper a:nth-child(3n) img {
+  .instafeed-wrapper .wrapper .instagram_container:nth-child(3n) {
     margin-right: 0;
   }
 }
 @media (min-width: 992px) {
-  .instafeed-wrapper .wrapper a:nth-child(3n) img {
+  .instafeed-wrapper .wrapper .instagram_container:nth-child(3n) {
     margin-right: 7px;
   }
 }
 @media (min-width: 992px) {
-  .instafeed-wrapper .wrapper a:nth-last-child(2) img {
+  .instafeed-wrapper .wrapper .instagram_container:nth-last-child(2) {
     margin-right: 0;
   }
 }
-.instafeed-wrapper .wrapper a:last-child {
+.instafeed-wrapper .wrapper .instagram_container:last-child,
+.instafeed-wrapper .wrapper .instagram_container:nth-last-child(2) {
   display: block;
 }
 @media (min-width: 992px) {
-  .instafeed-wrapper .wrapper a:last-child {
+  .instafeed-wrapper .wrapper .instagram_container:last-child,
+  .instafeed-wrapper .wrapper .instagram_container:nth-last-child(2) {
     display: none;
   }
+}
+@media (min-width: 1200px) {
+  .instafeed-wrapper .wrapper .instagram_container {
+    margin-bottom: 0;
+  }
+}
+.instafeed-wrapper .wrapper .instagram_container a {
+  display: block;
+}
+.instafeed-wrapper .wrapper .instagram_container a img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: 0;
+  /*.border-radius(4px);*/
+}
+@media (min-width: 768px) {
+  .instafeed-wrapper .wrapper .instagram_container a img {
+    width: 213px;
+    height: 213px;
+  }
+}
+@media (min-width: 992px) {
+  .instafeed-wrapper .wrapper .instagram_container a img {
+    width: 207px;
+    height: 207px;
+  }
+}
+.instafeed-wrapper .wrapper .instagram_container p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 0;
+  margin: 0;
 }
 footer {
   font-size: 0.8em;

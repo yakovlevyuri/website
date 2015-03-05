@@ -120,9 +120,9 @@ function loadInstragramPhotos() {
 		userId: 1632422781,
 		accessToken: '1632422781.0cf4cd7.a07484a4a5dd4ef3a0f6a0cd004235a5',
 		resolution: 'low_resolution',
-		template: '<a href="{{link}}" rel="nofollow" target="_blank"><img src="{{image}}" /></a>',
+		template: '<div id="{{id}}" class="instagram_container"><a href="{{link}}" rel="nofollow" target="_blank"><img src="{{image}}" /></a><p>{{likes}}</p></div>',
 		limit: 6,
-		after: function () {
+		/*after: function () {
 			var images = $("#instafeed a");
 			$.each(images, function(index, image) {
 				var delay = (index * 75) + 'ms';
@@ -133,7 +133,7 @@ function loadInstragramPhotos() {
 				$(image).css('animation-delay', delay);
 				$(image).addClass('animated flipInX');
 			});
-		}
+		}*/
 	});	
 
 	userFeed.run();
