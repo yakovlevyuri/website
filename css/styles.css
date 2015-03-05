@@ -194,7 +194,7 @@ body {
 }
 .clearfix:before,
 .clearfix:after {
-  content: " ";
+  content: "";
   display: table;
   clear: both;
 }
@@ -250,22 +250,25 @@ header h2 {
 header h2 em {
   padding: 2px 4px 3px;
   border-radius: 3px;
-  border: 1px solid #c0c5c8;
+  border: 1px solid #a5acb0;
   font-style: normal;
 }
 header a {
   color: #404649;
   font-weight: 600;
-  padding: 1px 2px 2px 3px;
   border-radius: 3px;
   text-decoration: none;
-  border: 1px solid #ffffff;
-  /*-webkit-transition: all ease .3s;
-		-moz-transition: all ease .3s;
-		transition: all ease .3s;*/
 }
-header a:hover {
-  border: 1px solid #c0c5c8;
+@media (min-width: 768px) {
+  header a {
+    padding: 1px 2px 2px 3px;
+    border: 1px solid #ffffff;
+  }
+}
+@media (min-width: 768px) {
+  header a:hover {
+    border: 1px solid #c0c5c8;
+  }
 }
 #editor {
   width: 883px;
@@ -282,10 +285,16 @@ header a:hover {
   border-radius: 5px;
   background-clip: padding-box;
   z-index: 0;
+  display: none;
+}
+@media (min-width: 992px) {
+  #editor {
+    display: block;
+  }
 }
 #editor #top-bar {
   position: relative;
-  width: 883px;
+  width: 881px;
   height: 22px;
   background: url('../images/osx-title-bar.png') 0 0 no-repeat;
   -webkit-border-top-right-radius: 5px;
@@ -308,9 +317,9 @@ header a:hover {
   left: 7px;
   display: block;
   background: url('../images/osx-title-bar-button.png') 0 0 no-repeat;
+  z-index: 99;
   width: 14px;
   height: 14px;
-  z-index: 99;
 }
 #editor #top-bar .top-bar-button:hover {
   background: url('../images/osx-title-bar-button.png') 0 -14px no-repeat;
@@ -323,7 +332,7 @@ header a:hover {
   color: white;
   height: 35px;
   position: relative;
-  border-bottom: 1px solid #3C3D38;
+  border-bottom: 1px solid #3c3d38;
   z-index: 999;
 }
 #editor #tabs-panel .lang-switcher {
@@ -400,7 +409,7 @@ header a:hover {
   background-color: #49483E;
 }
 #editor #bottom-bar {
-  width: 883px;
+  width: 881px;
   height: 20px;
   background-image: url('../images/osx-bottom-bar.png');
   -webkit-border-bottom-right-radius: 5px;
@@ -417,12 +426,12 @@ header a:hover {
   color: black;
 }
 .instafeed-wrapper {
-  background-color: #262721;
   margin-top: 100px;
+  background-color: #262721;
 }
 .instafeed-wrapper .wrapper {
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 32px;
 }
 .instafeed-wrapper .wrapper #instafeed {
   display: table;
@@ -435,11 +444,20 @@ header a:hover {
   position: relative;
   display: block;
   float: left;
-  margin-right: 7px;
+  margin-right: 13px;
   margin-bottom: 7px;
-  padding: 3px 3px 13px 3px;
-  background-color: #ffffff;
-  border-radius: 4px;
+  padding: 0 0 10px 0;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .instafeed-wrapper .wrapper .instagram_container {
+    max-width: 213px;
+  }
+}
+@media (min-width: 992px) {
+  .instafeed-wrapper .wrapper .instagram_container {
+    max-width: 207px;
+  }
 }
 @media (min-width: 768px) {
   .instafeed-wrapper .wrapper .instagram_container:nth-child(3n) {
@@ -448,7 +466,7 @@ header a:hover {
 }
 @media (min-width: 992px) {
   .instafeed-wrapper .wrapper .instagram_container:nth-child(3n) {
-    margin-right: 7px;
+    margin-right: 13px;
   }
 }
 @media (min-width: 992px) {
@@ -466,7 +484,7 @@ header a:hover {
     display: none;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .instafeed-wrapper .wrapper .instagram_container {
     margin-bottom: 0;
   }
@@ -478,7 +496,12 @@ header a:hover {
   max-width: 100%;
   max-height: 100%;
   margin-right: 0;
-  /*.border-radius(4px);*/
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
 }
 @media (min-width: 768px) {
   .instafeed-wrapper .wrapper .instagram_container a img {
@@ -493,15 +516,37 @@ header a:hover {
   }
 }
 .instafeed-wrapper .wrapper .instagram_container p {
-  position: absolute;
-  top: 0;
-  left: 0;
+  float: left;
+  position: relative;
   color: white;
   padding: 0;
   margin: 0;
+  color: #ffffff;
+}
+.instafeed-wrapper .wrapper .instagram_container p.caption {
+  padding: 0 10px;
+  max-width: inherit;
+  width: 100%;
+  line-height: 1em;
+}
+.instafeed-wrapper .wrapper .instagram_container p.likes {
+  margin: 0 10px;
+}
+.instafeed-wrapper .wrapper .instagram_container p.likes:before {
+  font-family: 'icomoon';
+  content: "\e600";
+  padding-right: 3px;
+}
+.instafeed-wrapper .wrapper .instagram_container p.comments:before {
+  font-family: 'icomoon';
+  content: "\e601";
+  padding-right: 3px;
 }
 footer {
   font-size: 0.8em;
   text-align: center;
   padding: 40px 0 20px 0;
+}
+footer .wrapper {
+  padding: 0;
 }

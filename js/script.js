@@ -6,7 +6,6 @@ function loadCV(lang) {
 		container = $('code');
 		container.html('');
 
-
 		/*$.each(data, function(key) {
 			html += '<p>' + key + '</p>';
 		});*/
@@ -120,7 +119,7 @@ function loadInstragramPhotos() {
 		userId: 1632422781,
 		accessToken: '1632422781.0cf4cd7.a07484a4a5dd4ef3a0f6a0cd004235a5',
 		resolution: 'low_resolution',
-		template: '<div id="{{id}}" class="instagram_container"><a href="{{link}}" rel="nofollow" target="_blank"><img src="{{image}}" /></a><p>{{likes}}</p></div>',
+		template: '<div id="{{id}}" class="instagram_container"><a href="{{link}}" rel="nofollow" target="_blank"><img src="{{image}}" /></a><p class="caption clearfix">{{caption}}</p><br><p class="likes">{{likes}}</p><p class="comments clear">{{comments}}</p></div>',
 		limit: 6,
 		/*after: function () {
 			var images = $("#instafeed a");
@@ -134,7 +133,7 @@ function loadInstragramPhotos() {
 				$(image).addClass('animated flipInX');
 			});
 		}*/
-	});	
+	});
 
 	userFeed.run();
 }
@@ -157,9 +156,7 @@ function getFoursquareLocation() {
 				}).text(
 					data.response.checkins.items[0].venue.name
 				);
-			}			
-		}).done(function() {
-			console.log( startUrl);
+			}
 		});
 	});
 }
@@ -184,7 +181,7 @@ $(document).ready(function() {
 		disableFadeOut: false
 	});
 	
-	$('footer').html('<p>&copy; ' + new Date().getFullYear() + '. All Rights Reserved.</p>');
+	$('footer .wrapper').html('<p>&copy; ' + new Date().getFullYear() + '. All Rights Reserved.</p>');
 
 	$('#english').click(function() {
 		loadCV("english");

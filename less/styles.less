@@ -11,6 +11,10 @@
 @screen-lg-min: 1200px;
 
 @white: #fff;
+@gray-main: #404649;
+@brown: #262721;
+@brown-light: #3C3D38;
+@brown-dark: #171714;
 
 * {
 	-webkit-box-sizing: border-box;
@@ -23,13 +27,13 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font: 16px/28px 'Lato', Helvetica, Arial, sans-serif;
-	color: #404649;
+	color: @gray-main;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
 .clearfix {
 	&:before, &:after {
-		content: " ";
+		content: "";
 		display: table;
 		clear: both;
 	}
@@ -68,7 +72,8 @@ header {
 		margin-bottom: 10px;
 		background: url(../images/avatar.png);
 		background-size: cover;
-		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.1);
+		box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 
+					inset 0 2px 0 rgba(255, 255, 255, 0.1);
 	}
 
 	h1 {
@@ -86,24 +91,26 @@ header {
 		em {
 			padding: 2px 4px 3px;
 			border-radius: 3px;
-			border: 1px solid #c0c5c8;
+			border: 1px solid #a5acb0;
 			font-style: normal;
 		}
 	}
 
 	a {
-		color: #404649;
+		color: @gray-main;
 		font-weight: 600;
-		padding: 1px 2px 2px 3px;
 		border-radius: 3px;
 		text-decoration: none;
-		border: 1px solid @white;
-		/*-webkit-transition: all ease .3s;
-		-moz-transition: all ease .3s;
-		transition: all ease .3s;*/
+
+		@media (min-width: @screen-sm-min) {
+			padding: 1px 2px 2px 3px;
+			border: 1px solid @white;
+		}
 
 		&:hover {
-			border: 1px solid #c0c5c8;
+			@media (min-width: @screen-sm-min) {
+				border: 1px solid #c0c5c8;
+			}
 		}
 	}
 }
@@ -115,10 +122,15 @@ header {
 	.box-shadow(0px 0px 90px 1px rgba(0, 0, 0, 0.3));
 	.border-radius(5px);
 	z-index: 0;
+	display: none;
+
+	@media (min-width: @screen-md-min) {
+		display: block;
+	}
 
 	#top-bar {
 		position: relative;
-		.size(883px, 22px);
+		.size(881px, 22px);
 		background: url('../images/osx-title-bar.png') 0 0 no-repeat;
 		.border-top-right-radius(5px);
 		.border-top-left-radius(5px);
@@ -134,8 +146,8 @@ header {
 			left: 7px;
 			display: block;
 			background: url('../images/osx-title-bar-button.png') 0 0 no-repeat;
-			.size(14px);
 			z-index: 99;
+			.size(14px);
 
 			&:hover {
 				background: url('../images/osx-title-bar-button.png') 0 -14px no-repeat;
@@ -148,11 +160,11 @@ header {
 	}
 
 	#tabs-panel {
-		background-color: #171714;
+		background-color: @brown-dark;
 		color: white;
 		height: 35px;
 		position: relative;
-		border-bottom: 1px solid #3C3D38;
+		border-bottom: 1px solid @brown-light;
 		z-index: 999;
 
 		.lang-switcher {
@@ -195,7 +207,7 @@ header {
 	#code-box {
 		padding: 10px 0;
 		.size(883px, 490px);
-		background-color: #262721;
+		background-color: @brown;
 		position: relative;
 		.box-sizing(border-box);
 
@@ -237,7 +249,7 @@ header {
 	}
 
 	#bottom-bar {
-		.size(883px, 20px);
+		.size(881px, 20px);
 		background-image: url('../images/osx-bottom-bar.png');
 		.border-bottom-right-radius(5px);
 		.border-bottom-left-radius(5px);
@@ -247,12 +259,12 @@ header {
 	color: black;
 }
 .instafeed-wrapper {
-	background-color: #262721;
-	margin-top: 100px;	
+	margin-top: 100px;
+	background-color: @brown;
 
 	.wrapper {
 		padding-top: 20px;
-		padding-bottom: 50px;
+		padding-bottom: 32px;
 
 		#instafeed {
 			display: table;
@@ -267,11 +279,18 @@ header {
 			position: relative;
 			display: block;
 			float: left;
-			margin-right: 7px;
+			margin-right: 13px;
 			margin-bottom: 7px;
-			padding: 3px 3px 13px 3px;
-			background-color: @white;
-			border-radius: 4px;
+			padding: 0 0 10px 0;
+			font-size: 14px;
+			
+			@media (min-width: @screen-sm-min) { 
+				max-width: 213px;
+			}
+
+			@media (min-width: @screen-md-min) {
+				max-width: 207px;
+			}
 
 			&:nth-child(3n) {
 				@media (min-width: @screen-sm-min) {
@@ -279,7 +298,7 @@ header {
 				}
 
 				@media (min-width: @screen-md-min) {
-					margin-right: 7px;
+					margin-right: 13px;
 				}
 			}
 			
@@ -298,7 +317,7 @@ header {
 				}
 			}
 
-			@media (min-width: @screen-lg-min) { 
+			@media (min-width: @screen-md-min) { 
 					margin-bottom: 0;
 				}
 
@@ -309,25 +328,51 @@ header {
 					max-width: 100%;
 					max-height: 100%;
 					margin-right: 0;
-					/*.border-radius(4px);*/
+					.border-radius(4px);
 
 					@media (min-width: @screen-sm-min) { 
 						.size(213px);
 					}
 
-					@media (min-width: @screen-md-min) { 
+					@media (min-width: @screen-md-min) {
 						.size(207px);
 					}
 				}	
 			}
 
 			p {
-				position: absolute;
-				top: 0;
-				left: 0;
+				float: left;
+				position: relative;
 				color: white;
 				padding: 0;
 				margin: 0;
+				color: @white;
+
+				&.caption {
+					padding: 0 10px;
+					max-width: inherit;
+					width: 100%;
+					line-height: 1em;
+				}
+
+				&.likes {
+					margin: 0 10px;
+
+					&:before {
+						font-family: 'icomoon';
+						content: "\e600";
+						padding-right: 3px;
+					}
+				}
+
+				&.comments {
+
+					&:before {
+						font-family: 'icomoon';
+						content: "\e601";
+						padding-right: 3px;
+					}
+				}
 			}
 		}		
 	}
@@ -336,4 +381,8 @@ footer {
 	font-size: 0.8em;
 	text-align: center;
 	padding: 40px 0 20px 0;
+
+	.wrapper {
+		padding: 0;
+	}
 }
