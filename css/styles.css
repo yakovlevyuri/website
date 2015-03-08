@@ -1,5 +1,6 @@
 @import url("../bower_components/normalize-css/normalize.css");
 @import url("../bower_components/animate.css/animate.min.css");
+@import url("../bower_components/owlcarousel/assets/owl.carousel.css");
 /* Liberation Mono (http://www.fontsquirrel.com/fonts/Liberation-Mono) */
 @font-face {
   font-family: 'liberation_monoregular';
@@ -201,7 +202,7 @@ body {
 .wrapper {
   max-width: 308px;
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 50px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -222,9 +223,14 @@ body {
   }
 }
 header {
-  margin-bottom: 75px;
+  margin-bottom: 50px;
   text-align: center;
   position: relative;
+}
+@media (min-width: 768px) {
+  header {
+    margin-bottom: 75px;
+  }
 }
 header #avatar {
   display: inline-block;
@@ -259,13 +265,13 @@ header a {
   border-radius: 3px;
   text-decoration: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   header a {
     padding: 1px 2px 2px 3px;
     border: 1px solid #ffffff;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   header a:hover {
     border: 1px solid #c0c5c8;
   }
@@ -422,80 +428,25 @@ header a {
   border-bottom-left-radius: 5px;
   background-clip: padding-box;
 }
-#four a {
-  color: black;
-}
 .instafeed-wrapper {
-  margin-top: 100px;
   background-color: #262721;
 }
-.instafeed-wrapper .wrapper {
-  padding-top: 20px;
-  padding-bottom: 32px;
+@media (min-width: 768px) {
+  .instafeed-wrapper {
+    margin-top: 100px;
+  }
 }
-.instafeed-wrapper .wrapper #instafeed {
-  display: table;
-  position: relative;
+.instafeed-wrapper .wrapper {
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 .instafeed-wrapper .wrapper h2 {
   color: #ffffff;
 }
-.instafeed-wrapper .wrapper .instagram_container {
-  position: relative;
-  display: block;
-  float: left;
-  margin-right: 13px;
-  margin-bottom: 7px;
-  padding: 0 0 10px 0;
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  .instafeed-wrapper .wrapper .instagram_container {
-    max-width: 213px;
-  }
-}
-@media (min-width: 992px) {
-  .instafeed-wrapper .wrapper .instagram_container {
-    max-width: 207px;
-  }
-}
-@media (min-width: 768px) {
-  .instafeed-wrapper .wrapper .instagram_container:nth-child(3n) {
-    margin-right: 0;
-  }
-}
-@media (min-width: 992px) {
-  .instafeed-wrapper .wrapper .instagram_container:nth-child(3n) {
-    margin-right: 13px;
-  }
-}
-@media (min-width: 992px) {
-  .instafeed-wrapper .wrapper .instagram_container:nth-last-child(2) {
-    margin-right: 0;
-  }
-}
-.instafeed-wrapper .wrapper .instagram_container:last-child,
-.instafeed-wrapper .wrapper .instagram_container:nth-last-child(2) {
+.instafeed-wrapper .wrapper #instafeed a {
   display: block;
 }
-@media (min-width: 992px) {
-  .instafeed-wrapper .wrapper .instagram_container:last-child,
-  .instafeed-wrapper .wrapper .instagram_container:nth-last-child(2) {
-    display: none;
-  }
-}
-@media (min-width: 992px) {
-  .instafeed-wrapper .wrapper .instagram_container {
-    margin-bottom: 0;
-  }
-}
-.instafeed-wrapper .wrapper .instagram_container a {
-  display: block;
-}
-.instafeed-wrapper .wrapper .instagram_container a img {
-  max-width: 100%;
-  max-height: 100%;
-  margin-right: 0;
+.instafeed-wrapper .wrapper #instafeed a img {
   -webkit-border-radius: 4px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 4px;
@@ -503,41 +454,30 @@ header a {
   border-radius: 4px;
   background-clip: padding-box;
 }
-@media (min-width: 768px) {
-  .instafeed-wrapper .wrapper .instagram_container a img {
-    width: 213px;
-    height: 213px;
-  }
-}
-@media (min-width: 992px) {
-  .instafeed-wrapper .wrapper .instagram_container a img {
-    width: 207px;
-    height: 207px;
-  }
-}
-.instafeed-wrapper .wrapper .instagram_container p {
+.instafeed-wrapper .wrapper #instafeed p {
   float: left;
   position: relative;
   color: white;
   padding: 0;
   margin: 0;
   color: #ffffff;
+  font-size: 14px;
 }
-.instafeed-wrapper .wrapper .instagram_container p.caption {
+.instafeed-wrapper .wrapper #instafeed p.caption {
   padding: 0 10px;
   max-width: inherit;
   width: 100%;
   line-height: 1em;
 }
-.instafeed-wrapper .wrapper .instagram_container p.likes {
+.instafeed-wrapper .wrapper #instafeed p.likes {
   margin: 0 10px;
 }
-.instafeed-wrapper .wrapper .instagram_container p.likes:before {
+.instafeed-wrapper .wrapper #instafeed p.likes:before {
   font-family: 'icomoon';
   content: "\e600";
   padding-right: 3px;
 }
-.instafeed-wrapper .wrapper .instagram_container p.comments:before {
+.instafeed-wrapper .wrapper #instafeed p.comments:before {
   font-family: 'icomoon';
   content: "\e601";
   padding-right: 3px;
@@ -545,7 +485,7 @@ header a {
 footer {
   font-size: 0.8em;
   text-align: center;
-  padding: 40px 0 20px 0;
+  padding: 20px 0;
 }
 footer .wrapper {
   padding: 0;

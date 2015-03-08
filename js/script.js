@@ -119,20 +119,32 @@ function loadInstragramPhotos() {
 		userId: 1632422781,
 		accessToken: '1632422781.0cf4cd7.a07484a4a5dd4ef3a0f6a0cd004235a5',
 		resolution: 'low_resolution',
-		template: '<div id="{{id}}" class="instagram_container"><a href="{{link}}" rel="nofollow" target="_blank"><img src="{{image}}" /></a><p class="caption clearfix">{{caption}}</p><br><p class="likes">{{likes}}</p><p class="comments clear">{{comments}}</p></div>',
-		limit: 6,
-		/*after: function () {
-			var images = $("#instafeed a");
-			$.each(images, function(index, image) {
-				var delay = (index * 75) + 'ms';
-				$(image).css('-webkit-animation-delay', delay);
-				$(image).css('-moz-animation-delay', delay);
-				$(image).css('-ms-animation-delay', delay);
-				$(image).css('-o-animation-delay', delay);
-				$(image).css('animation-delay', delay);
-				$(image).addClass('animated flipInX');
+		template: '<a href="{{link}}" rel="nofollow" target="_blank"><img class="owl-lazy" data-src="{{image}}" /></a>',
+		limit: 20,
+		after: function() {
+			$('#instafeed').owlCarousel({
+				smartSpeed: 1000,
+				lazyLoad: true,
+				loop: true,
+				margin: 10,
+				autoplay: true,
+				autoplayTimeout: 3000,
+				autoplayHoverPause: true,
+				responsive: {
+					0: {
+						items: 3,
+						dots: true
+					},
+					768: {
+						items: 5,
+						nav: false
+					},
+					992: {
+						items: 7
+					}
+				}
 			});
-		}*/
+		}
 	});
 
 	userFeed.run();
@@ -165,8 +177,8 @@ $(document).ready(function() {
 	console.log('Smile! You\'re on camera :)');
 
 	getFoursquareLocation();
-	loadInstragramPhotos();
 	loadCV("english");
+	loadInstragramPhotos();
 
 	$('#code-box').slimScroll({
 		height: '490px',
