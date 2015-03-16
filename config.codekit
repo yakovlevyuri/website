@@ -2231,36 +2231,733 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/owlcarousel\/assets\/owl.carousel.css": {
+	"\/bower_components\/owlcarousel\/assets\/css\/bootstrapTheme.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/owl.carousel.css",
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/css\/bootstrapTheme.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/owlcarousel\/owl.carousel.js": {
+	"\/bower_components\/owlcarousel\/assets\/css\/custom.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/css\/custom.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/css\/responsive.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/css\/responsive.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/ico\/apple-touch-icon-114-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5673,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/ico\/apple-touch-icon-114-precomposed.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/ico\/apple-touch-icon-114-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/ico\/apple-touch-icon-144-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7907,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/ico\/apple-touch-icon-144-precomposed.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/ico\/apple-touch-icon-144-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/ico\/apple-touch-icon-57-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3058,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/ico\/apple-touch-icon-57-precomposed.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/ico\/apple-touch-icon-57-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/ico\/apple-touch-icon-72-precomposed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3942,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/ico\/apple-touch-icon-72-precomposed.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/ico\/apple-touch-icon-72-precomposed.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/ico\/favicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2165,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/ico\/favicon.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/ico\/favicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/controls.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3126,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/controls.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/controls.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/css3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7776,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/css3.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/css3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/feather.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3913,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/feather.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/feather.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/grab.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3339,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/grab.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/grab.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/modern.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8114,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/modern.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/modern.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/multi.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2459,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/multi.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/multi.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/responsive.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2156,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/responsive.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/responsive.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/tons.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3726,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/tons.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/tons.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/touch.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3320,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/touch.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/touch.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/zombie.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5840,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/zombie.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/demo-slides\/zombie.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/glyphicons-halflings-green.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15738,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/glyphicons-halflings-green.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/glyphicons-halflings-green.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/glyphicons-halflings-white.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8777,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/glyphicons-halflings-white.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/glyphicons-halflings-white.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/glyphicons-halflings.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12799,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/glyphicons-halflings.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/glyphicons-halflings.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/img\/owl-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8874,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/owl-logo.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/img\/owl-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/js\/application.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/owl.carousel.js",
-		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/min\/owl.carousel-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/application.js",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/min\/application-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/owlcarousel\/owl.carousel.min.js": {
+	"\/bower_components\/owlcarousel\/assets\/js\/bootstrap-collapse.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/owl.carousel.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/min\/owl.carousel.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/bootstrap-collapse.js",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/min\/bootstrap-collapse-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/owlcarousel\/assets\/js\/bootstrap-tab.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/bootstrap-tab.js",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/min\/bootstrap-tab-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/owlcarousel\/assets\/js\/bootstrap-transition.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/bootstrap-transition.js",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/min\/bootstrap-transition-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/owlcarousel\/assets\/js\/google-code-prettify\/prettify.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/google-code-prettify\/prettify.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/assets\/js\/google-code-prettify\/prettify.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/google-code-prettify\/prettify.js",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/google-code-prettify\/min\/prettify-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/owlcarousel\/assets\/js\/google-code-prettify\/run_prettify.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/google-code-prettify\/run_prettify.js",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/google-code-prettify\/min\/run_prettify-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/owlcarousel\/assets\/js\/jquery-1.9.1.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/jquery-1.9.1.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/assets\/js\/min\/jquery-1.9.1.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/owlcarousel\/changelog.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/changelog.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/fullimage1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 163675,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage1.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/fullimage2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 149197,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage2.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/fullimage3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 155634,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage3.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/fullimage4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 50895,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage4.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/fullimage5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 106252,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage5.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/fullimage6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 119136,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage6.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/fullimage7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 104748,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage7.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/fullimage7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/owl1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27090,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl1.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/owl2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58799,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl2.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/owl3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 37374,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl3.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/owl4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27756,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl4.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/owl5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34388,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl5.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/owl6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20136,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl6.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/owl7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28345,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl7.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/assets\/owl8.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21166,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl8.jpg",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/assets\/owl8.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/autoHeight.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/autoHeight.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/click.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/click.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/custom.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/custom.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/customJson.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/customJson.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/full.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/full.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/images.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/images.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/itemsCustom.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/itemsCustom.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/json.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/json.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/lazyLoad.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/lazyLoad.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/manipulations.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/manipulations.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/navOnTop.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/navOnTop.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/navOnTop2.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/navOnTop2.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/one.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/one.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/owlStatus.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/owlStatus.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/progressBar.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/progressBar.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/randomOrder.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/randomOrder.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/scaleup.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/scaleup.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/sync.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/sync.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/demos\/transitions.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/demos\/transitions.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/owl-carousel\/grabbing.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 116,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/owl-carousel\/grabbing.png",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/owl-carousel\/grabbing.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/bower_components\/owlcarousel\/owl-carousel\/owl.carousel.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/owl-carousel\/owl.carousel.js",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/owl-carousel\/min\/owl.carousel-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/owlcarousel\/owl-carousel\/owl.theme.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/owl-carousel\/owl.theme.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/owl-carousel\/owl.transitions.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/owl-carousel\/owl.transitions.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/owlcarousel\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/owlcarousel\/README.md",
+		"outputAbbreviatedPath": "\/bower_components\/owlcarousel\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/bower_components\/slimscroll\/examples\/allow-page-scroll.html": {
 		"fileType": 8192,

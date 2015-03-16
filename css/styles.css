@@ -1,6 +1,6 @@
 @import url("../bower_components/normalize-css/normalize.css");
 @import url("../bower_components/animate.css/animate.min.css");
-@import url("../bower_components/owlcarousel/assets/owl.carousel.css");
+@import url("../bower_components/owlcarousel/owl-carousel/owl.carousel.css");
 /* Liberation Mono (http://www.fontsquirrel.com/fonts/Liberation-Mono) */
 @font-face {
   font-family: 'liberation_monoregular';
@@ -200,7 +200,7 @@ body {
   clear: both;
 }
 .wrapper {
-  max-width: 600px;
+  max-width: 608px;
   margin: 0 auto;
   padding-top: 50px;
   padding-left: 10px;
@@ -210,7 +210,7 @@ body {
   .wrapper {
     padding-left: 40px;
     padding-right: 40px;
-    max-width: 950px;
+    max-width: 963px;
     padding-top: 100px;
   }
 }
@@ -274,78 +274,82 @@ header a {
     border: 1px solid #c0c5c8;
   }
 }
-#editor {
-  width: 883px;
-  margin-top: 50px;
-  background-color: transparent;
-  border: 1px solid #ccc;
-  -webkit-box-shadow: 0px 0px 90px 1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0px 0px 90px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 0px 90px 1px rgba(0, 0, 0, 0.3);
-  -webkit-border-radius: 5px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius: 5px;
-  -moz-background-clip: padding;
-  border-radius: 5px;
-  background-clip: padding-box;
-  z-index: 0;
-  display: none;
-}
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #editor {
-    display: block;
+    width: 883px;
+    margin-top: 50px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0px 0px 90px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 90px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 90px 1px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 5px;
+    -moz-background-clip: padding;
+    border-radius: 5px;
+    background-clip: padding-box;
+    z-index: 0;
   }
 }
-#editor #top-bar {
-  position: relative;
-  width: 881px;
-  height: 22px;
-  background: url('../images/osx-title-bar.png') 0 0 no-repeat;
-  -webkit-border-top-right-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  border-top-right-radius: 5px;
-  -webkit-border-top-left-radius: 5px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius-topleft: 5px;
-  -moz-background-clip: padding;
-  border-top-left-radius: 5px;
-  background-clip: padding-box;
+@media (min-width: 768px) {
+  #editor #top-bar {
+    position: relative;
+    width: 881px;
+    height: 22px;
+    background: url('../images/osx-title-bar.png') 0 0 no-repeat;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius-topleft: 5px;
+    -moz-background-clip: padding;
+    border-top-left-radius: 5px;
+    background-clip: padding-box;
+  }
+  #editor #top-bar:hover {
+    background: url('../images/osx-title-bar.png') 0 -22px no-repeat;
+    z-index: 999;
+  }
 }
-#editor #top-bar:hover {
-  background: url('../images/osx-title-bar.png') 0 -22px no-repeat;
-  z-index: 999;
+@media (min-width: 768px) {
+  #editor #top-bar .top-bar-button {
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    display: block;
+    background: url('../images/osx-title-bar-button.png') 0 0 no-repeat;
+    z-index: 99;
+    width: 14px;
+    height: 14px;
+  }
+  #editor #top-bar .top-bar-button:hover {
+    background: url('../images/osx-title-bar-button.png') 0 -14px no-repeat;
+  }
+  #editor #top-bar .top-bar-button:active {
+    background: url('../images/osx-title-bar-button.png') 0 -28px no-repeat;
+  }
 }
-#editor #top-bar .top-bar-button {
-  position: absolute;
-  top: 4px;
-  left: 7px;
-  display: block;
-  background: url('../images/osx-title-bar-button.png') 0 0 no-repeat;
-  z-index: 99;
-  width: 14px;
-  height: 14px;
+@media (min-width: 768px) {
+  #editor #tabs-panel {
+    background-color: #171714;
+    color: white;
+    height: 35px;
+    position: relative;
+    border-bottom: 1px solid #3c3d38;
+    z-index: 999;
+  }
 }
-#editor #top-bar .top-bar-button:hover {
-  background: url('../images/osx-title-bar-button.png') 0 -14px no-repeat;
-}
-#editor #top-bar .top-bar-button:active {
-  background: url('../images/osx-title-bar-button.png') 0 -28px no-repeat;
-}
-#editor #tabs-panel {
-  background-color: #171714;
-  color: white;
-  height: 35px;
-  position: relative;
-  border-bottom: 1px solid #3c3d38;
-  z-index: 999;
-}
-#editor #tabs-panel .lang-switcher {
-  display: inline-block;
-  position: relative;
-  background: url("../images/button-inactive.png");
-  width: 185px;
-  height: 32px;
-  top: 7px;
+@media (min-width: 768px) {
+  #editor #tabs-panel .lang-switcher {
+    display: inline-block;
+    position: relative;
+    background: url("../images/button-inactive.png");
+    width: 185px;
+    height: 32px;
+    top: 7px;
+  }
 }
 #editor #tabs-panel .lang-switcher:nth-child(2),
 #editor #tabs-panel .lang-switcher:last-child {
@@ -372,15 +376,17 @@ header a {
 #editor #tabs-panel .home {
   margin-right: 90px;
 }
-#editor #code-box {
-  padding: 10px 0;
-  width: 883px;
-  height: 490px;
-  background-color: #262721;
-  position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+@media (min-width: 768px) {
+  #editor #code-box {
+    padding: 10px 0;
+    width: 883px;
+    height: 490px;
+    background-color: #262721;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 }
 #editor #code-box code {
   counter-reset: line;
@@ -412,19 +418,21 @@ header a {
 #editor #code-box code p:hover {
   background-color: #49483E;
 }
-#editor #bottom-bar {
-  width: 881px;
-  height: 20px;
-  background-image: url('../images/osx-bottom-bar.png');
-  -webkit-border-bottom-right-radius: 5px;
-  -moz-border-radius-bottomright: 5px;
-  border-bottom-right-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -webkit-background-clip: padding-box;
-  -moz-border-radius-bottomleft: 5px;
-  -moz-background-clip: padding;
-  border-bottom-left-radius: 5px;
-  background-clip: padding-box;
+@media (min-width: 768px) {
+  #editor #bottom-bar {
+    width: 881px;
+    height: 20px;
+    background-image: url('../images/osx-bottom-bar.png');
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius-bottomleft: 5px;
+    -moz-background-clip: padding;
+    border-bottom-left-radius: 5px;
+    background-clip: padding-box;
+  }
 }
 .instafeed-wrapper {
   background-color: #262721;
