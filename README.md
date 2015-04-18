@@ -1,9 +1,7 @@
 My homepage on the internet
 ======================
 
-This is the source code of my personal website --- [yuri yakovlev].
+This is the source code of my personal website -- [http://yakovlevyuri.com/](http://yakovlevyuri.com/).
 
 ### Version
-1.0 
-
-[yuri yakovlev]:http://yakovlevyuri.com/
+1.0
