@@ -1,0 +1,28 @@
+{
+  "name": "http://yakovlevyuri.com",
+  "version": "1.0.0",
+  "description" : "This is the source code of my personal website",
+  "author": "Yuri Yakovlev",
+  "email" : "contact@yakovlevyuri.com",
+  "url" : "http://yakovlevyuri.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yakovlevyuri/yakovlevyuri.com.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-imagemin": "~0.9.4",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-less": "^0.11.4",
+    "grunt-contrib-watch": "^0.6.1",
+    "time-grunt": "^1.0.0",
+    "grunt-favicons": "~0.6.4",
+    "grunt-notify": "^0.3.1",
+    "grunt-svgmin": "~2.0.1",
+    "jit-grunt": "~0.9.1"
+  }
+}
