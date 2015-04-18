@@ -1,3 +1,9 @@
+// @codekit-prepend "../bower_components/jquery/dist/jquery.min.js";
+// @codekit-prepend "../bower_components/highlightjs/highlight.pack.js";
+// @codekit-prepend "../bower_components/slimscroll/jquery.slimscroll.min.js";
+// @codekit-prepend "../bower_components/instafeed.js/instafeed.min.js";
+// @codekit-prepend "../js/libs/owlcarousel/owl.carousel.min.js";
+
 function loadCV(lang) {
 	$.getJSON('js/data.json', function(data) {
 		console.log( "Json in " + lang + " loaded successfully" );
@@ -195,24 +201,12 @@ $(document).ready(function() {
 	
 	$('footer .wrapper').html('<p>&copy; ' + new Date().getFullYear() + '. All Rights Reserved.</p>');
 
-	$('#english').click(function() {
-		loadCV("english");
-		$(".lang-switcher").removeClass('active');
-		$(this).parents(".lang-switcher").addClass('active');
-		return false;
-	});
+	$('.switcher').click(function() {
+		var thisID = $(this).attr('id');
 
-	$('#russian').click(function() {
-		loadCV("russian");
+		loadCV(thisID);
 		$(".lang-switcher").removeClass('active');
-		$(this).parents(".lang-switcher").addClass('active');
-		return false;
-	});
-
-	$('#czech').click(function() {
-		loadCV("czech");
-		$(".lang-switcher").removeClass('active');
-		$(this).parents(".lang-switcher").addClass('active');
+		$('#' + thisID).parents(".lang-switcher").addClass('active');
 		return false;
 	});
 

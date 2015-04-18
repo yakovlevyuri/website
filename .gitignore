@@ -74,9 +74,27 @@ build/Release
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
 
+#JetBrains configs
+.idea
 
 ### Bower ###
 bower_components
 .bower-cache
 .bower-registry
 .bower-tmp
+
+# Ignore CSS & Map File
+css
+*.css
+*.map
+
+# Ignore Compiled JS files
+js/min
+js/min/*
+
+#Ignore some folders
+analytics
+downloads
+editor
+works
+trash
