@@ -87,6 +87,7 @@ bower_components
 css
 *.css
 *.map
+!owl.carousel.css
 
 # Ignore Compiled JS files
 js/min
