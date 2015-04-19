@@ -1,0 +1,253 @@
+{
+	"bio": {
+		"first-name": "Yuri",
+		"last-name": "Yakovlev",
+		"date-of-birth": "#271189",
+		"address": {
+			"streetName": "..prague/kamenicka/812/33",
+			"gmapsLink": "https://www.google.com/maps/place/Kamenick%C3%A1+812%2F33,+170+00+Praha-Praha+7,+Czech+Republic/@50.1004858,14.4268931,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94c59adad7e1:0x849eea8f5baa64bc"
+		},
+		"email": "contact@yakovlevyuri.com",
+		"phone": "420, 776, 278, 743"
+	},
+	"workExperience": [
+		{
+			"classname": {
+				"english": ".wrapper",
+				"russian": ".wrapper",
+				"czech": ".wrapper"
+			},
+			"work-place": {
+				"english": "Lundegaard",
+				"russian": "Lundegaard",
+				"czech": "Lundegaard"
+			},
+			"link": {
+				"english": "http://www.lundegaard.eu/en/",
+				"russian": "http://www.lundegaard.eu/en/",
+				"czech": "http://www.lundegaard.eu/cs/"
+			},
+			"position": {
+				"english": "front-end developer",
+				"russian": "front-end разработчик",
+				"czech": "front-end vývojář"
+			},
+			"city-country": {
+				"english": "Prague/Czech Republic",
+				"russian": "Прага/Чехия",
+				"czech": "Praha/Česká republika"
+			},
+			"start-year": {
+				"english": "2014px",
+				"russian": "2014px",
+				"czech": "2014px"
+			},
+			"end-year": {
+				"english": "present",
+				"russian": "по настоящее время",
+				"czech": "současnost"
+			},
+			"responsibilities": {
+				"english": [
+					"implementation of the front-end part of internet solutions (coding using HTML, CSS, JavaScript)",
+					"cooperation in a team with web consultants, designers and programmers",
+					"responsibility for quality of code, accuracy of displaying and functioning of front-end code in various browsers",
+					"working for 3M corporation projects mainly"
+				],
+				"russian": [
+					"реализация фронт-энд части (использование HTML, CSS, JavaScript)",
+					"сотрудничество в команде, состоящей из программистов, дизайнеров и веб-консультантов",
+					"ответственность за качество, точности отображения и функционирования кода в различных браузерах",
+					"в основном работа над проектами корпорации 3М"
+				],
+				"czech": [
+					"realizace front-endové části internetových řešení (kódování za použití HTML, CSS, Javascriptu)",
+					"spolupráce v týmu s webovými konzultanty, designéry a programátory",
+					"odpovědnost za validitu kódu, správnost zobrazení a fungování front-end kódu v různých prohlížečích",
+					"řešení firemních projektů pro 3M hlavně"
+				]
+			}
+		},
+		{
+			"classname": {
+				"english": ".wrapper:before",
+				"russian": ".wrapper:before",
+				"czech": ".wrapper:before"
+			},
+			"work-place": {
+				"english": "Electronic Tour Guide",
+				"russian": "Electronic Tour Guide",
+				"czech": "Electronic Tour Guide"
+			},
+			"link": {
+				"english": "http://electronictourguide.com/",
+				"russian": "http://electronictourguide.com/ru/",
+				"czech": "http://electronictourguide.com/"
+			},
+			"position": {
+				"english": "product manager",
+				"russian": "менеджер по продукту",
+				"czech": "produktový manažer"
+			},
+			"city-country": {
+				"english": "Prague/Czech Republic",
+				"russian": "Прага/Чехия",
+				"czech": "Praha/Česká republika"
+			},
+			"start-year": {
+				"english": "2012px",
+				"russian": "2012px",
+				"czech": "2012px"
+			},
+			"end-year": {
+				"english": "2014px",
+				"russian": "2014px",
+				"czech": "2014px"
+			},
+			"responsibilities": {
+				"english": [
+					"collaborating with partners and technical consulting",
+					"promotional campaign planning"
+				],
+				"russian": [
+					"сотрудничество с партнерами и техническая консультация",
+					"планирование кампаний по продвижению продукта"
+				],
+				"czech": [
+					"jednání s partnery a technické konzultace",
+					"organizace propagační kampaně"
+				]
+			}
+		}
+	],
+	"education": [
+		{
+			"classname": {
+				"english": "nth-last-child",
+				"russian": "nth-last-child",
+				"czech": "nth-last-child"
+			},
+			"university": {
+				"english": "Czech Technical University",
+				"russian": "Чешский Технический Университет",
+				"czech": "České Vysoké Učení Technické"
+			},
+			"city-country": {
+				"english": "Prague/Czech Republic",
+				"russian": "Прага/Чехия",
+				"czech": "Praha/Česká republika"
+			},
+			"start-year": {
+				"english": "2012px",
+				"russian": "2012px",
+				"czech": "2012px"
+			},
+			"end-year": {
+				"english": "present",
+				"russian": "по настоящее время",
+				"czech": "současnost"
+			},
+			"field": {
+				"english": "applied informatics",
+				"russian": "прикладная информатика",
+				"czech": "aplikovaná informatika"
+			}
+		},
+		{
+			"classname": {
+				"english": "nth-child(2)",
+				"russian": "nth-child(2)",
+				"czech": "nth-child(2)"
+			},
+			"university": {
+				"english": "The University of Finance and Administration",
+				"russian": "Институт финансов и управления",
+				"czech": "Vysoká škola finanční a správní"
+			},
+			"city-country": {
+				"english": "Prague/Czech Republic",
+				"russian": "Прага/Чехия",
+				"czech": "Praha/Česká republika"
+			},
+			"start-year": {
+				"english": "2011px",
+				"russian": "2011px",
+				"czech": "2011px"
+			},
+			"end-year": {
+				"english": "2012px",
+				"russian": "2012px",
+				"czech": "2012px"
+			},
+			"field": {
+				"english": "marketing communications",
+				"russian": "маркетинговые коммуникации",
+				"czech": "marketingová komunikace"
+			},
+			"finished": {
+				"english": "none",
+				"russian": "none",
+				"czech": "none"
+			}
+		},
+		{
+			"classname": {
+				"english": "nth-first-child",
+				"russian": "nth-first-child",
+				"czech": "nth-first-child"
+			},
+			"university": {
+				"english": "Plekhanov Russian University of Economics",
+				"russian": "Российский экономический университет им. Г. В. Плеханова",
+				"czech": "Ruská ekonomická univerzita G.V. Plechanova"
+			},
+			"city-country": {
+				"english": "Moscow/Russian Federation",
+				"russian": "Москва/Российская Федерация",
+				"czech": "Moskva/Ruská federace"
+			},
+			"start-year": {
+				"english": "2006px",
+				"russian": "2006px",
+				"czech": "2006px"
+			},
+			"end-year": {
+				"english": "2010px",
+				"russian": "2010px",
+				"czech": "2010px"
+			},
+			"field": {
+				"english": "labour economics",
+				"russian": "экономика труда",
+				"czech": "ekonomika práce"
+			}
+		}
+	],
+	"skills": {
+		"languageSkills": {
+			"russian": {
+				"english": "native speaker",
+				"russian": "родной",
+				"czech": "mateřský"
+			},
+			"english": {
+				"english": "upper-intermediate",
+				"russian": "выше среднего",
+				"czech": "pokročilá"
+			},
+			"czech": {
+				"english": "intermediate",
+				"russian": "средний уровень",
+				"czech": "středně pokročilá"
+			}
+		},
+		"professionalSkills":
+		{
+			"program-lang": "JavaScript (jQuery, AngularJS), C#, Java",
+			"markup-lang": "HTML5, CSS3, XML, LaTeX",
+			"databases": "MySQL",
+			"cms-engines": "WordPress, Joomla",
+			"graphics": "Adobe Photoshop, Inkscape"
+		}
+	}
+}
