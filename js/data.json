@@ -4,8 +4,8 @@
 		"last-name": "Yakovlev",
 		"date-of-birth": "#271189",
 		"address": {
-			"streetName": "..prague/kamenicka/812/33",
-			"gmapsLink": "https://www.google.com/maps/place/Kamenick%C3%A1+812%2F33,+170+00+Praha-Praha+7,+Czech+Republic/@50.1004858,14.4268931,17z/data=!3m1!4b1!4m2!3m1!1s0x470b94c59adad7e1:0x849eea8f5baa64bc"
+			"streetName": "..prague/rohacova/1030/75",
+			"gmapsLink": "https://www.google.cz/maps/place/Roh%C3%A1%C4%8Dova+1030%2F75,+130+00+Praha/data=!4m2!3m1!1s0x470b935f9babfb79:0x183dfc53e25de50a?sa=X&ved=0ahUKEwjvncGhy_7JAhXDlQ8KHcVwALAQ8gEIHTAA"
 		},
 		"email": "contact@yakovlevyuri.com",
 		"phone": "420, 776, 278, 743"
@@ -123,9 +123,9 @@
 	"education": [
 		{
 			"classname": {
-				"english": "nth-last-child",
-				"russian": "nth-last-child",
-				"czech": "nth-last-child"
+				"english": "last-child",
+				"russian": "last-child",
+				"czech": "last-child"
 			},
 			"university": {
 				"english": "Czech Technical University",
@@ -192,9 +192,9 @@
 		},
 		{
 			"classname": {
-				"english": "nth-first-child",
-				"russian": "nth-first-child",
-				"czech": "nth-first-child"
+				"english": "first-child",
+				"russian": "first-child",
+				"czech": "first-child"
 			},
 			"university": {
 				"english": "Plekhanov Russian University of Economics",
@@ -243,11 +243,13 @@
 		},
 		"professionalSkills":
 		{
-			"program-lang": "JavaScript (jQuery, AngularJS), C#, Java",
-			"markup-lang": "HTML5, CSS3, XML, LaTeX",
+			"program-lang": "JavaScript (jQuery, React, AngularJS), PHP, C#, Java",
+			"markup-lang": "HTML5, XML, LaTeX",
+			"stylesheet-lang": "CSS3, LESS, Sass", 
 			"databases": "MySQL",
+			"version-control-system": "Git",
 			"cms-engines": "WordPress, Joomla",
-			"graphics": "Adobe Photoshop, Inkscape"
+			"graphics": "Adobe Photoshop, Illustrator"
 		}
 	}
 }
