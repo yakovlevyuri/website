@@ -4,7 +4,7 @@
 @import url("lesshat.less");
 @import url("fonts.less");
 @import url("monokai-sublime.less");
-@import url("flag-icon.less");
+@import url("svg-icon.less");
 @import url("print.less");
 
 @screen-xs-min: 480px;
@@ -57,6 +57,12 @@
 		@media (min-width: @screen-md-min) {
 			border: 1px solid @gray-light;
 		}
+	}
+
+	&.disabled {
+		pointer-events: none;
+		cursor: default;
+		opacity: 0.5;
 	}
 }
 
@@ -281,10 +287,18 @@ header {
 	}
 }
 
-.mobile-cv {
+.download-cv {
 	display: block;
 	text-align: center;
 	padding-bottom: 30px;
+
+	@media (min-width: @screen-sm-min) {
+		padding-bottom: 40px;
+	}
+
+	@media (min-width: @screen-md-min) {
+		padding: 50px 0;
+	}
 
 	ul {
 		list-style: none;
@@ -311,20 +325,12 @@ header {
 					padding-right: 0;
 				}
 			}
-			
-			a {
-				.a();
-			}
 		}
 	}
 
-	@media (min-width: @screen-sm-min) {
-		padding-bottom: 40px;
-	}
-
-	@media (min-width: @screen-md-min) {
-		padding: 50px 0;
-	}
+	a {
+		.a();
+	}	
 }
 
 .instafeed-wrapper {
