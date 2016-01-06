@@ -224,7 +224,7 @@
 		}
 	],
 	"skills": {
-		"languageSkills": {
+		"language-skills": {
 			"russian": {
 				"english": "native speaker",
 				"russian": "родной",
@@ -241,7 +241,7 @@
 				"czech": "středně pokročilá"
 			}
 		},
-		"professionalSkills":
+		"professional-skills":
 		{
 			"program-lang": "JavaScript (jQuery, React, AngularJS), PHP, C#, Java",
 			"markup-lang": "HTML5, XML, LaTeX",
