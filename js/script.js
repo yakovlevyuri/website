@@ -46,7 +46,6 @@ function loadCV(lang) {
 			$.each(data.workExperience[workplaceNumber], function(key) {
 				if (key !== "classname" && key !== "link") {
 					if (key === "work-place") {
-						console.log();
 						html += '<p>' + key +': ' + '<a href="' + data.workExperience[workplaceNumber].link[lang] + '">' + this[lang] + '</a>' + ';</p>';
 					}
 					else if (key === "responsibilities") {
@@ -90,18 +89,18 @@ function loadCV(lang) {
 			html += '<p>#skills ' + '.' + diferentSkills + ' {</p>';
 
 			switch (diferentSkills) {
-				case "languageSkills":
+				case "language-skills":
 					$.each(data.skills[diferentSkills], function(key) {
 						html += '<p>' + key + ': '+ this[lang] + ';</p>';
 					});
 					break;
-				case "professionalSkills":
+				case "professional-skills":
 					$.each(data.skills[diferentSkills], function(key) {
 						html += '<p>' + key + ': '+ this + ';</p>';
 					});
 			}
 			html += '<p>}</p>';
-			if (diferentSkills !== "professionalSkills") {
+			if (diferentSkills !== "professional-skills") {
 				html += '<p>&nbsp;</p>';
 			}
 		});
@@ -180,8 +179,6 @@ function getFoursquareLocation() {
 }
 
 $(document).ready(function() {
-	console.log('Smile! You\'re on camera :)');
-
 	getFoursquareLocation();
 	loadCV("english");
 	loadInstragramPhotos();
@@ -198,8 +195,14 @@ $(document).ready(function() {
 		allowPageScroll: false,
 		disableFadeOut: false
 	});
+
+	$('.top-bar-button').click(function() {
+		$('#editor').fadeOut(function(){
+			$('header').after('<p class="egg">Q3VycmVudGx5IGxvb2tpbmcgZm9yIGEgbmV3IGpvYi4gRW1haWwgbWU6IGNvbnRhY3RAeWFrb3ZsZXZ5dXJpLmNvbSA7KQ==</p>');
+		});
+	});
 	
-	$('footer .wrapper').html('<p>&copy; ' + new Date().getFullYear() + '. All Rights Reserved.</p>');
+	$('.current-year').html(new Date().getFullYear());
 
 	$('.switcher').click(function() {
 		var thisID = $(this).attr('id');
