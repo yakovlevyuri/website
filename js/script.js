@@ -42,11 +42,11 @@ function loadCV(lang) {
 		html += '<p>/* Work Experience */</p>';
 
 		$.each(data.workExperience, function(workplaceNumber) {
-			html += '<p>#work-experience ' + data.workExperience[workplaceNumber].classname[lang] + ' {</p>';
+			html += '<p>#work-experience:' + data.workExperience[workplaceNumber].classname[lang] + ' {</p>';
 			$.each(data.workExperience[workplaceNumber], function(key) {
 				if (key !== "classname" && key !== "link") {
 					if (key === "work-place") {
-						html += '<p>' + key +': ' + '<a href="' + data.workExperience[workplaceNumber].link[lang] + '">' + this[lang] + '</a>' + ';</p>';
+						html += '<p>' + key +': ' + '<a href="' + data.workExperience[workplaceNumber].link[lang] + '" target="_blank">' + this[lang] + '</a>' + ';</p>';
 					}
 					else if (key === "responsibilities") {
 						html += '<p>' + key +': ';
@@ -198,7 +198,7 @@ $(document).ready(function() {
 
 	$('.top-bar-button').click(function() {
 		$('#editor').fadeOut(function(){
-			$('header').after('<p class="egg">Q3VycmVudGx5IGxvb2tpbmcgZm9yIGEgbmV3IGpvYi4gRW1haWwgbWU6IGNvbnRhY3RAeWFrb3ZsZXZ5dXJpLmNvbSA7KQ==</p>');
+			$('header').after('<p class="egg">Boom!</p>');
 		});
 	});
 	
