@@ -13,9 +13,60 @@
 	"workExperience": [
 		{
 			"classname": {
-				"english": ".wrapper",
-				"russian": ".wrapper",
-				"czech": ".wrapper"
+				"english": "first-child",
+				"russian": "first-child",
+				"czech": "first-child"
+			},
+			"work-place": {
+				"english": "CN Group",
+				"russian": "CN Group",
+				"czech": "CN Group"
+			},
+			"link": {
+				"english": "http://cngroup.dk/",
+				"russian": "http://cngroup.dk/",
+				"czech": "http://cngroup.dk/"
+			},
+			"position": {
+				"english": "software/front-end developer",
+				"russian": "software/front-end разработчик",
+				"czech": "software/front-end vývojář"
+			},
+			"city-country": {
+				"english": "Prague/Czech Republic",
+				"russian": "Прага/Чехия",
+				"czech": "Praha/Česká republika"
+			},
+			"start-year": {
+				"english": "2016px",
+				"russian": "2016px",
+				"czech": "2016px"
+			},
+			"end-year": {
+				"english": "present",
+				"russian": "по настоящее время",
+				"czech": "současnost"
+			},
+			"responsibilities": {
+				"english": [
+					"creating Single Page Apps using React.js library",
+					"android and iOS mobile apps development using React Native technology"
+				],
+				"russian": [
+					"создание одностраничных приложений при помощи библиотеки React.js",
+					"разработка гибридных мобильных приложений для андроида и iOS с использованием React Native"
+				],
+				"czech": [
+					"tvorba Single Page Apps s využitím React.js knihovny",
+					"vývoj mobilních aplikací pro android a iOS pomocí React Native technologie"
+				]
+			}
+		},
+		{
+			"classname": {
+				"english": "nth-child(2)",
+				"russian": "nth-child(2)",
+				"czech": "nth-child(2)"
 			},
 			"work-place": {
 				"english": "Lundegaard",
@@ -43,9 +94,9 @@
 				"czech": "2014px"
 			},
 			"end-year": {
-				"english": "present",
-				"russian": "по настоящее время",
-				"czech": "současnost"
+				"english": "2016",
+				"russian": "2016",
+				"czech": "2016"
 			},
 			"responsibilities": {
 				"english": [
@@ -70,9 +121,9 @@
 		},
 		{
 			"classname": {
-				"english": ".wrapper:before",
-				"russian": ".wrapper:before",
-				"czech": ".wrapper:before"
+				"english": "last-child",
+				"russian": "last-child",
+				"czech": "last-child"
 			},
 			"work-place": {
 				"english": "Electronic Tour Guide",
@@ -123,9 +174,9 @@
 	"education": [
 		{
 			"classname": {
-				"english": "last-child",
-				"russian": "last-child",
-				"czech": "last-child"
+				"english": "first-child",
+				"russian": "first-child",
+				"czech": "first-child"
 			},
 			"university": {
 				"english": "Czech Technical University",
@@ -192,9 +243,9 @@
 		},
 		{
 			"classname": {
-				"english": "first-child",
-				"russian": "first-child",
-				"czech": "first-child"
+				"english": "last-child",
+				"russian": "last-child",
+				"czech": "last-child"
 			},
 			"university": {
 				"english": "Plekhanov Russian University of Economics",
@@ -243,7 +294,7 @@
 		},
 		"professional-skills":
 		{
-			"program-lang": "JavaScript (jQuery, React, AngularJS), PHP, C#, Java",
+			"program-lang": "JavaScript (jQuery, React.js, AngularJS), PHP, C#, Java",
 			"markup-lang": "HTML5, XML, LaTeX",
 			"stylesheet-lang": "CSS3, LESS, Sass", 
 			"databases": "MySQL",
