@@ -215,5 +215,5 @@ $(document).ready(function() {
 
 	$('#top-bar a').click(function() {
 		return false;
-	});
+	}); 
 });
