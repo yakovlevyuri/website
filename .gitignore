@@ -96,6 +96,5 @@ js/min/*
 #Ignore some folders
 analytics
 downloads
-editor
 works
 trash
