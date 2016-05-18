@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Editor from './components/Editor/Editor.jsx';
+import EditorContainer from './components/Editor/EditorContainer.jsx';
 
 main();
 
 function main() {
-	ReactDOM.render(<Editor url="data.json" />, document.getElementById('app'));
+	ReactDOM.render(<EditorContainer url="data.json" />, document.getElementById('app'));
 }
