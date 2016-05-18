@@ -1,7 +1,7 @@
 import React from 'react';
-import WorkItem from './WorkItem';
+import EducationItem from './EducationItem';
 
-export default class WorkContainer extends React.Component {
+export default class EducationContainer extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -13,7 +13,7 @@ export default class WorkContainer extends React.Component {
     if (workExperience.length > 0) {
       workTemplate = workExperience.map(function (item, index) {
         return (
-          <WorkItem data={item} key={index}/>
+          <EducationItem data={item} key={index}/>
         );
       });
     } else {
@@ -28,6 +28,6 @@ export default class WorkContainer extends React.Component {
   }
 }
 
-WorkContainer.propTypes = {
+EducationItem.propTypes = {
   data: React.PropTypes.array.isRequired,
 };
