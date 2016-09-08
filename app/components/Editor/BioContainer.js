@@ -2,6 +2,10 @@ import React from 'react';
 import BioItem from './BioItem';
 
 export default class BioContainer extends React.Component {
+  static propTypes = {
+    data: React.PropTypes.object.isRequired,
+  };
+
   constructor(props) {
     super(props);
   }
@@ -16,7 +20,3 @@ export default class BioContainer extends React.Component {
     );
   }
 }
-
-BioContainer.propTypes = {
-  data: React.PropTypes.array.isRequired,
-};

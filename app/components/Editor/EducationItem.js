@@ -14,13 +14,19 @@ export default class WorkItem extends React.Component {
       field,
     } = this.props.data;
 
+    const {
+      lang,
+    } = this.props;
+
     return (
       <div className="education__block">
-        <p className="education__university">university: {university.english};</p>
-        <p className="education__city-country">city-country: {cityCountry.english};</p>
-        <p className="education__start-year">start-year: {startYear.english};</p>
-        <p className="education__end-year">end-year: {endYear.english};</p>
-        <p className="education__field">field: {field.english};</p>
+        <p>.education:first-child &#123;</p>
+        <p className="education__university">university: {university[lang]};</p>
+        <p className="education__city-country">city-country: {cityCountry[lang]};</p>
+        <p className="education__start-year">start-year: {startYear[lang]};</p>
+        <p className="education__end-year">end-year: {endYear[lang]};</p>
+        <p className="education__field">field: {field[lang]};</p>
+        <p>&#125;</p>
       </div>
     );
   }
