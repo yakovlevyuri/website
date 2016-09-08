@@ -24,9 +24,9 @@ const editor = handleActions({
     next(state, action) {
       return state.withMutations(newState => {
           newState
-            .setIn(['isLoaded'], true)
-            .setIn(['isError'], false)
-            .setIn(['editorJson'], action.payload)
+            .setIn(['isLoaded',], true)
+            .setIn(['isError',], false)
+            .setIn(['editorJson',], action.payload)
         }
       );
     },

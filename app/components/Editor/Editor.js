@@ -6,7 +6,7 @@ import Highlight from 'react-highlight';
 
 export default class Editor extends React.Component {
   static propTypes = {
-    data: React.PropTypes.object.isRequired,
+    editorJson: React.PropTypes.object,
   };
 
   constructor(props) {
@@ -18,7 +18,7 @@ export default class Editor extends React.Component {
       bio,
       workExperience,
       education,
-    } = this.props.data;
+    } = this.props.editorJson;
 
     const {
       lang,
@@ -26,11 +26,11 @@ export default class Editor extends React.Component {
 
     return (
       <div>
-        <BioContainer data={bio}/>
+        <BioContainer bio={bio}/>
         <p>&#47;&#42; Work Experience &#42;&#47;</p>
-        <WorkContainer data={workExperience} lang={lang} />
+        <WorkContainer workExperience={workExperience} lang={lang} />
         <p>&#47;&#42; Education &#42;&#47;</p>
-        <EducationContainer data={education} lang={lang}/>
+        <EducationContainer education={education} lang={lang}/>
       </div>
     );
   }

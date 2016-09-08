@@ -2,36 +2,37 @@ import React from 'react';
 import EducationItem from './EducationItem';
 
 export default class WorkContainer extends React.Component {
+  static propTypes = {
+    education: React.PropTypes.array.isRequired,
+    lang: React.PropTypes.string.isRequired,
+  };
+
   constructor(props) {
     super(props);
+    this._renderBlock = this._renderBlock.bind(this);
   }
 
-  render() {
+  _renderBlock() {
     const {
-      data,
+      education,
       lang,
     } = this.props;
 
-    let educationTemplate;
-
-    if (data.length > 0) {
-      educationTemplate = data.map(function (item, index) {
-        return (
-          <EducationItem data={item} key={index} lang={lang}/>
-        );
-      });
-    } else {
-      educationTemplate = <p>К сожалению Bio нет</p>;
+    if (education) {
+      return (
+        education.map((item, index) => {
+          return <EducationItem education={item} key={index} lang={lang}/>
+        }));
     }
 
+    return <p>There is no information about education</p>;
+  }
+
+  render() {
     return (
       <div className="news">
-           {educationTemplate}
+           {this._renderBlock()}
       </div>
     );
   }
 }
-
-WorkContainer.propTypes = {
-  data: React.PropTypes.array.isRequired,
-};

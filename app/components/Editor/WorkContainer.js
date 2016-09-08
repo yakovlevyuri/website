@@ -3,7 +3,8 @@ import WorkItem from './WorkItem';
 
 export default class WorkContainer extends React.Component {
   static propTypes = {
-    data: React.PropTypes.array.isRequired,
+    workExperience: React.PropTypes.array.isRequired,
+    lang: React.PropTypes.string.isRequired,
   };
 
   constructor(props) {
@@ -13,14 +14,14 @@ export default class WorkContainer extends React.Component {
 
   _renderBlock() {
     const {
-      data,
+      workExperience,
       lang,
     } = this.props;
 
-    if (data) {
+    if (workExperience) {
       return (
-        data.map((item, index) => {
-        return <WorkItem data={item} key={index} lang={lang}/>
+        workExperience.map((item, index) => {
+        return <WorkItem workExperience={item} key={index} lang={lang}/>
       }));
     }
 

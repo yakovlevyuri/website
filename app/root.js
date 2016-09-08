@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider, } from 'react-redux';
-import { rootStore } from './configureStore';
+import { rootStore, } from './configureStore';
 import EditorContainer from './components/Editor/EditorContainer';
 import Header from './components/header/Header';
 import Downloads from './components/downloads/Downloads';

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class BioItem extends React.Component {
   static propTypes = {
-    data: React.PropTypes.shape({
+    bio: React.PropTypes.shape({
       firstName: React.PropTypes.string.isRequired,
       lastName: React.PropTypes.string.isRequired,
       dateOfBirth: React.PropTypes.string.isRequired,
@@ -20,7 +20,7 @@ export default class BioItem extends React.Component {
       lastName,
       dateOfBirth,
       address,
-    } = this.props.data;
+    } = this.props.bio;
 
     return (
       <div className="contact_info__block">

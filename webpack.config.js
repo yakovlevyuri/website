@@ -2,7 +2,7 @@ var path = require('path');
 
 var config = {
   entry: [
-    'webpack-dev-server/client?http://localhost:8080',
+    'webpack-dev-server/client?http://localhost:8081',
     'webpack/hot/only-dev-server',
     path.resolve(__dirname, 'app/root.js'),
   ],

@@ -8,7 +8,7 @@ import Editor from './Editor';
 
 export class EditorContainer extends React.Component {
   static propTypes = {
-    editorJson: React.PropTypes.array,
+    editorJson: React.PropTypes.object,
     isLoaded: React.PropTypes.bool,
     isError: React.PropTypes.bool,
   };
@@ -83,7 +83,7 @@ export class EditorContainer extends React.Component {
 
         <div className="css">
           <Loader loaded={isLoaded}>
-          <Editor data={editorJson} lang={this.state.lang} />
+          <Editor editorJson={editorJson} lang={this.state.lang} />
           </Loader>
         </div>
 

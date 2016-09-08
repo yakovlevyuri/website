@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class WorkItem extends React.Component {
   static propTypes = {
-    data: React.PropTypes.shape({
+    workExperience: React.PropTypes.shape({
       workPlace: React.PropTypes.object.isRequired,
       workPlaceLink: React.PropTypes.string.isRequired,
       position: React.PropTypes.object.isRequired,
@@ -27,7 +27,7 @@ export default class WorkItem extends React.Component {
       startYear,
       endYear,
       responsibilities,
-    } = this.props.data;
+    } = this.props.workExperience;
 
     const {
       lang,

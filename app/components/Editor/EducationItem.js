@@ -1,6 +1,17 @@
 import React from 'react';
 
 export default class WorkItem extends React.Component {
+  static propTypes = {
+    bio: React.PropTypes.shape({
+      university: React.PropTypes.object.isRequired,
+      cityCountry: React.PropTypes.object.isRequired,
+      startYear: React.PropTypes.object.isRequired,
+      endYear: React.PropTypes.object.isRequired,
+      field: React.PropTypes.object.isRequired,
+    }),
+    lang: React.PropTypes.string.isRequired,
+  };
+
   constructor(props) {
     super(props);
   }
@@ -12,7 +23,7 @@ export default class WorkItem extends React.Component {
       startYear,
       endYear,
       field,
-    } = this.props.data;
+    } = this.props.education;
 
     const {
       lang,
@@ -31,11 +42,3 @@ export default class WorkItem extends React.Component {
     );
   }
 }
-
-WorkItem.propTypes = {
-  data: React.PropTypes.shape({
-    firstName: React.PropTypes.string.isRequired,
-    lastName: React.PropTypes.string.isRequired,
-    dateOfBirth: React.PropTypes.string.isRequired,
-  }),
-};

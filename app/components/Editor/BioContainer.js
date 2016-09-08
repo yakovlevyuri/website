@@ -3,7 +3,7 @@ import BioItem from './BioItem';
 
 export default class BioContainer extends React.Component {
   static propTypes = {
-    data: React.PropTypes.object.isRequired,
+    bio: React.PropTypes.object.isRequired,
   };
 
   constructor(props) {
@@ -13,11 +13,11 @@ export default class BioContainer extends React.Component {
 
   _renderBlock() {
     const {
-      data,
+      bio,
     } = this.props;
 
-    if (data) {
-      return <BioItem data={data} />;
+    if (bio) {
+      return <BioItem bio={bio} />;
     }
 
     return <p>There is no bio information</p>;
