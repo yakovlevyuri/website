@@ -1,8 +1,8 @@
 import { combineReducers, } from 'redux-immutable';
-import pilot from './home/PilotReducer';
+import editor from './components/Editor/EditorReducer';
 
 const rootReducer = combineReducers({
-  pilot,
+  editor,
 });
 
 export default rootReducer;

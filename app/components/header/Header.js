@@ -1,21 +1,10 @@
 import React from 'react';
-import baffle from 'baffle';
 
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
-    this._baffle = this._baffle.bind(this);
   }
   componentDidMount() {
-    this._baffle('h1', 1000);
-  }
-
-  _baffle(tag, reveal) {
-    let b = baffle(document.querySelector(tag), {
-      characters: ['█','▓','▒','░','█','▓','▒','░','█','▓','▒','░',],
-      speed: 75,
-    });
-    b.reveal(reveal);
   }
 
   render() {

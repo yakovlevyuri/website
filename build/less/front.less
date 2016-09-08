@@ -1,6 +1,6 @@
-@import url("../bower_components/normalize-css/normalize.css");
+@import url("../../node_modules/normalize.css/normalize.css");
 @import url("../bower_components/animate.css/animate.min.css");
-@import url("../js/libs/owlcarousel/assets/owl.carousel.css");
+@import url("../../node_modules/owl.carousel/dist/assets/owl.carousel.css");
 @import url("lesshat.less");
 @import url("fonts.less");
 @import url("monokai-sublime.less");
@@ -76,6 +76,10 @@ html, body {
 	.reset-ma-pa();
 }
 
+pre {
+  margin: 0;
+}
+
 .wrapper {
 	max-width: 600px;
 	margin: 0 auto;
@@ -109,7 +113,7 @@ header {
 		margin-bottom: 75px;
 	}
 
-	#avatar {
+	.avatar {
 		display: inline-block;
 		width: 120px;
 		height: 120px;
@@ -146,7 +150,7 @@ header {
 	}
 }
 
-#editor {
+.editor {
 	width: 883px;
 	margin-top: 50px;
 	background-color: transparent;
@@ -160,7 +164,7 @@ header {
 		display: block;
 	}
 
-	#top-bar {
+	.top-bar {
 		position: relative;
 		.size(881px, 22px);
 		background: url('../images/osx-title-bar.png') 0 0 no-repeat;
@@ -191,7 +195,7 @@ header {
 		}
 	}
 
-	#tabs-panel {
+	.tabs-panel {
 		background-color: @brown-dark;
 		color: @white;
 		height: 37px;
@@ -215,7 +219,7 @@ header {
 				z-index: 99;
 			}
 
-			a {
+			.switcher {
 				font-family: Arial, Helvetica, sans-serif;
 				display: block;
 				padding-left: 30px;
@@ -223,6 +227,7 @@ header {
 				color: @gray-dark-2;
 				font-size: 13px;
 				line-height: 30px;
+				cursor: pointer;
 			}
 		}
 
@@ -236,7 +241,7 @@ header {
 		}
 	}
 
-	#code-box {
+	.code-box {
 		padding: 10px 0;
 		.size(883px, 490px);
 		background-color: @brown;
@@ -279,7 +284,7 @@ header {
 		}
 	}
 
-	#bottom-bar {
+	.bottom-bar {
 		.size(881px, 20px);
 		background-image: url('../images/osx-bottom-bar.png');
 		.border-bottom-right-radius(5px);

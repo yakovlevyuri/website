@@ -1,6 +1,19 @@
 import React from 'react';
 
 export default class WorkItem extends React.Component {
+  static propTypes = {
+    data: React.PropTypes.shape({
+      workPlace: React.PropTypes.object.isRequired,
+      workPlaceLink: React.PropTypes.string.isRequired,
+      position: React.PropTypes.object.isRequired,
+      cityCountry: React.PropTypes.object.isRequired,
+      startYear: React.PropTypes.object.isRequired,
+      endYear: React.PropTypes.object.isRequired,
+      responsibilities: React.PropTypes.object.isRequired,
+    }),
+    lang: React.PropTypes.string.isRequired,
+  };
+
   constructor(props) {
     super(props);
   }
@@ -45,11 +58,3 @@ export default class WorkItem extends React.Component {
     );
   }
 }
-
-WorkItem.propTypes = {
-  data: React.PropTypes.shape({
-    firstName: React.PropTypes.string.isRequired,
-    lastName: React.PropTypes.string.isRequired,
-    dateOfBirth: React.PropTypes.string.isRequired,
-  }),
-};

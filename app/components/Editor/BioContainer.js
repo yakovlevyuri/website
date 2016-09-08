@@ -8,14 +8,25 @@ export default class BioContainer extends React.Component {
 
   constructor(props) {
     super(props);
+    this._renderBlock = this._renderBlock.bind(this);
+  }
+
+  _renderBlock() {
+    const {
+      data,
+    } = this.props;
+
+    if (data) {
+      return <BioItem data={data} />;
+    }
+
+    return <p>There is no bio information</p>;
   }
 
   render() {
-    const bioInfo = this.props.data;
-
     return (
       <div className="news">
-        <BioItem data={bioInfo} />
+        {this._renderBlock()}
       </div>
     );
   }

@@ -1,53 +1,66 @@
 import React from 'react';
+import { connect, } from 'react-redux';
+import {
+  fetchJson,
+} from './EditorActions';
 import Loader from 'react-loader';
 import Editor from './Editor';
-import $ from 'jquery';
 
-export default class EditorContainer extends React.Component {
+export class EditorContainer extends React.Component {
+  static propTypes = {
+    editorJson: React.PropTypes.array,
+    isLoaded: React.PropTypes.bool,
+    isError: React.PropTypes.bool,
+  };
+
   constructor(props) {
     super(props);
-    this._loadBioFromServer = this._loadBioFromServer.bind(this);
     this._changeLang = this._changeLang.bind(this);
+    this._init = this._init.bind(this);
+
     this.state = {
-      loaded: false,
-      data: [],
       lang: 'english',
     };
   }
 
   componentDidMount() {
-    this._loadBioFromServer();
+    this._init();
   }
 
-  _loadBioFromServer() {
-    $.ajax({
-      url: this.props.url,
-      dataType: 'json',
-      cache: false,
-      success: function (data) {
-        this.setState({
-          data: data,
-          loaded: true,
-        });
-      }.bind(this),
-      error: function (xhr, status, err) {
-        console.error(this.props.url, status, err.toString()); // eslint-disable-line no-console
-      }.bind(this),
-    });
+  static mapStateToProps(state) {
+    return {
+      editorJson: state.getIn(['editor', 'editorJson',]),
+      isLoaded: state.getIn(['editor', 'isLoaded',]),
+      isError: state.getIn(['editor', 'isError',]),
+    };
+  }
+
+  static mapDispatchToProps(dispatch) {
+    return {
+      fetchJson: () => dispatch(fetchJson()),
+    };
+  }
+
+  _init() {
+    this.props.fetchJson();
   }
 
   _changeLang(lang) {
-    console.log(lang);
     this.setState({
       lang: lang,
     });
   }
 
   render() {
+    const {
+      editorJson,
+      isLoaded,
+    } = this.props;
+
     return (
       <div className="editor">
         <div className="top-bar">
-          <a href="#" class="top-bar-button" />
+          <a href="#" className="top-bar-button" />
         </div>
 
         <div className="tabs-panel">
@@ -69,9 +82,9 @@ export default class EditorContainer extends React.Component {
         </div>
 
         <div className="css">
-        <Loader loaded={this.state.loaded}>
-          <Editor data={this.state.data} lang={this.state.lang} />
-        </Loader>
+          <Loader loaded={isLoaded}>
+          <Editor data={editorJson} lang={this.state.lang} />
+          </Loader>
         </div>
 
         <div className="bottom-bar" />
@@ -79,3 +92,8 @@ export default class EditorContainer extends React.Component {
     );
   }
 }
+
+export default connect(
+  EditorContainer.mapStateToProps,
+  EditorContainer.mapDispatchToProps,
+)(EditorContainer);
