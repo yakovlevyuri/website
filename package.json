@@ -2,7 +2,7 @@
   "name": "yakovlevyuri.com",
   "version": "0.0.1",
   "description": "My homepage on the internet",
-  "main": "index.js",
+  "main": "app/root.js",
   "scripts": {
     "start": "npm run dev",
     "eslint": "eslint ./app",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yakovlevyuri/yakovlevyuri.com"
+    "url": "https://github.com/yakovlevyuri/yakovlevyuri.com.git"
   },
   "author": "Yuri Yakovlev",
   "license": "MIT",
@@ -23,16 +23,24 @@
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
+    "bourbon": "^4.2.7",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.25.0",
     "eslint": "^3.4.0",
     "eslint-loader": "^1.5.0",
     "eslint-plugin-react": "^6.2.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
+    "lesshat": "^4.1.0",
+    "node-sass": "^3.9.3",
     "react-hot-loader": "^3.0.0-beta.3",
     "react-loader": "^2.4.0",
+    "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
+    "svg-url-loader": "^1.1.0",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.15.1"
   },

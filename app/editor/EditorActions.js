@@ -1,5 +1,5 @@
 import { createAction, } from 'redux-actions';
-import api from '../../api';
+import api from '../api';
 
 export const REQUEST_JSON = 'REQUEST_JSON';
 export const RECEIVE_JSON = 'RECEIVE_JSON';

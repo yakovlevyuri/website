@@ -1,8 +1,9 @@
 import React from 'react';
-import BioContainer from './BioContainer';
-import WorkContainer from './WorkContainer';
-import EducationContainer from './EducationContainer';
+import BioContainer from './bio/BioContainer';
+import WorkContainer from './work/WorkContainer';
+import EducationContainer from './education/EducationContainer';
 import Highlight from 'react-highlight';
+import '../assets/styles/modules/editor.scss';
 
 export default class Editor extends React.Component {
   static propTypes = {

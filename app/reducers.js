@@ -1,5 +1,5 @@
 import { combineReducers, } from 'redux-immutable';
-import editor from './components/Editor/EditorReducer';
+import editor from './editor/EditorReducer';
 
 const rootReducer = combineReducers({
   editor,

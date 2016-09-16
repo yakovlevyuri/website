@@ -8,7 +8,6 @@
 # Icon must end with two \r
 Icon
 
-
 # Thumbnails
 ._*
 
@@ -27,7 +26,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
 ### SublimeText ###
 # cache files for sublime text
 *.tmlanguage.cache
@@ -43,7 +41,6 @@ Temporary Items
 
 # sftp configuration file
 sftp-config.json
-
 
 ### Node ###
 # Logs
@@ -94,7 +91,5 @@ js/min
 js/min/*
 
 #Ignore some folders
-analytics
-downloads
-works
-trash
+build
+dist

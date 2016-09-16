@@ -1,4 +1,5 @@
-var path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const path = require('path');
 
 var config = {
   entry: [
@@ -18,15 +19,22 @@ var config = {
         loaders: ['babel',],
       },
       {
-        test: /\.less$/,
-        loaders: ['style', 'css', 'less',],
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass',],
       },
       {
         test: /\.(png|jpg|)$/,
         loader: 'url-loader?limit=200000',
       },
+      {
+        test: /\.svg/,
+        loader: 'svg-url-loader',
+      },
     ],
   },
+  sassLoader: {
+    includePaths: [path.resolve(__dirname, './some-folder')],
+  }
 };
 
 module.exports = config;
