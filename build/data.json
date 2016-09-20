@@ -4,24 +4,15 @@
     "lastName": "Yakovlev",
     "dateOfBirth": "#271189",
     "address": {
-      "streetName": "..prague/rohacova/1030/75",
-      "gmapsLink": "https://www.google.cz/maps/place/Roh%C3%A1%C4%8Dova+1030%2F75,+130+00+Praha/data=!4m2!3m1!1s0x470b935f9babfb79:0x183dfc53e25de50a?sa=X&ved=0ahUKEwjvncGhy_7JAhXDlQ8KHcVwALAQ8gEIHTAA"
+      "streetName": "..prague/musilkova/85/28",
+      "gmapsLink": "https://www.google.cz/maps/place/Mus%C3%ADlkova+85%2F28,+150+00+Praha+5-Ko%C5%A1%C3%AD%C5%99e/data=!4m2!3m1!1s0x470b95a495fadbfb:0xde79f03096c14a9?sa=X&ved=0ahUKEwiUi5zHhpXPAhXrIcAKHdsfDAYQ8gEIHzAA"
     },
     "email": "contact@yakovlevyuri.com",
-    "phone": "420, 776, 278, 743"
+    "phone": "rgba(420, 776, 278, 743)"
   },
   "workExperience": [
     {
-      "classname": {
-        "english": "first-child",
-        "russian": "first-child",
-        "czech": "first-child"
-      },
-      "workPlace": {
-        "english": "CN Group",
-        "russian": "CN Group",
-        "czech": "CN Group"
-      },
+      "workPlace": "CN Group",
       "workPlaceLink": "http://cngroup.dk/",
       "position": {
         "english": "software/front-end developer",
@@ -33,16 +24,8 @@
         "russian": "Прага/Чехия",
         "czech": "Praha/Česká republika"
       },
-      "startYear": {
-        "english": "2016px",
-        "russian": "2016px",
-        "czech": "2016px"
-      },
-      "endYear": {
-        "english": "present",
-        "russian": "по настоящее время",
-        "czech": "současnost"
-      },
+      "startYear": "2016",
+      "endYear": "",
       "responsibilities": {
         "english": [
           "creating Single Page Apps using React.js library",
@@ -59,16 +42,7 @@
       }
     },
     {
-      "classname": {
-        "english": "nth-child(2)",
-        "russian": "nth-child(2)",
-        "czech": "nth-child(2)"
-      },
-      "workPlace": {
-        "english": "Lundegaard",
-        "russian": "Lundegaard",
-        "czech": "Lundegaard"
-      },
+      "workPlace": "Lundegaard",
       "workPlaceLink": "http://www.lundegaard.eu/",
       "position": {
         "english": "front-end developer",
@@ -80,16 +54,8 @@
         "russian": "Прага/Чехия",
         "czech": "Praha/Česká republika"
       },
-      "startYear": {
-        "english": "2014px",
-        "russian": "2014px",
-        "czech": "2014px"
-      },
-      "endYear": {
-        "english": "2016",
-        "russian": "2016",
-        "czech": "2016"
-      },
+      "startYear": "2014",
+      "endYear": "2016",
       "responsibilities": {
         "english": [
           "implementation of the front-end part of internet solutions (coding using HTML, CSS, JavaScript)",
@@ -112,16 +78,7 @@
       }
     },
     {
-      "classname": {
-        "english": "last-child",
-        "russian": "last-child",
-        "czech": "last-child"
-      },
-      "workPlace": {
-        "english": "Electronic Tour Guide",
-        "russian": "Electronic Tour Guide",
-        "czech": "Electronic Tour Guide"
-      },
+      "workPlace": "Electronic Tour Guide",
       "workPlaceLink": "http://electronictourguide.com/",
       "position": {
         "english": "product manager",
@@ -133,16 +90,8 @@
         "russian": "Прага/Чехия",
         "czech": "Praha/Česká republika"
       },
-      "startYear": {
-        "english": "2012px",
-        "russian": "2012px",
-        "czech": "2012px"
-      },
-      "endYear": {
-        "english": "2014px",
-        "russian": "2014px",
-        "czech": "2014px"
-      },
+      "startYear": "2012",
+      "endYear": "2014",
       "responsibilities": {
         "english": [
           "collaborating with partners and technical consulting",
@@ -161,11 +110,6 @@
   ],
   "education": [
     {
-      "classname": {
-        "english": "first-child",
-        "russian": "first-child",
-        "czech": "first-child"
-      },
       "university": {
         "english": "Czech Technical University",
         "russian": "Чешский Технический Университет",
@@ -176,16 +120,8 @@
         "russian": "Прага/Чехия",
         "czech": "Praha/Česká republika"
       },
-      "startYear": {
-        "english": "2012px",
-        "russian": "2012px",
-        "czech": "2012px"
-      },
-      "endYear": {
-        "english": "present",
-        "russian": "по настоящее время",
-        "czech": "současnost"
-      },
+      "startYear": "2012",
+      "endYear": "2014",
       "field": {
         "english": "applied informatics",
         "russian": "прикладная информатика",
@@ -193,11 +129,6 @@
       }
     },
     {
-      "classname": {
-        "english": "nth-child(2)",
-        "russian": "nth-child(2)",
-        "czech": "nth-child(2)"
-      },
       "university": {
         "english": "The University of Finance and Administration",
         "russian": "Институт финансов и управления",
@@ -208,33 +139,15 @@
         "russian": "Прага/Чехия",
         "czech": "Praha/Česká republika"
       },
-      "startYear": {
-        "english": "2011px",
-        "russian": "2011px",
-        "czech": "2011px"
-      },
-      "endYear": {
-        "english": "2012px",
-        "russian": "2012px",
-        "czech": "2012px"
-      },
+      "startYear": "2011",
+      "endYear": "2012px",
       "field": {
         "english": "marketing communications",
         "russian": "маркетинговые коммуникации",
         "czech": "marketingová komunikace"
-      },
-      "finished": {
-        "english": "none",
-        "russian": "none",
-        "czech": "none"
       }
     },
     {
-      "classname": {
-        "english": "last-child",
-        "russian": "last-child",
-        "czech": "last-child"
-      },
       "university": {
         "english": "Plekhanov Russian University of Economics",
         "russian": "Российский экономический университет им. Г. В. Плеханова",
@@ -245,16 +158,8 @@
         "russian": "Москва/Российская Федерация",
         "czech": "Moskva/Ruská federace"
       },
-      "startYear": {
-        "english": "2006px",
-        "russian": "2006px",
-        "czech": "2006px"
-      },
-      "endYear": {
-        "english": "2010px",
-        "russian": "2010px",
-        "czech": "2010px"
-      },
+      "startYear": "2006",
+      "endYear": "2010px",
       "field": {
         "english": "labour economics",
         "russian": "экономика труда",

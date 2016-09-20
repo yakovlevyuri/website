@@ -18,6 +18,8 @@ export default class WorkContainer extends React.Component {
       lang,
     } = this.props;
 
+    console.log(workExperience);
+
     if (workExperience) {
       return (
         workExperience.map((item, index) => {

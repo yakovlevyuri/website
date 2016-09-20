@@ -4,6 +4,7 @@ import {
   fetchJson,
 } from './EditorActions';
 import Loader from 'react-loader';
+import Highlight from 'react-highlight';
 import Editor from './Editor';
 
 export class EditorContainer extends React.Component {
@@ -81,11 +82,11 @@ export class EditorContainer extends React.Component {
           </div>
         </div>
 
-        <div className="css">
-          <Loader loaded={isLoaded}>
+        <Loader loaded={isLoaded}>
+          <Highlight className="css">
           <Editor editorJson={editorJson} lang={this.state.lang} />
-          </Loader>
-        </div>
+            </Highlight>
+        </Loader>
 
         <div className="bottom-bar" />
       </div>

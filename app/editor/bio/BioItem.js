@@ -1,4 +1,5 @@
 import React from 'react';
+import Highlight from 'react-highlight';
 
 export default class BioItem extends React.Component {
   static propTypes = {
@@ -23,6 +24,7 @@ export default class BioItem extends React.Component {
     } = this.props.bio;
 
     return (
+
       <div className="contact_info__block">
         <p>.contact-info &#123;</p>
         <p className="bio__firstName">first-name: {firstName};</p>
@@ -33,6 +35,7 @@ export default class BioItem extends React.Component {
         </p>
         <p>&#125;</p>
       </div>
+
     );
   }
 }

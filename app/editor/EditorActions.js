@@ -21,3 +21,18 @@ export const fetchJson = () => {
     );
   };
 };
+
+export const changeLang = () => {
+  return (dispatch) => {
+    dispatch(requestJson());
+
+    return api.get('data.json').then(
+      (response) => dispatch(receiveJson(
+        response.data
+      )),
+      (error) => dispatch(receiveJson(
+        error,
+      ))
+    );
+  };
+};
