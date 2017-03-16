@@ -1,0 +1,143 @@
+@import '../../../../../../node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import '../variables.scss';
+@import '../monokaiSublime.scss';
+
+.editor {
+  width: 883px;
+  margin-top: 50px;
+  background-color: $editor-background-color;
+  border: 1px solid $gray-light-2;
+  box-shadow: 0 0 90px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  z-index: 0;
+  display: none;
+
+  @media (min-width: $screen-md-min) {
+    display: block;
+  }
+
+  .top-bar {
+    position: relative;
+    @include size(881px 22px);
+    background: url('../../images/osx-title-bar.png') 0 0 no-repeat;
+    @include border-top-radius(5px);
+
+    &:hover {
+      background: url('../../images/osx-title-bar.png') 0 -22px no-repeat;
+      z-index: 999;
+    }
+
+    .top-bar-button {
+      position: absolute;
+      top: 4px;
+      left: 7px;
+      display: block;
+      background: url('../../images/osx-title-bar-button.png') 0 0 no-repeat;
+      z-index: 99;
+      @include size(14px);
+
+      &:hover {
+        background: url('../../images/osx-title-bar-button.png') 0 -14px no-repeat;
+      }
+
+      &:active {
+        background: url('../../images/osx-title-bar-button.png') 0 -28px no-repeat;
+      }
+    }
+  }
+
+  .tabs-panel {
+    background-color: $brown-dark;
+    color: $white;
+    height: 37px;
+    position: relative;
+    border-bottom: 1px solid $brown-light;
+    z-index: 999;
+
+    .lang-switcher {
+      display: inline-block;
+      position: relative;
+      background: url("../../images/button-inactive.png");
+      @include size(185px 32px);
+      top: 7px;
+
+      &:nth-child(2), &:last-child {
+        margin-left: -23px;
+      }
+
+      &.active {
+        background: url("../../images/button-active.png");
+        z-index: 99;
+      }
+
+      .switcher {
+        font-family: Arial, Helvetica, sans-serif;
+        display: block;
+        padding-left: 30px;
+        text-decoration: none;
+        color: $gray-dark-2;
+        font-size: 13px;
+        line-height: 30px;
+        cursor: pointer;
+      }
+    }
+
+    .home, .title {
+      float: left;
+      line-height: 33px;
+    }
+
+    .home {
+      margin-right: 90px;
+    }
+  }
+
+  .code-box {
+    padding: 10px 0;
+    @include size(883px 490px);
+    background-color: $brown;
+    position: relative;
+
+    code {
+      counter-reset: line;
+      position: relative;
+      z-index: 9999;
+
+      a {
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 0 10px 0 50px;
+        margin: 0;
+
+        &:before{
+          color: $gray-dark-2;
+          content: counter(line);
+          counter-increment: line;
+          font-size: 12px;
+          left: -20px;
+          text-align: center;
+          position: relative;
+        }
+
+        &:hover{
+          background-color: $gray-dark-3;
+        }
+      }
+    }
+  }
+
+  .bottom-bar {
+    @include size(881px 20px);
+    background-image: url('../../images/osx-bottom-bar.png');
+    @include border-bottom-radius(5px);
+  }
+}

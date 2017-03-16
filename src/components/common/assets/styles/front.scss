@@ -1,0 +1,161 @@
+@import '../../../../../node_modules/bourbon/app/assets/stylesheets/bourbon';
+@import "../../../../../node_modules/normalize.css/normalize.css";
+@import './variables.scss';
+@import './mixins.scss';
+/*@import './fonts/fonts.scss';*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font: 16px/28px 'Lato', Helvetica, Arial, sans-serif;
+  background-color: $white-dark;
+  color: $gray-main;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  @include reset-ma-pa();
+}
+
+pre {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: $screen-sm-min) {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 950px;
+    padding-top: 100px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    max-width: 963px;
+    padding-top: 100px;
+  }
+}
+
+.egg {
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.download-cv {
+  display: block;
+  text-align: center;
+  padding-bottom: 30px;
+
+  @media (min-width: $screen-sm-min) {
+    padding-bottom: 40px;
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding: 50px 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    @include clearfix();
+
+    @media (min-width: $screen-md-min) {
+      margin: 20px auto;
+      width: 362px;
+    }
+
+    li {
+      padding-bottom: 10px;
+
+      @media (min-width: $screen-md-min) {
+        float: left;
+        padding-right: 15px;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+
+        @media (min-width: $screen-md-min) {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  a {
+    @include links();
+  }
+}
+
+.instafeed-wrapper {
+  background-color: $brown;
+
+  .wrapper {
+    padding-top: 10px;
+    padding-bottom: 40px;
+
+    h2 {
+      color: $white;
+    }
+
+    #instafeed {
+      a {
+        display: block;
+
+        img {
+          border-radius: 4px;
+        }
+      }
+
+      p {
+        float: left;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        color: $white;
+        font-size: 14px;
+
+        &.caption {
+          padding: 0 10px;
+          max-width: inherit;
+          width: 100%;
+          line-height: 1em;
+        }
+
+        &.likes {
+          margin: 0 10px;
+
+          &:before {
+            font-family: 'icomoon';
+            content: "\e600";
+            padding-right: 3px;
+          }
+        }
+
+        &.comments {
+          &:before {
+            font-family: 'icomoon';
+            content: "\e601";
+            padding-right: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  font-size: 0.8em;
+  text-align: center;
+  padding: 20px 0;
+
+  .wrapper {
+    padding: 0;
+  }
+}

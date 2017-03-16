@@ -1,13 +1,20 @@
 import Axios from 'axios';
 import {
   BASE_URL,
+  INSTAGRAM_URL
 } from './appConfig';
 
-const api = Axios.create({
+export const api = Axios.create({
   baseURL: BASE_URL,
   headers: {
-    'Content-Type': 'application/json',
-  },
+    'Content-Type': 'application/json'
+  }
 });
 
-export default api;
+export const instagram = Axios.create({
+  baseURL: INSTAGRAM_URL,
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  withCredentials: true
+});

@@ -12,7 +12,7 @@
   },
   "workExperience": [
     {
-      "workPlace": "CN Group",
+      "workPlaceName": "CN Group",
       "workPlaceLink": "http://cngroup.dk/",
       "position": {
         "english": "software/front-end developer",
@@ -42,7 +42,7 @@
       }
     },
     {
-      "workPlace": "Lundegaard",
+      "workPlaceName": "Lundegaard",
       "workPlaceLink": "http://www.lundegaard.eu/",
       "position": {
         "english": "front-end developer",
@@ -78,7 +78,7 @@
       }
     },
     {
-      "workPlace": "Electronic Tour Guide",
+      "workPlaceName": "Electronic Tour Guide",
       "workPlaceLink": "http://electronictourguide.com/",
       "position": {
         "english": "product manager",
