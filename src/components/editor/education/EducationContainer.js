@@ -1,10 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import EducationItem from './EducationItem';
 
 export default class WorkContainer extends React.Component {
   static propTypes = {
-    education: React.PropTypes.array.isRequired,
-    lang: React.PropTypes.string.isRequired,
+    education: PropTypes.array.isRequired,
+    lang: PropTypes.string.isRequired,
   };
 
   constructor(props) {

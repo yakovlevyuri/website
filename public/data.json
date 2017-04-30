@@ -2,30 +2,30 @@
   "bio": {
     "firstName": "Yuri",
     "lastName": "Yakovlev",
-    "dateOfBirth": "#271189",
+    "dateOfBirth": "27.11.89",
     "address": {
       "streetName": "..prague/musilkova/85/28",
-      "gmapsLink": "https://www.google.cz/maps/place/Mus%C3%ADlkova+85%2F28,+150+00+Praha+5-Ko%C5%A1%C3%AD%C5%99e/data=!4m2!3m1!1s0x470b95a495fadbfb:0xde79f03096c14a9?sa=X&ved=0ahUKEwiUi5zHhpXPAhXrIcAKHdsfDAYQ8gEIHzAA"
+      "gmapsLink": "https://goo.gl/5XCNPk"
     },
     "email": "contact@yakovlevyuri.com",
-    "phone": "rgba(420, 776, 278, 743)"
+    "phone": "+420776278743"
   },
   "workExperience": [
     {
       "workPlaceName": "CN Group",
       "workPlaceLink": "http://cngroup.dk/",
       "position": {
-        "english": "software/front-end developer",
-        "russian": "software/front-end разработчик",
-        "czech": "software/front-end vývojář"
+        "english": "software/frontend developer",
+        "russian": "software/frontend разработчик",
+        "czech": "software/frontend vývojář"
       },
       "cityCountry": {
-        "english": "Prague/Czech Republic",
-        "russian": "Прага/Чехия",
-        "czech": "Praha/Česká republika"
+        "english": "Prague, Czechia",
+        "russian": "Прага, Чехия",
+        "czech": "Praha, Česká republika"
       },
       "startYear": "2016",
-      "endYear": "",
+      "endYear": "present",
       "responsibilities": {
         "english": [
           "creating Single Page Apps using React.js library",
@@ -39,7 +39,36 @@
           "tvorba Single Page Apps s využitím React.js knihovny",
           "vývoj mobilních aplikací pro android a iOS pomocí React Native technologie"
         ]
-      }
+      },
+      "projects": [
+        {
+          "name": "BUNTE.de",
+          "website": "http://www.bunte.de/",
+          "description": {
+            "english": [
+              "Germany’s leading people news website BUNTE.de (30m+ visits/month)"
+            ],
+            "russian": [
+              "Germany’s leading people news website BUNTE.de (30m+ visits/month)"
+            ],
+            "czech": [
+              "Germany’s leading people news website BUNTE.de (30m+ visits/month)"
+            ]
+          },
+          "goal": {
+            "english": [
+              "Complete relaunch of the website"
+            ],
+            "russian": [
+              "Complete relaunch of the website"
+            ],
+            "czech": [
+              "Complete relaunch of the website"
+            ]
+          },
+          "myRole": "Javascript, React, React Native, Java (Groovy)"
+        }
+      ]
     },
     {
       "workPlaceName": "Lundegaard",
@@ -50,9 +79,9 @@
         "czech": "front-end vývojář"
       },
       "cityCountry": {
-        "english": "Prague/Czech Republic",
-        "russian": "Прага/Чехия",
-        "czech": "Praha/Česká republika"
+        "english": "Prague, Czechia",
+        "russian": "Прага, Чехия",
+        "czech": "Praha, Česká republika"
       },
       "startYear": "2014",
       "endYear": "2016",
@@ -86,9 +115,9 @@
         "czech": "produktový manažer"
       },
       "cityCountry": {
-        "english": "Prague/Czech Republic",
-        "russian": "Прага/Чехия",
-        "czech": "Praha/Česká republika"
+        "english": "Prague, Czechia",
+        "russian": "Прага, Чехия",
+        "czech": "Praha, Česká republika"
       },
       "startYear": "2012",
       "endYear": "2014",
@@ -116,9 +145,9 @@
         "czech": "České Vysoké Učení Technické"
       },
       "cityCountry": {
-        "english": "Prague/Czech Republic",
-        "russian": "Прага/Чехия",
-        "czech": "Praha/Česká republika"
+        "english": "Prague, Czechia",
+        "russian": "Прага, Чехия",
+        "czech": "Praha, Česká republika"
       },
       "startYear": "2012",
       "endYear": "2014",
@@ -135,12 +164,12 @@
         "czech": "Vysoká škola finanční a správní"
       },
       "cityCountry": {
-        "english": "Prague/Czech Republic",
-        "russian": "Прага/Чехия",
-        "czech": "Praha/Česká republika"
+        "english": "Prague, Czechia",
+        "russian": "Прага, Чехия",
+        "czech": "Praha, Česká republika"
       },
       "startYear": "2011",
-      "endYear": "2012px",
+      "endYear": "2012",
       "field": {
         "english": "marketing communications",
         "russian": "маркетинговые коммуникации",
@@ -159,7 +188,7 @@
         "czech": "Moskva/Ruská federace"
       },
       "startYear": "2006",
-      "endYear": "2010px",
+      "endYear": "2010",
       "field": {
         "english": "labour economics",
         "russian": "экономика труда",
@@ -177,21 +206,21 @@
       "english": {
         "english": "upper-intermediate",
         "russian": "выше среднего",
-        "czech": "pokročilá"
+        "czech": "pokročilý"
       },
       "czech": {
         "english": "intermediate",
         "russian": "средний уровень",
-        "czech": "středně pokročilá"
+        "czech": "středně pokročilý"
       }
     },
     "professionalSkills": {
-      "programLang": "JavaScript (jQuery, React.js, AngularJS), PHP, C#, Java",
+      "programLang": "JavaScript (React.js, React Native, AngularJS, jQuery), Java",
       "markupLang": "HTML5, XML, LaTeX",
       "stylesheetLang": "CSS3, LESS, Sass",
       "databases": "MySQL",
       "versionControlSystem": "Git",
-      "cmsEngines": "WordPress, Joomla",
+      "cmsEngines": "WordPress",
       "graphics": "Adobe Photoshop, Illustrator"
     }
   }

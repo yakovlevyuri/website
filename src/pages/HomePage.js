@@ -1,25 +1,27 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Loader from 'react-loader';
 import { connect } from 'react-redux';
+/*import Hightlight from 'react-highlight';*/
 
 import {
   fetchJson,
   changeLang,
-} from '../components/resume/ResumeActions';
+} from '../components/editor/EditorActions';
 
 import Header from '../components/header/Header';
-import Resume from '../components/resume/Resume';
+/*import Editor from '../components/editor/Editor';*/
 import Downloads from '../components/downloads/Downloads';
 import Footer from '../components/footer/Footer';
 
 export class HomePage extends React.Component {
   static propTypes = {
-    editorJson: React.PropTypes.object,
-    isLoaded: React.PropTypes.bool,
-    isError: React.PropTypes.bool,
-    fetchJson: React.PropTypes.func.isRequired,
-    changeLang: React.PropTypes.func.isRequired,
-    lang: React.PropTypes.string.isRequired,
+    editorJson: PropTypes.object,
+    isLoaded: PropTypes.bool,
+    isError: PropTypes.bool,
+    fetchJson: PropTypes.func.isRequired,
+    changeLang: PropTypes.func.isRequired,
+    lang: PropTypes.string.isRequired,
   };
 
   constructor(props) {
@@ -33,10 +35,10 @@ export class HomePage extends React.Component {
 
   static mapStateToProps(state) {
     return {
-      editorJson: state.getIn(['resume', 'editorJson']),
-      isLoaded: state.getIn(['resume', 'isLoaded']),
-      isError: state.getIn(['resume', 'isError']),
-      lang: state.getIn(['resume', 'lang'])
+      editorJson: state.getIn(['editor', 'editorJson']),
+      isLoaded: state.getIn(['editor', 'isLoaded']),
+      isError: state.getIn(['editor', 'isError']),
+      lang: state.getIn(['editor', 'lang'])
     };
   }
 
@@ -62,12 +64,18 @@ export class HomePage extends React.Component {
 
     return (
       <Loader loaded={isLoaded}>
-        <Header data={editorJson} />
-        <Resume
+        <Header
           data={editorJson}
-          changeLang={changeLang}
           lang={lang}
+          changeLang={changeLang}
         />
+        {/*<Hightlight className='javascript'>
+          <Editor
+            data={editorJson}
+            changeLang={changeLang}
+            lang={lang}
+          />
+        </Hightlight>*/}
         <Downloads />
         <Footer />
       </Loader>

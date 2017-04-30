@@ -2,15 +2,16 @@ import { handleActions } from 'redux-actions'
 import Immutable from 'immutable'
 import {
   REQUEST_JSON,
-  RECEIVE_JSON
-} from './EditorActions'
+  RECEIVE_JSON,
+  CHANGE_LANG,
+} from './EditorActions';
 
 const POST_ARTICLE_STATE_ENUM = {
   DEFAULT: '',
   SUCCESS: 'success',
   ERROR: 'error',
   LOADING: 'loading'
-}
+};
 
 const editor = handleActions({
   [REQUEST_JSON]: (state) => {
@@ -23,11 +24,11 @@ const editor = handleActions({
   [RECEIVE_JSON]: {
     next (state, action) {
       return state.withMutations(newState => {
-        newState
+          newState
             .setIn(['isLoaded' ], true)
             .setIn(['isError' ], false)
             .setIn(['editorJson' ], action.payload)
-      }
+        }
       )
     },
     throw (state) {
@@ -37,11 +38,18 @@ const editor = handleActions({
           .setIn(['isError' ], true)
       )
     }
-  }
+  },
+  [CHANGE_LANG]: (state, action) => {
+    return state.withMutations(newState =>
+      newState
+        .setIn(['lang' ], action.payload)
+    )
+  },
 }, Immutable.fromJS({
   isLoaded: false,
   isError: false,
-  postArticleState: POST_ARTICLE_STATE_ENUM.DEFAULT
-}))
+  lang: 'english',
+  postArticleState: POST_ARTICLE_STATE_ENUM.DEFAULT,
+}));
 
-export default editor
+export default editor;

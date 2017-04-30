@@ -1,31 +1,47 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
+import WorkProjectItem from './WorkProjectItem';
 
 export default class WorkItem extends React.Component {
   static propTypes = {
-    workExperience: React.PropTypes.shape({
-      workPlace: React.PropTypes.string.isRequired,
-      workPlaceLink: React.PropTypes.string.isRequired,
-      position: React.PropTypes.object.isRequired,
-      cityCountry: React.PropTypes.object.isRequired,
-      startYear: React.PropTypes.string.isRequired,
-      endYear: React.PropTypes.string.isRequired,
-      responsibilities: React.PropTypes.object.isRequired,
+    workExperience: PropTypes.shape({
+      workPlaceName: PropTypes.string.isRequired,
+      workPlaceLink: PropTypes.string.isRequired,
+      position: PropTypes.object.isRequired,
+      cityCountry: PropTypes.object.isRequired,
+      startYear: PropTypes.string.isRequired,
+      endYear: PropTypes.string.isRequired,
+      responsibilities: PropTypes.object.isRequired,
     }),
-    lang: React.PropTypes.string.isRequired,
+    lang: PropTypes.string.isRequired,
   };
 
   constructor(props) {
     super(props);
+    this._renderResponsibilities = this._renderResponsibilities.bind(this);
+    this._renderEndYear = this._renderEndYear.bind(this);
+    this._renderProjects = this._renderProjects.bind(this);
   }
 
-  render() {
+  _renderEndYear() {
     const {
-      workPlace,
-      workPlaceLink,
-      position,
-      cityCountry,
-      startYear,
       endYear,
+    } = this.props.workExperience;
+
+    return (
+      <p className='work_experience__end-year'>
+        <span className='editor-attr'>endYear: </span>
+        {
+          Number(endYear) ? endYear : `'${endYear}'`
+        }
+        <span>&#44;</span>
+      </p>
+    )
+  }
+
+  _renderResponsibilities() {
+    const {
       responsibilities,
     } = this.props.workExperience;
 
@@ -33,34 +49,89 @@ export default class WorkItem extends React.Component {
       lang,
     } = this.props;
 
-    const classArray = {
-      0: "first-child",
-      1: "nth-child(2)",
-    };
-
     return (
+      <div className='work_experience__responsibilities'>
+        <span>responsibilities: [</span>
+        {
+          responsibilities[lang].map((item, key) => {
+            return (
+              <p key={key}>
+                <span>&#39;</span>
+                {item}
+                <span>&#39;&#44;</span>
+              </p>
+            );
+          })
+        }
+        <span>]&#44;</span>
+      </div>
+    );
+  }
 
-      <div className="work_experience__block" id="work-q">
-        <p>.work-experience:first-child &#123;</p>
-        <p className="work_experience__workplace">workPlace: {workPlace};</p>
-        <p className="work_experience__position">position: {position[lang]};</p>
-        <p className="work_experience__city-country">city-country: {cityCountry[lang]};</p>
-        <p className="work_experience__start-year">start-year: {startYear};</p>
-        <p className="work_experience__end-year">end-year: {endYear};</p>
-        <div className="work_experience__responsibilities">
-          responsibilities:
+  _renderProjects() {
+    const {
+      lang,
+    } = this.props;
+
+    const {
+      projects
+    } = this.props.workExperience;
+
+    if (projects) {
+      return (
+        <div className='work_experience__responsibilities'>
+          <span>projects: [</span>
           {
-            responsibilities[lang].map((item, key, obj) => {
-              if (key === 0) {
-                return <span key={key}>&#32;{item},</span>;
-              } else if (key > 0 && key < obj.length - 1) {
-                return <p key={key}>{item},</p>;
-              }
-              return <p key={key}>{item};</p>;
+            projects.map((project, index) => {
+              return <WorkProjectItem project={project} key={index} lang={lang}/>
             })
           }
+          <span>]&#44;</span>
         </div>
-        <p>&#125;</p>
+      );
+    }
+  }
+
+  render() {
+    const {
+      workPlaceName,
+      workPlaceLink,
+      position,
+      cityCountry,
+      startYear,
+    } = this.props.workExperience;
+
+    const {
+      lang,
+    } = this.props;
+
+    return (
+      <div className='work_experience__block'>
+        <p>&#123;</p>
+        <p className='work_experience__workplace'>
+          <span className='editor-attr'>workPlace: &#39;</span>
+          <a href={workPlaceLink} target="_blank">{workPlaceName}</a>
+          <span>&#39;&#44;</span>
+        </p>
+        <p className='work_experience__position'>
+          <span className='editor-attr'>position: &#39;</span>
+          {position[lang]}
+          <span>&#39;&#44;</span>
+        </p>
+        <p className='work_experience__city-country'>
+          <span className='editor-attr'>location: &#39;</span>
+          {cityCountry[lang]}
+          <span>&#39;&#44;</span>
+        </p>
+        <p className='work_experience__start-year'>
+          <span className='editor-attr'>startYear: </span>
+          {startYear}
+          <span>&#44;</span>
+        </p>
+        {this._renderEndYear()}
+        {this._renderResponsibilities()}
+        {this._renderProjects()}
+        <p>&#125;&#44;</p>
       </div>
     );
   }

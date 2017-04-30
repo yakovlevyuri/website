@@ -1,20 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class WorkItem extends React.Component {
   static propTypes = {
-    bio: React.PropTypes.shape({
-      university: React.PropTypes.object.isRequired,
-      cityCountry: React.PropTypes.object.isRequired,
-      startYear: React.PropTypes.object.isRequired,
-      endYear: React.PropTypes.object.isRequired,
-      field: React.PropTypes.object.isRequired,
+    bio: PropTypes.shape({
+      university: PropTypes.object.isRequired,
+      cityCountry: PropTypes.object.isRequired,
+      startYear: PropTypes.object.isRequired,
+      endYear: PropTypes.object.isRequired,
+      field: PropTypes.object.isRequired,
     }),
-    lang: React.PropTypes.string.isRequired,
+    lang: PropTypes.string.isRequired,
   };
-
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const {

@@ -1,21 +1,23 @@
 @import '../../../../../node_modules/bourbon/app/assets/stylesheets/bourbon';
-@import "../../../../../node_modules/normalize.css/normalize.css";
 @import './variables.scss';
 @import './mixins.scss';
-/*@import './fonts/fonts.scss';*/
-
-* {
-  box-sizing: border-box;
-}
+@import './fonts.scss';
+@import './flags.scss';
 
 html, body {
   height: 100%;
-  font: 16px/28px 'Lato', Helvetica, Arial, sans-serif;
+  font: 16px/28px 'latoregular', Helvetica, Arial, sans-serif;
   background-color: $white-dark;
   color: $gray-main;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   @include reset-ma-pa();
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
 }
 
 pre {
@@ -45,52 +47,6 @@ pre {
 .egg {
   text-align: center;
   word-wrap: break-word;
-}
-
-.download-cv {
-  display: block;
-  text-align: center;
-  padding-bottom: 30px;
-
-  @media (min-width: $screen-sm-min) {
-    padding-bottom: 40px;
-  }
-
-  @media (min-width: $screen-md-min) {
-    padding: 50px 0;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-    @include clearfix();
-
-    @media (min-width: $screen-md-min) {
-      margin: 20px auto;
-      width: 362px;
-    }
-
-    li {
-      padding-bottom: 10px;
-
-      @media (min-width: $screen-md-min) {
-        float: left;
-        padding-right: 15px;
-      }
-
-      &:last-child {
-        padding-bottom: 0;
-
-        @media (min-width: $screen-md-min) {
-          padding-right: 0;
-        }
-      }
-    }
-  }
-
-  a {
-    @include links();
-  }
 }
 
 .instafeed-wrapper {
@@ -157,5 +113,27 @@ footer {
 
   .wrapper {
     padding: 0;
+  }
+}
+
+
+
+.work-experience-item {
+  border: 1px solid $gray-main;
+  padding: 20px 30px;
+  margin-bottom: 20px;
+  color: $gray-dark;
+
+  .work-experience-item-name {
+    font-size: 22px;
+    margin-right: 20px;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .work-experience-item-years {
+    color: $gray-dark;
   }
 }

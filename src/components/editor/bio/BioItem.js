@@ -1,19 +1,15 @@
 import React from 'react';
-import Highlight from 'react-highlight';
+import PropTypes from 'prop-types';
 
 export default class BioItem extends React.Component {
   static propTypes = {
-    bio: React.PropTypes.shape({
-      firstName: React.PropTypes.string.isRequired,
-      lastName: React.PropTypes.string.isRequired,
-      dateOfBirth: React.PropTypes.string.isRequired,
-      address: React.PropTypes.object.isRequired,
+    bio: PropTypes.shape({
+      firstName: PropTypes.string.isRequired,
+      lastName: PropTypes.string.isRequired,
+      dateOfBirth: PropTypes.string.isRequired,
+      address: PropTypes.object.isRequired,
     }),
   };
-
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const {
@@ -24,7 +20,6 @@ export default class BioItem extends React.Component {
     } = this.props.bio;
 
     return (
-
       <div className="contact_info__block">
         <p>.contact-info &#123;</p>
         <p className="bio__firstName">first-name: {firstName};</p>
@@ -35,7 +30,6 @@ export default class BioItem extends React.Component {
         </p>
         <p>&#125;</p>
       </div>
-
     );
   }
 }

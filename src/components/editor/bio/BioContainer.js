@@ -1,9 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import BioItem from './BioItem';
 
 export default class BioContainer extends React.Component {
   static propTypes = {
-    bio: React.PropTypes.object.isRequired,
+    bio: PropTypes.object.isRequired,
   };
 
   constructor(props) {

@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux-immutable';
-import resume from './components/resume/ResumeReducer';
+import editor from './components/editor/EditorReducer';
 
 const rootReducer = combineReducers({
-  resume,
+  editor,
 });
 
 export default rootReducer;

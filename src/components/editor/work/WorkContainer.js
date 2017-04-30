@@ -1,10 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import WorkItem from './WorkItem';
 
 export default class WorkContainer extends React.Component {
   static propTypes = {
-    workExperience: React.PropTypes.array.isRequired,
-    lang: React.PropTypes.string.isRequired,
+    workExperience: PropTypes.array.isRequired,
+    lang: PropTypes.string.isRequired,
   };
 
   constructor(props) {
@@ -32,8 +34,13 @@ export default class WorkContainer extends React.Component {
 
   render() {
     return (
-      <div className="news">
-        {this._renderBlock()}
+      <div className='news'>
+        <p>
+          <span>&#47;&#42;</span> Work Experience <span>&#42;&#47;</span>
+        </p>
+        <p>let workExperience = [</p>
+          {this._renderBlock()}
+        <p>&#125;,</p>
       </div>
     );
   }
