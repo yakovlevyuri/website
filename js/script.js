@@ -1,9 +1,3 @@
-// @codekit-prepend "../bower_components/jquery/dist/jquery.min.js";
-// @codekit-prepend "../bower_components/highlightjs/highlight.pack.js";
-// @codekit-prepend "../bower_components/slimscroll/jquery.slimscroll.min.js";
-// @codekit-prepend "../bower_components/instafeed.js/instafeed.min.js";
-// @codekit-prepend "../js/libs/owlcarousel/owl.carousel.min.js";
-
 function loadCV(lang) {
 	$.getJSON('js/data.json', function(data) {
 		console.log( "Json in " + lang + " loaded successfully" );
@@ -12,9 +6,6 @@ function loadCV(lang) {
 		container = $('code');
 		container.html('');
 
-		/*$.each(data, function(key) {
-			html += '<p>' + key + '</p>';
-		});*/
 		html += '<p>/* resume.css */</p>';
 		html += '<p>&nbsp;</p>';
 

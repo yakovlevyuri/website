@@ -5,197 +5,207 @@
 
 /* global module:false, require:false */
 module.exports = function(grunt) {
+  // Display the elapsed execution time of grunt tasks
+  require('time-grunt')(grunt);
 
-	// Display the elapsed execution time of grunt tasks
-	require('time-grunt')(grunt);
+  // A JIT(Just In Time) plugin loader for Grunt
+  require('jit-grunt')(grunt);
 
-	// A JIT(Just In Time) plugin loader for Grunt
-	require('jit-grunt')(grunt);
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
 
+    lessFile: {
+      front: 'less/front.less',
+      print: 'less/print.less',
+    },
 
-	grunt.initConfig({
-		pkg: grunt.file.readJSON('package.json'),
+    cssFile: {
+      front: 'css/front.css',
+      print: 'css/print.css',
+    },
 
-		lessFile: {
-			front: 'less/front.less',
-			print: 'less/print.less',
-		},
+    compiledJS: {
+      all: 'js/min/script-min.js',
+    },
 
-		cssFile: {
-			front: 'css/front.css',
-			print: 'css/print.css',
-		},
+    jsFile: {
+      jquery: 'node_modules/jquery/dist/jquery.min.js',
+      highlightjs: 'node_modules/highlightjs/highlight.pack.js',
+      slimscroll: 'node_modules/slimscroll/jquery.slimscroll.min.js',
+      instafeedjs: 'node_modules/instafeed.js/instafeed.min.js',
+      owlcarousel: 'js/libs/owlcarousel/owl.carousel.min.js',
+      scriptjs: 'js/script.js',
+    },
 
-		compiledJS: {
-			all: 'js/min/script-min.js',
-		},
+    banner: '/*\n' +
+      ' * <%= pkg.name %>\n' +
+      ' * <%= pkg.version %>\n' +
+      ' * <%= pkg.description %> <%= pkg.url %>\n' +
+      ' * This version was compiled <%= grunt.template.today("yyyy-mm-dd") %>\n' +
+      ' * Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %> (<%= pkg.email %>)\n' +
+      ' */\n' +
+      '\n',
 
-		jsFile: {
-			jquery: 'bower_components/jquery/dist/jquery.min.js',
-			highlightjs: 'bower_components/highlightjs/highlight.pack.js',
-			slimscroll: 'bower_components/slimscroll/jquery.slimscroll.min.js',
-			instafeedjs: 'bower_components/instafeed.js/instafeed.min.js',
-			owlcarousel: 'js/libs/owlcarousel/owl.carousel.min.js',
-			scriptjs: 'js/script.js'
-		},
+    uglify: {
+      options: {
+        banner: '<%= banner %>',
+      },
 
-		banner: '/*\n' +
-				' * <%= pkg.name %>\n' +
-				' * <%= pkg.version %>\n' +
-				' * <%= pkg.description %> <%= pkg.url %>\n' +
-				' * This version was compiled <%= grunt.template.today("yyyy-mm-dd") %>\n' +
-				' * Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %> (<%= pkg.email %>)\n' +
-				' */\n' +
-				'\n',
+      develop: {
+        options: {
+          sourceMap: true,
+          sourceMapName: 'js/min/sourceMap.map',
+        },
 
-		uglify: {
-			options: {
-				banner: '<%= banner %>'
-			},
+        files: {
+          '<%= compiledJS.all %>': [
+            '<%= jsFile.jquery %>',
+            '<%= jsFile.highlightjs %>',
+            '<%= jsFile.slimscroll %>',
+            '<%= jsFile.instafeedjs %>',
+            '<%= jsFile.owlcarousel %>',
+            '<%= jsFile.scriptjs %>',
+          ],
+        },
+      },
 
-			develop: {
-				options: {
-					sourceMap: true,
-					sourceMapName: 'js/min/sourceMap.map'
-				},
+      production: {
+        options: {
+          sourceMap: false,
+        },
 
-				files: {
-					'<%= compiledJS.all %>': ['<%= jsFile.jquery %>', '<%= jsFile.highlightjs %>', '<%= jsFile.slimscroll %>', '<%= jsFile.instafeedjs %>', '<%= jsFile.owlcarousel %>', '<%= jsFile.scriptjs %>']
-				}	
-			},
+        files: {
+          '<%= compiledJS.all %>': [
+            '<%= jsFile.jquery %>',
+            '<%= jsFile.highlightjs %>',
+            '<%= jsFile.slimscroll %>',
+            '<%= jsFile.instafeedjs %>',
+            '<%= jsFile.owlcarousel %>',
+            '<%= jsFile.scriptjs %>',
+          ],
+        },
+      },
+    },
 
-			production: {
-				options: {
-					sourceMap: false
-				},
+    // compile LESS files to CSS.
+    less: {
+      options: {
+        banner: '<%= banner %>',
+      },
 
-				files: {
-					'<%= compiledJS.all %>': ['<%= jsFile.jquery %>', '<%= jsFile.highlightjs %>', '<%= jsFile.slimscroll %>', '<%= jsFile.instafeedjs %>', '<%= jsFile.owlcarousel %>', '<%= jsFile.scriptjs %>']
-				}
-			}
-		},
+      // compilation for development, uncompressed with source map
+      develop: {
+        files: {
+          '<%= cssFile.front %>': '<%= lessFile.front %>',
+        },
 
-		// compile LESS files to CSS.
-		less: {
-			options: {
-				banner: '<%= banner %>'
-			},
+        options: {
+          sourceMap: true,
+          sourceMapFilename: 'css/front.css.map',
+          sourceMapURL: 'front.css.map',
+          sourceMapBasepath: '',
+          sourceMapRootpath: '/',
+          compress: false,
+        },
+      },
 
-			// compilation for development, uncompressed with source map
-			develop: {
+      // compilation of print.css
+      other: {
+        files: {
+          '<%= cssFile.print %>': '<%= lessFile.print %>',
+        },
+        options: {
+          compress: true,
+        },
+      },
 
-				files:
-				{
-					'<%= cssFile.front %>': '<%= lessFile.front %>'
-				},
+      // compilation for production, compressed
+      production: {
+        files: {
+          '<%= cssFile.front %>': '<%= lessFile.front %>',
+        },
+        options: {
+          compress: true,
+        },
+      },
+    },
 
-				options: {
-					sourceMap: true,
-					sourceMapFilename: 'css/front.css.map',
-					sourceMapURL: 'front.css.map',
-					sourceMapBasepath: '',
-					sourceMapRootpath: '/',
-					compress: false
-				}
-			},
+    // image optimalization
+    imagemin: {
+      default: {
+        files: [
+          {
+            expand: true,
+            cwd: 'images',
+            src: ['{,*/}*.{jpg,png,gif}'],
+            dest: 'images',
+          },
+        ],
+      },
+    },
 
-			// compilation of print.css
-			other: {
-				files: {
-					'<%= cssFile.print %>': '<%= lessFile.print %>',
-				},
-				options: {
-					compress: true
-				}
-			},
+    // svg optimalization
+    svgmin: {
+      default: {
+        files: [
+          {
+            expand: true,
+            cwd: 'images',
+            src: ['{,*/}*.svg'],
+            dest: '<%=  resourcePath %>/images',
+          },
+        ],
+      },
+    },
 
-			// compilation for production, compressed
-			production: {
-				files: {
-					'<%= cssFile.front %>': '<%= lessFile.front %>'
-				},
-				options: {
-					compress: true
-				}
-			}
-		},
+    // generates meta icons
+    favicons: {
+      options: {
+        windowsTile: false,
+        appleTouchBackgroundColor: '#ffffff',
+      },
+      icons: {
+        src: 'images/meta/source.png',
+        dest: 'images/meta/',
+      },
+    },
 
-		// image optimalization
-		imagemin: {
-			default: {
-				files: [{
-					expand: true,
-					cwd: 'images',
-					src: ['{,*/}*.{jpg,png,gif}'],
-					dest: 'images'
-				}]
-			}
-		},
+    // Run predefined tasks whenever watched file patterns are added, changed or deleted
+    watch: {
+      options: {
+        nospawn: true,
+      },
+      uglify: {
+        files: ['bower_components/**/*.js', 'js/*.js'],
+        tasks: ['uglify:develop'],
+      },
+      less: {
+        files: [
+          'less/**/*.less',
 
-		// svg optimalization
-		svgmin: {
-			default: {
-				files: [{
-					expand: true,
-					cwd: 'images',
-					src: ['{,*/}*.svg'],
-					dest: '<%=  resourcePath %>/images'
-				}]
-			}
-		},
+          // exclude other files
+          '!<%= lessFile.print %>',
+        ],
+        tasks: ['less:develop'],
+      },
+      lessOther: {
+        files: ['<%= lessFile.print %>'],
+        tasks: ['less:other'],
+      },
+    },
+  });
 
-		// generates meta icons
-		favicons: {
-			options: {
-				windowsTile: false,
-				appleTouchBackgroundColor: "#ffffff",
-			},
-			icons: {
-				src: 'images/meta/source.png',
-				dest: 'images/meta/',
-			}
-		},
+  grunt.registerTask('build-develop', [
+    'uglify:develop',
+    'less:develop',
+    'less:other',
+  ]);
 
-		// Run predefined tasks whenever watched file patterns are added, changed or deleted
-		watch: {
-			options: {
-				nospawn: true
-			},
-			uglify: {
-				files: ['bower_components/**/*.js', 'js/*.js'],
-				tasks: ['uglify:develop']
-			},
-			less: {
-				files: [
-					'less/**/*.less',
+  grunt.registerTask('build', [
+    'uglify:production',
+    'less:production',
+    'less:other',
+  ]);
 
-					// exclude other files
-					'!<%= lessFile.print %>',
-				],
-				tasks: ['less:develop'],
-			},
-			lessOther: {
-				files: [
-					'<%= lessFile.print %>',
-				],
-				tasks: ['less:other']
-			}
-		}
-	});
-
-	grunt.registerTask('build-develop', [
-		'uglify:develop',
-		'less:develop',
-		'less:other'
-	]);
-
-	grunt.registerTask('build', [
-		'uglify:production',
-		'less:production',
-		'less:other'
-	]);
-
-	grunt.registerTask('default', [
-		'watch'
-	]);
+  grunt.registerTask('default', ['watch']);
 };
