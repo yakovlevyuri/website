@@ -3,10 +3,7 @@
 		"first-name": "Yuri",
 		"last-name": "Yakovlev",
 		"date-of-birth": "#271189",
-		"address": {
-			"streetName": "..prague/rohacova/1030/75",
-			"gmapsLink": "https://www.google.cz/maps/place/Roh%C3%A1%C4%8Dova+1030%2F75,+130+00+Praha/data=!4m2!3m1!1s0x470b935f9babfb79:0x183dfc53e25de50a?sa=X&ved=0ahUKEwjvncGhy_7JAhXDlQ8KHcVwALAQ8gEIHTAA"
-		},
+		"address": "Prague, Czechia",
 		"email": "contact@yakovlevyuri.com",
 		"phone": "420, 776, 278, 743"
 	},
@@ -294,12 +291,12 @@
 		},
 		"professional-skills":
 		{
-			"program-lang": "JavaScript (jQuery, React.js, AngularJS), PHP, C#, Java",
+			"program-lang": "JavaScript (React.js, React Native, AngularJS, jQuery), Java",
 			"markup-lang": "HTML5, XML, LaTeX",
 			"stylesheet-lang": "CSS3, LESS, Sass", 
 			"databases": "MySQL",
 			"version-control-system": "Git",
-			"cms-engines": "WordPress, Joomla",
+			"cms-engines": "WordPress",
 			"graphics": "Adobe Photoshop, Illustrator"
 		}
 	}

@@ -1,10 +1,11 @@
 {
-  "name": "my-portolio-website",
+  "name": "yakovlevyuri-com",
   "version": "1.0.0",
   "description": "This is the source code of my personal website",
   "author": "Yuri Yakovlev",
   "email": "contact@yakovlevyuri.com",
   "url": "http://yakovlevyuri.com",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/yakovlevyuri/yakovlevyuri.com.git"
@@ -20,30 +21,16 @@
     "jquery": "^2.1.3",
     "jquery-slimscroll": "^1.3.8",
     "normalize-css": "^2.3.1",
-    "owl.carousel": "^2.2.0"
+    "perfect-scrollbar": "^0.7.0"
   },
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-cssmin": "^2.2.0",
-    "grunt-contrib-imagemin": "^1.0.1",
-    "grunt-contrib-less": "^1.4.1",
-    "grunt-contrib-uglify": "^3.0.1",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-favicons": "^0.8.0",
-    "grunt-notify": "^0.4.5",
-    "grunt-svgmin": "^4.0.0",
-    "jit-grunt": "^0.10.0",
-    "time-grunt": "^1.0.0",
-
     "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-less": "^3.3.0",
     "gulp-concat": "^2.6.1",
-    "gulp-uglify": "^2.0.0",
-    "gulp-sourcemaps": "^2.2.0"
+    "gulp-less": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^3.0.0",
+    "lesshat": "^4.1.0"
   },
   "scripts": {
     "build": "grunt build"
