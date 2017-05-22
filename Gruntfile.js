@@ -16,16 +16,16 @@ module.exports = function(grunt) {
 
     lessFile: {
       front: 'less/front.less',
-      print: 'less/print.less',
+      print: 'less/print.less'
     },
 
     cssFile: {
       front: 'css/front.css',
-      print: 'css/print.css',
+      print: 'css/print.css'
     },
 
     compiledJS: {
-      all: 'js/min/script-min.js',
+      all: 'js/min/script-min.js'
     },
 
     jsFile: {
@@ -33,8 +33,8 @@ module.exports = function(grunt) {
       highlightjs: 'node_modules/highlightjs/highlight.pack.js',
       slimscroll: 'node_modules/slimscroll/jquery.slimscroll.min.js',
       instafeedjs: 'node_modules/instafeed.js/instafeed.min.js',
-      owlcarousel: 'js/libs/owlcarousel/owl.carousel.min.js',
-      scriptjs: 'js/script.js',
+      owlcarousel: 'node_modules/dist/owl.carousel.min.js',
+      scriptjs: 'js/script.js'
     },
 
     banner: '/*\n' +
@@ -64,14 +64,14 @@ module.exports = function(grunt) {
             '<%= jsFile.slimscroll %>',
             '<%= jsFile.instafeedjs %>',
             '<%= jsFile.owlcarousel %>',
-            '<%= jsFile.scriptjs %>',
-          ],
-        },
+            '<%= jsFile.scriptjs %>'
+          ]
+        }
       },
 
       production: {
         options: {
-          sourceMap: false,
+          sourceMap: false
         },
 
         files: {
@@ -81,10 +81,10 @@ module.exports = function(grunt) {
             '<%= jsFile.slimscroll %>',
             '<%= jsFile.instafeedjs %>',
             '<%= jsFile.owlcarousel %>',
-            '<%= jsFile.scriptjs %>',
-          ],
-        },
-      },
+            '<%= jsFile.scriptjs %>'
+          ]
+        }
+      }
     },
 
     // compile LESS files to CSS.
@@ -105,27 +105,27 @@ module.exports = function(grunt) {
           sourceMapURL: 'front.css.map',
           sourceMapBasepath: '',
           sourceMapRootpath: '/',
-          compress: false,
-        },
+          compress: false
+        }
       },
 
       // compilation of print.css
       other: {
         files: {
-          '<%= cssFile.print %>': '<%= lessFile.print %>',
+          '<%= cssFile.print %>': '<%= lessFile.print %>'
         },
         options: {
-          compress: true,
-        },
+          compress: true
+        }
       },
 
       // compilation for production, compressed
       production: {
         files: {
-          '<%= cssFile.front %>': '<%= lessFile.front %>',
+          '<%= cssFile.front %>': '<%= lessFile.front %>'
         },
         options: {
-          compress: true,
+          compress: true
         },
       },
     },
@@ -138,10 +138,10 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'images',
             src: ['{,*/}*.{jpg,png,gif}'],
-            dest: 'images',
-          },
-        ],
-      },
+            dest: 'images'
+          }
+        ]
+      }
     },
 
     // svg optimalization
@@ -152,59 +152,59 @@ module.exports = function(grunt) {
             expand: true,
             cwd: 'images',
             src: ['{,*/}*.svg'],
-            dest: '<%=  resourcePath %>/images',
-          },
-        ],
-      },
+            dest: '<%=  resourcePath %>/images'
+          }
+        ]
+      }
     },
 
     // generates meta icons
     favicons: {
       options: {
         windowsTile: false,
-        appleTouchBackgroundColor: '#ffffff',
+        appleTouchBackgroundColor: '#ffffff'
       },
       icons: {
         src: 'images/meta/source.png',
-        dest: 'images/meta/',
-      },
+        dest: 'images/meta/'
+      }
     },
 
     // Run predefined tasks whenever watched file patterns are added, changed or deleted
     watch: {
       options: {
-        nospawn: true,
+        nospawn: true
       },
       uglify: {
         files: ['bower_components/**/*.js', 'js/*.js'],
-        tasks: ['uglify:develop'],
+        tasks: ['uglify:develop']
       },
       less: {
         files: [
           'less/**/*.less',
 
           // exclude other files
-          '!<%= lessFile.print %>',
+          '!<%= lessFile.print %>'
         ],
-        tasks: ['less:develop'],
+        tasks: ['less:develop']
       },
       lessOther: {
         files: ['<%= lessFile.print %>'],
-        tasks: ['less:other'],
-      },
-    },
+        tasks: ['less:other']
+      }
+    }
   });
 
   grunt.registerTask('build-develop', [
     'uglify:develop',
     'less:develop',
-    'less:other',
+    'less:other'
   ]);
 
   grunt.registerTask('build', [
     'uglify:production',
     'less:production',
-    'less:other',
+    'less:other'
   ]);
 
   grunt.registerTask('default', ['watch']);
