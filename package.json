@@ -33,6 +33,6 @@
     "lesshat": "^4.1.0"
   },
   "scripts": {
-    "build": "grunt build"
+    "build": "gulp build"
   }
 }
