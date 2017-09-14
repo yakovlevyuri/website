@@ -15,6 +15,54 @@
 				"czech": "first-child"
 			},
 			"work-place": {
+				"english": "Kiwi.com",
+				"russian": "Kiwi.com",
+				"czech": "Kiwi.com"
+			},
+			"link": {
+				"english": "http://kiwi.com/",
+				"russian": "http://kiwi.com/",
+				"czech": "http://kiwi.com/"
+			},
+			"position": {
+				"english": "full stack developer",
+				"russian": "full stack разработчик",
+				"czech": "full stack vývojář"
+			},
+			"city-country": {
+				"english": "Prague/Czech Republic",
+				"russian": "Прага/Чехия",
+				"czech": "Praha/Česká republika"
+			},
+			"start-year": {
+				"english": "2017px",
+				"russian": "2017px",
+				"czech": "2017px"
+			},
+			"end-year": {
+				"english": "present",
+				"russian": "по настоящее время",
+				"czech": "současnost"
+			},
+			"responsibilities": {
+				"english": [
+					"Technologies I use everyday: React, Redux, GraphQL, Relay/Apollo, Server Side Rendering"
+				],
+				"russian": [
+					"Мои каждодневные технологии: React, Redux, GraphQL, Relay/Apollo, Server Side Rendering"
+				],
+				"czech": [
+					"Technologie, které používám: React, Redux, GraphQL, Relay/Apollo, Server Side Rendering"
+				]
+			}
+		},
+		{
+			"classname": {
+				"english": "nth-child(2)",
+				"russian": "nth-child(2)",
+				"czech": "nth-child(2)"
+			},
+			"work-place": {
 				"english": "CN Group",
 				"russian": "CN Group",
 				"czech": "CN Group"
@@ -40,9 +88,9 @@
 				"czech": "2016px"
 			},
 			"end-year": {
-				"english": "present",
-				"russian": "по настоящее время",
-				"czech": "současnost"
+				"english": "2017px",
+				"russian": "2017px",
+				"czech": "2017px"
 			},
 			"responsibilities": {
 				"english": [
@@ -61,9 +109,9 @@
 		},
 		{
 			"classname": {
-				"english": "nth-child(2)",
-				"russian": "nth-child(2)",
-				"czech": "nth-child(2)"
+				"english": "nth-child(3)",
+				"russian": "nth-child(3)",
+				"czech": "nth-child(3)"
 			},
 			"work-place": {
 				"english": "Lundegaard",
@@ -91,9 +139,9 @@
 				"czech": "2014px"
 			},
 			"end-year": {
-				"english": "2016",
-				"russian": "2016",
-				"czech": "2016"
+				"english": "2016px",
+				"russian": "2016px",
+				"czech": "2016px"
 			},
 			"responsibilities": {
 				"english": [
