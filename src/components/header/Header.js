@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import i18next from 'i18next';
 
 import LangPanel from './langPanel/LangPanel';
 
@@ -14,37 +13,37 @@ export default class Header extends React.Component {
   };
 
   render() {
-    const {
-      bio,
-      workExperience,
-    } = this.props.data;
+    const { bio, workExperience } = this.props.data;
 
-    const {
-      lang,
-      changeLang,
-    } = this.props;
+    const { lang, changeLang } = this.props;
 
     return (
-      <header className='header'>
-        <LangPanel
-          lang={lang}
-          changeLang={changeLang}
-        />
+      <header className="header">
+        <LangPanel lang={lang} changeLang={changeLang} />
 
-        <span className='avatar' />
-        <h1>Hi, I'm {bio.firstName} {bio.lastName}</h1>
-        <h2><em>{workExperience[0].position[lang]}</em></h2>
-        <p>{i18next.t('liveIn')} Prague, work at&nbsp;
-          <a href={workExperience[0].workPlaceLink}
-             title={workExperience[0].workPlaceName}
-             target='_blank'>{workExperience[0].workPlaceName}
-          </a>,&nbsp;
-          last time was seen at&nbsp;
-          <a id='foursquare'
-             target='_blank'
-             rel='nofollow'
-             href='https://foursquare.com/user/18827111/checkin/5745f32138fabe2bf2d2eb7b'
-             title='Havlíčkovy sady (Grébovka)'>
+        <span className="avatar" />
+        <h1>
+          Hi, I'm {bio.firstName} {bio.lastName}
+        </h1>
+        <h2>
+          <em>{workExperience[0].position[lang]}</em>
+        </h2>
+        <p>
+          Live in Prague, work at&nbsp;
+          <a
+            href={workExperience[0].workPlaceLink}
+            title={workExperience[0].workPlaceName}
+            target="_blank"
+          >
+            {workExperience[0].workPlaceName}
+          </a>,&nbsp; last time was seen at&nbsp;
+          <a
+            id="foursquare"
+            target="_blank"
+            rel="nofollow"
+            href="https://foursquare.com/user/18827111/checkin/5745f32138fabe2bf2d2eb7b"
+            title="Havlíčkovy sady (Grébovka)"
+          >
             Havlíčkovy sady (Grébovka)
           </a>.
         </p>

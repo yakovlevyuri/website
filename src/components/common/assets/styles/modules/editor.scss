@@ -1,6 +1,5 @@
 @import '../../../../../../node_modules/bourbon/app/assets/stylesheets/bourbon';
 @import '../variables.scss';
-@import '../monokaiSublime.scss';
 
 .editor {
   width: 883px;
@@ -102,6 +101,8 @@
       counter-reset: line;
       position: relative;
       z-index: 9999;
+      font-size: 12px;
+      line-height: 16px;
 
       a {
         color: $white;
@@ -113,8 +114,6 @@
       }
 
       p {
-        font-size: 12px;
-        line-height: 16px;
         padding: 0 10px 0 50px;
         margin: 0;
 

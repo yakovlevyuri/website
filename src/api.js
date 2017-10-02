@@ -1,20 +1,11 @@
-import Axios from 'axios';
-import {
-  BASE_URL,
-  INSTAGRAM_URL
-} from './appConfig';
+import ApolloClient, { createNetworkInterface } from 'apollo-client';
 
-export const api = Axios.create({
-  baseURL: BASE_URL,
-  headers: {
-    'Content-Type': 'application/json'
-  }
+import { BASE_URL } from './appConfig';
+
+const networkInterface = createNetworkInterface({
+  uri: BASE_URL,
 });
 
-export const instagram = Axios.create({
-  baseURL: INSTAGRAM_URL,
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  withCredentials: true
+export const apolloClient = new ApolloClient({
+  networkInterface,
 });

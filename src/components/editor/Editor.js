@@ -1,42 +1,41 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-/*import { Scrollbars } from 'react-custom-scrollbars';*/
+import injectSheet from 'react-jss';
 
-/*import BioContainer from './bio/BioContainer';*/
-import WorkContainer from './work/WorkContainer';
-/*import EducationContainer from './education/EducationContainer';*/
+import TopBar from './topBar/TopBar';
+import CodeBox from './codeBox/CodeBox';
 
-import '../../components/common/assets/styles/modules/editor.css';
+const styles = theme => ({
+  editor: {
+    width: '1270px',
+    boxShadow: '0 0 90px 1px rgba(0, 0, 0, 0.3)',
 
-export default class Editor extends React.Component {
+    '@font-face': {
+      fontFamily: 'latolight',
+      src: `url('../common/assets/fonts/lato/lato-light-webfont.woff2') format('woff2'), 
+          url(../common/assets/fonts/lato/lato-light-webfont.woff') format('woff')`,
+      fontWeight: 'normal',
+      fontStyle: 'normal',
+    },
+  },
+});
+
+class Editor extends Component {
   static propTypes = {
-    data: PropTypes.object,
+    data: PropTypes.object.isRequired,
+    langChange: PropTypes.func.isRequired,
   };
 
   render() {
-    const {
-      /*bio,*/
-      workExperience,
-      /*education,*/
-    } = this.props.data;
-
-    const {
-      lang,
-    } = this.props;
+    const { data, langChange, classes } = this.props;
 
     return (
-      <div>
-        {/*<Scrollbars
-          autoHide={true}
-          style={{ width: 700, height: 400 }}
-        >*/}
-            {/*<BioContainer bio={bio} />*/}
-
-            <WorkContainer workExperience={workExperience} lang={lang} />
-            {/*<p>&#47;&#42; Education &#42;&#47;</p>
-            <EducationContainer education={education} lang={lang}/>*/}
-        {/*</Scrollbars>*/}
+      <div className={classes.editor}>
+        <TopBar langChange={langChange} />
+        <CodeBox data={data} />
       </div>
     );
   }
 }
+
+export default injectSheet(styles)(Editor);

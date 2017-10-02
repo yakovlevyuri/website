@@ -1,13 +1,16 @@
-import React from 'react';
-import './components/common/assets/styles/front.css';
+import React, { Component } from 'react';
+/*import './components/common/assets/styles/front.css';*/
 
-export default class App extends React.Component {
+import HomePage from './pages/HomePage';
+
+class App extends Component {
   render() {
     return (
-      <div className='wrapper'>
-        {this.props.children}
+      <div className="wrapper">
+        <HomePage />
       </div>
     );
   }
 }
 
+export default App;

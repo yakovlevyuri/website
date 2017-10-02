@@ -8,46 +8,42 @@ export const requestJson = createAction(REQUEST_JSON);
 export const receiveJson = createAction(RECEIVE_JSON);
 
 export const fetchJson = () => {
-  return (dispatch) => {
+  return dispatch => {
     dispatch(requestJson());
 
-    return api.get('data.json').then(
-      (response) => dispatch(receiveJson(
-        response.data
-      )),
-      (error) => dispatch(receiveJson(
-        error,
-      ))
-    );
+    return api
+      .get('data.json')
+      .then(
+        response => dispatch(receiveJson(response.data)),
+        error => dispatch(receiveJson(error)),
+      );
   };
 };
 
 export const getInstagramImages = () => {
-  return (dispatch) => {
+  return dispatch => {
     return instagram.get('').then(
-      (response) => {
+      response => {
         console.log(response);
         return response.data;
       },
-      (error) => {
+      error => {
         console.log(error);
         return error;
-      }
+      },
     );
   };
 };
 
 export const changeLang = () => {
-  return (dispatch) => {
+  return dispatch => {
     dispatch(requestJson());
 
-    return api.get('data.json').then(
-      (response) => dispatch(receiveJson(
-        response.data
-      )),
-      (error) => dispatch(receiveJson(
-        error,
-      ))
-    );
+    return api
+      .get('data.json')
+      .then(
+        response => dispatch(receiveJson(response.data)),
+        error => dispatch(receiveJson(error)),
+      );
   };
 };
