@@ -186,16 +186,3 @@ footer {
   padding: 20px 0; }
   footer .wrapper {
     padding: 0; }
-
-.work-experience-item {
-  border: 1px solid #404649;
-  padding: 20px 30px;
-  margin-bottom: 20px;
-  color: #A5ACB0; }
-  .work-experience-item .work-experience-item-name {
-    font-size: 22px;
-    margin-right: 20px; }
-    .work-experience-item .work-experience-item-name a {
-      color: #FFF; }
-  .work-experience-item .work-experience-item-years {
-    color: #A5ACB0; }

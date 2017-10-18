@@ -2,23 +2,19 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import injectSheet from 'react-jss';
 
-import TopBar from './topBar/TopBar';
+import TabBar from './tabBar/TabBar';
 import CodeBox from './codeBox/CodeBox';
 
-const styles = theme => ({
+const styles = {
   editor: {
-    width: '1270px',
-    boxShadow: '0 0 90px 1px rgba(0, 0, 0, 0.3)',
-
-    '@font-face': {
-      fontFamily: 'latolight',
-      src: `url('../common/assets/fonts/lato/lato-light-webfont.woff2') format('woff2'), 
-          url(../common/assets/fonts/lato/lato-light-webfont.woff') format('woff')`,
-      fontWeight: 'normal',
-      fontStyle: 'normal',
-    },
+    width: '1100px',
+    /*boxShadow: '0 0 90px 1px rgba(0, 0, 0, 0.3)',*/
+    borderRadius: 5,
+    border: '1px solid #333',
+    boxShadow: '1px 2px 5px 0 rgba(0, 0, 0, 0.1)',
+    backgroundColor: '#242420',
   },
-});
+};
 
 class Editor extends Component {
   static propTypes = {
@@ -31,7 +27,7 @@ class Editor extends Component {
 
     return (
       <div className={classes.editor}>
-        <TopBar langChange={langChange} />
+        <TabBar langChange={langChange} />
         <CodeBox data={data} />
       </div>
     );

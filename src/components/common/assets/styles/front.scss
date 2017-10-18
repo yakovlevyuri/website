@@ -115,25 +115,3 @@ footer {
     padding: 0;
   }
 }
-
-
-
-.work-experience-item {
-  border: 1px solid $gray-main;
-  padding: 20px 30px;
-  margin-bottom: 20px;
-  color: $gray-dark;
-
-  .work-experience-item-name {
-    font-size: 22px;
-    margin-right: 20px;
-
-    a {
-      color: $white;
-    }
-  }
-
-  .work-experience-item-years {
-    color: $gray-dark;
-  }
-}

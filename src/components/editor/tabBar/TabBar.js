@@ -7,11 +7,6 @@ import injectSheet from 'react-jss';
 }*/
 
 const styles = {
-  titleBar: {
-    width: '100%',
-    height: 'auto',
-    display: 'block',
-  },
   tabBar: {
     display: 'flex',
     position: 'relative',
@@ -51,22 +46,29 @@ const styles = {
     margin: '0 0.66em',
   },
 
-
+  header: {
+    display: 'flex',
+  },
 
   icon: {
     display: 'inline-block',
     width: 12,
     height: 12,
-    position: 'absolute',
     top: '50%',
     transform: 'translateY(-50%)',
     borderRadius: '50%',
+    marginLeft: 10,
 
     '&.close': {
-      backgroundColor: 'rgb(255, 95, 86)',
-      left: 13,
-    }
-  }
+      backgroundColor: '#ED6B60',
+    },
+    '&.minimize': {
+      backgroundColor: '#F6BE4F',
+    },
+    '&.fullScreen': {
+      backgroundColor: '#64C957',
+    },
+  },
 };
 
 class TopBar extends Component {
@@ -102,18 +104,18 @@ class TopBar extends Component {
 
     return (
       <div>
-        <div className="header">
+        <div className={classes.header}>
           <span className={`${classes.icon} close`} />
           <span className={`${classes.icon} minimize`} />
           <span className={`${classes.icon} fullScreen`} />
-          <div className="title">bash</div>
         </div>
-
-        <ul className={classes.tabBar}>
-          {this.generateTab('english', 'english.json')}
-          {this.generateTab('czech', 'czech.json')}
-          {this.generateTab('russian', 'russian.json')}
-        </ul>
+        <div>
+          <ul className={classes.tabBar}>
+            {this.generateTab('english', 'english.json')}
+            {this.generateTab('czech', 'czech.json')}
+            {this.generateTab('russian', 'russian.json')}
+          </ul>
+        </div>
       </div>
     );
   }

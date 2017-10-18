@@ -1,10 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import injectSheet from 'react-jss';
 
 import Hightlight from 'react-syntax-highlighter';
 import ErrorBoundary from '../../ErrorBoundary';
 
 import { monokaiSublime } from 'react-syntax-highlighter/dist/styles';
+
+const styles = {
+  codeBox: {
+    padding: '.5em 0 2.5em',
+  },
+  pre: {
+    margin: 0,
+  },
+};
 
 class CodeBox extends Component {
   static propTypes = {
@@ -68,7 +78,7 @@ class CodeBox extends Component {
 
   render() {
     return (
-      <div className="code-box">
+      <div className={this.props.classes.codeBox}>
         <ErrorBoundary>
           <Hightlight
             language="json"
@@ -92,6 +102,7 @@ class CodeBox extends Component {
               display: 'block',
               fontFamily: 'inherit',
             }}
+            className={this.props.classes.pre}
           >
             {this.props.data.loading
               ? 'Loading'
@@ -103,4 +114,4 @@ class CodeBox extends Component {
   }
 }
 
-export default CodeBox;
+export default injectSheet(styles)(CodeBox);

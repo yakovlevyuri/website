@@ -68,7 +68,7 @@
       margin-right: 90px; }
   .editor .code-box {
     padding: 10px 0;
-    /*height: 490px;*/
+    height: 490px;
     width: 883px;
     background-color: #262721;
     position: relative; }

@@ -18,7 +18,7 @@ class HomePage extends Component {
     const { lang } = this.state;
 
     return (
-      <div>
+      <div className="homepage">
         <EditorContainer lang={lang} langChange={this.langChange} />
         <Downloads />
         <Footer />
