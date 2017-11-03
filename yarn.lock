@@ -1765,7 +1765,7 @@ path-type@^1.0.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-perfect-scrollbar@^0.8.1:
+perfect-scrollbar@0.8.1:
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/perfect-scrollbar/-/perfect-scrollbar-0.8.1.tgz#9cdcb50e72740b8da7e5a4a534f36c35f4e0a613"
 
