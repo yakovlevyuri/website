@@ -77,8 +77,9 @@ class CodeBox extends Component {
   };
 
   render() {
+    const { data, classes } = this.props;
     return (
-      <div className={this.props.classes.codeBox}>
+      <div className={classes.codeBox}>
         <ErrorBoundary>
           <Hightlight
             language="json"
@@ -94,17 +95,19 @@ class CodeBox extends Component {
               fontSize: '13px',
               lineHeight: '18px',
               display: 'block',
-              fontFamily: 'inherit',
             }}
             lineStyle={{
               fontSize: '13px',
               lineHeight: '18px',
               display: 'block',
-              fontFamily: 'inherit',
+              textAlign: 'left',
+              font: `13px Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono,
+        Courier New, monospace, serif`,
             }}
-            className={this.props.classes.pre}
+            className={classes.pre}
           >
-            {this.props.data.loading
+            {data.loading
               ? 'Loading'
               : JSON.stringify(this.createCodeString(), null, 2)}
           </Hightlight>

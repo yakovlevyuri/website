@@ -8,18 +8,21 @@ import Editor from './Editor';
 
 class EditorContainer extends Component {
   static propTypes = {
-    data: PropTypes.object.isRequired,
+    allPostsQuery: PropTypes.object.isRequired,
   };
 
   render() {
-    const { data, langChange } = this.props;
+    console.log(this.props);
+    const { allPostsQuery, langChange } = this.props;
 
-    return <Editor data={data} langChange={langChange} />;
+    return <Editor data={allPostsQuery} langChange={langChange} />;
   }
 }
 
 export default graphql(FEED_QUERY, {
+  name: 'allPostsQuery',
   options: props => ({
+    fetchPolicy: 'network-only',
     variables: {
       lang: props.lang,
     },

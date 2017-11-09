@@ -6,21 +6,27 @@ import HomePage from './pages/HomePage';
 
 const styles = {
   '@global': {
-    body: {
+    '*': {
       margin: 0,
       padding: 0,
-      /*backgroundColor: 'black',*/
+      boxSizing: 'border-box',
+    },
+    body: {
+      height: '100%',
+      font: `13px Menlo, Monaco, Lucida Console, Liberation Mono,
+        DejaVu Sans Mono, Bitstream Vera Sans Mono,
+        Courier New, monospace, serif`,
+    },
+    a: {
+      color: '#22BAD9',
+      '-webkit-tap-highlight-color': 'rgba(0,0,0,0)',
     },
   },
 };
 
 class App extends Component {
   render() {
-    return (
-      <div className="wrapper">
-        <HomePage />
-      </div>
-    );
+    return <HomePage />;
   }
 }
 

@@ -1,30 +1,46 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import injectSheet from 'react-jss';
 
-/*import Header from '../components/header/Header';*/
-import EditorContainer from '../components/editor/EditorContainer';
-import Downloads from '../components/downloads/Downloads';
-import Footer from '../components/footer/Footer';
+import Info from '../components/info/Info';
+
+const styles = {
+  home: {
+    overflow: 'hidden',
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    top: '-60px',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  wrapper: {
+    maxWidth: '70%',
+    alignSelf: 'center',
+    textAlign: 'center',
+  },
+};
 
 class HomePage extends Component {
-  state = { lang: 'english' };
-
-  langChange = lang => {
-    return this.setState(() => {
-      return { lang };
-    });
+  static propTypes = {
+    classes: PropTypes.object.isRequired,
   };
 
   render() {
-    const { lang } = this.state;
+    const { classes } = this.props;
 
     return (
-      <div className="homepage">
-        <EditorContainer lang={lang} langChange={this.langChange} />
-        <Downloads />
-        <Footer />
+      <div className={classes.home}>
+        <div className={classes.wrapper}>
+          <Info
+            name="Yuri Yakovlev"
+            position="Full Stack Javascript Developer"
+          />
+        </div>
       </div>
     );
   }
 }
 
-export default HomePage;
+export default injectSheet(styles)(HomePage);

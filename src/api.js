@@ -1,11 +1,10 @@
-import ApolloClient, { createNetworkInterface } from 'apollo-client';
+import { ApolloClient } from 'apollo-client';
+import { HttpLink } from 'apollo-link-http';
+import { InMemoryCache } from 'apollo-cache-inmemory';
 
 import { BASE_URL } from './appConfig';
 
-const networkInterface = createNetworkInterface({
-  uri: BASE_URL,
-});
-
 export const apolloClient = new ApolloClient({
-  networkInterface,
+  link: new HttpLink({ uri: BASE_URL }),
+  cache: new InMemoryCache(),
 });

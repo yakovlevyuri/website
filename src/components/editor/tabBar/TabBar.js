@@ -87,9 +87,9 @@ class TopBar extends Component {
 
   generateTab = (id, title) => (
     <li
-      className={`${this.props.classes.tab} ${id === this.state.active
-        ? 'active'
-        : ''}`}
+      className={`${this.props.classes.tab} ${
+        id === this.state.active ? 'active' : ''
+      }`}
       title={title}
       onClick={this.onLangChange}
     >
