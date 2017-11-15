@@ -1,34 +1,35 @@
 {
   "name": "yakovlevyuri-com",
-  "version": "1.0.0",
-  "description": "This is the source code of my personal website",
-  "author": "Yuri Yakovlev",
-  "email": "contact@yakovlevyuri.com",
-  "url": "http://yakovlevyuri.com",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yakovlevyuri/yakovlevyuri.com.git"
-  },
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "animate.css": "^3.2.3",
-    "highlightjs": "^9.10.0",
-    "instafeed.js": "^1.3.2",
-    "jquery": "^3.2.1",
-    "jquery-slimscroll": "^1.3.8",
-    "normalize-css": "^2.3.1",
-    "perfect-scrollbar": "0.8.1"
+    "apollo-cache-inmemory": "^1.1.0",
+    "apollo-client": "^2.0.2",
+    "apollo-link-http": "^1.2.0",
+    "dotenv": "^4.0.0",
+    "graphql": "^0.11.7",
+    "graphql-tag": "^2.5.0",
+    "highlight.js": "^9.12.0",
+    "next": "^4.2.0-canary.1",
+    "nprogress": "^0.2.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1",
+    "react-apollo": "^2.0.1",
+    "react-dom": "^16.1.1",
+    "react-ga": "^2.3.5",
+    "react-syntax-highlighter": "^5.8.0",
+    "styled-jsx": "^2.2.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-less": "^3.3.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1",
-    "gulp-uglify": "^3.0.0",
-    "lesshat": "^4.1.0"
+    "babel-plugin-inline-dotenv": "^1.1.1",
+    "babel-plugin-transform-inline-environment-variables": "^0.2.0",
+    "prettier": "^1.8.2"
   },
   "scripts": {
-    "build": "gulp build"
+    "dev": "next",
+    "build": "next build",
+    "start": "NODE_ENV=production next start",
+    "deploy": "now --dotenv",
+    "prettier": "prettier --single-quote --trailing-comma all --write '{src,pages}/**/*.js'"
   }
 }
