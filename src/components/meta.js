@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Head from 'next/head';
 import Router from 'next/router';
 import NProgress from 'nprogress';
@@ -18,7 +18,7 @@ class Meta extends Component {
 
   render() {
     return (
-      <div>
+      <Fragment>
         <Head>
           <title>Yuri Yakovlev &ndash; Full Stack JavaScript Developer</title>
           <meta
@@ -72,7 +72,7 @@ class Meta extends Component {
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
           }
         `}</style>
-      </div>
+      </Fragment>
     );
   }
 }

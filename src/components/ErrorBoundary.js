@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -16,14 +16,14 @@ class ErrorBoundary extends Component {
   render() {
     if (this.state.errorInfo) {
       return (
-        <div>
+        <Fragment>
           <h2>Something went wrong.</h2>
           <details style={{ whiteSpace: 'pre-wrap' }}>
             {this.state.error && this.state.error.toString()}
             <br />
             {this.state.errorInfo.componentStack}
           </details>
-        </div>
+        </Fragment>
       );
     }
 

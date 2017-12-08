@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
 const Info = ({ name, position }) => (
-  <div>
+  <Fragment>
     <img className="avatar" src="/static/images/avatar@2x.jpg" alt="Avatar" />
     <h1 className="h1">{name}</h1>
     <h2 className="h2">{position}</h2>
@@ -56,7 +56,7 @@ const Info = ({ name, position }) => (
         margin-bottom: 10px;
       }
     `}</style>
-  </div>
+  </Fragment>
 );
 
 Info.propTypes = {
