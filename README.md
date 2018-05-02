@@ -1,7 +1,2 @@
-My homepage on the internet
+My homepage on the internet [http://yakovlevyuri.com/](http://yakovlevyuri.com/)
 ======================
-
-This is the source code of my personal website -- [http://yakovlevyuri.com/](http://yakovlevyuri.com/).
-
-### React.js version
-0.1

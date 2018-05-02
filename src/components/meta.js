@@ -12,7 +12,7 @@ class Meta extends Component {
   componentDidMount() {
     if (process.env.NODE_ENV === 'production') {
       ReactGA.initialize(process.env.GA_TRACKING_ID);
-      ReactGA.pageview(document.location.pathname);
+      ReactGA.pageview(window.location.pathname + window.location.search);
     }
   }
 

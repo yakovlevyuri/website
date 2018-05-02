@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 
 const Info = ({ name, position }) => (
   <Fragment>
-    <img className="avatar" src="/static/images/avatar@2x.jpg" alt="Avatar" />
+    <img
+      className="photo"
+      src="/static/images/photo.jpg"
+      alt="Yuri Yakovlev photo"
+    />
     <h1 className="h1">{name}</h1>
     <h2 className="h2">{position}</h2>
     <p>
@@ -47,7 +51,7 @@ const Info = ({ name, position }) => (
         font-size: 13px;
         font-weight: normal;
       }
-      .avatar {
+      .photo {
         width: 120px;
         height: 120px;
         box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2),
