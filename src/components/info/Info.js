@@ -1,7 +1,13 @@
-import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
+// @flow
 
-const Info = ({ name, position }) => (
+import React, { Fragment } from 'react';
+
+type Props = {|
+  name: string,
+  position: string,
+|};
+
+const Info = ({ name, position }: Props) => (
   <Fragment>
     <img
       className="photo"
@@ -62,10 +68,5 @@ const Info = ({ name, position }) => (
     `}</style>
   </Fragment>
 );
-
-Info.propTypes = {
-  name: PropTypes.string.isRequired,
-  position: PropTypes.string.isRequired,
-};
 
 export default Info;

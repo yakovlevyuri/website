@@ -1,3 +1,5 @@
+// @flow
+
 import React, { Component, Fragment } from 'react';
 import Head from 'next/head';
 import Router from 'next/router';
@@ -8,9 +10,10 @@ Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
 
-class Meta extends Component {
+class Meta extends Component<null> {
   componentDidMount() {
     if (process.env.NODE_ENV === 'production') {
+      console.log(process.env.GA_TRACKING_ID);
       ReactGA.initialize(process.env.GA_TRACKING_ID);
       ReactGA.pageview(window.location.pathname + window.location.search);
     }

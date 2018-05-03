@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "8"
+  - '8'
 
 cache:
   yarn: true
@@ -13,13 +13,13 @@ notifications:
     on_failure: always
 
 stages:
-  - compile
+  - build
   - name: deploy
     if: branch = master
 
 jobs:
   include:
-  - stage: compile
+  - stage: build
     script:
     - yarn
     - yarn build
@@ -29,7 +29,3 @@ jobs:
     after_script:
     - yarn alias
     - yarn clear-deployments
-
-env:
-  global:
-    secure: K/gBBOKXRxv8jjApiWuEYDlUfEjbh0iUKHkvYGoqf3BUVcNo6Mpyt8BPkMRPRi0X21/9CMRg73GMinrv2m0/YQQdMb18bHM5ygOyQ8bNFTQOkXl7tgJTvzwOoa/mIXalYajBYaq7Mngv4VOsKJR5ehZNhixRHfu0zLMdOUlbI0+BhZOm5/FE1APfcr/EFOUd3QMIMcjynABQpFSmhEUWKWPWVYmfqg5ihe0xo2/0xRoitVAsw5RbhoyhKUuj9bhoG6EpAoKY+EjSi1yeap8B0KzcjvG1saTj9uYTjNHnAkMXoljoyJDFf/dfLPr3pFIDKvJjRFG70pkWYIIGZOWlflxbCDdW8P5hUxpFmyOitwTS443yWkwwQMNM+PNdQ++cOXBNr6w3wqE8Cwh7ec+Lt6h4syhhXUVkvxfsnLuENb4NHt8HV3GYAxf1CtB/QBcYGYsibsjk00JnujCOBPHqdBzhZIijXVb33l0DAEqZG0SE3fSfDYqOJ7GA7JyeAW0KGcWYGHclHUjngLauvLlPcKm+vdCAE1M0NR1kPB76lEG6phGLl/ZdJatL2k0t1Afl//Icid+OxPGLpqhTr2Cbxn+VVgJu2GrLgI0891vdRb1SCyAiQKhx7vnRf91NBzLAN/d8grt2CbVGK2Q8pPj/50QTKtYojwFVLWXkQzEKBIM=

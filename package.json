@@ -9,24 +9,32 @@
     "babel-plugin-transform-inline-environment-variables": "^0.4.0",
     "next": "^6.0.0",
     "nprogress": "^0.2.0",
-    "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-ga": "^2.5.0",
     "styled-jsx": "^2.2.6"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-prettier": "^2.6.0",
+    "flow-bin": "^0.71.0",
     "now": "^11.1.7",
     "prettier": "^1.12.1"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "NODE_ENV=production next start",
-    "deploy": "now -e NODE_ENV=production --token $NOW_TOKEN --npm",
+    "start": "next start",
+    "deploy": "now -e NODE_ENV=production -t $NOW_TOKEN --npm",
     "alias": "now alias --token=$NOW_TOKEN",
     "clear-deployments": "now rm --safe --yes yakovlevyuri-com --token=$NOW_TOKEN",
-    "prettier": "prettier --single-quote --trailing-comma all --write '{src,pages}/**/*.js'"
+    "eslint": "eslint .",
+    "flow": "flow",
+    "test-ci": "yarn eslint && yarn flow"
   },
   "now": {
     "name": "yakovlevyuri-com",
