@@ -13,15 +13,19 @@ notifications:
     on_failure: always
 
 stages:
+  - test
   - build
   - name: deploy
     if: branch = master
 
 jobs:
   include:
+  - stage: test
+    script:
+    - yarn test-ci
+
   - stage: build
     script:
-    - yarn
     - yarn build
 
   - stage: deploy
@@ -29,3 +33,7 @@ jobs:
     after_script:
     - yarn alias
     - yarn clear-deployments
+
+env:
+  global:
+  - secure: SZKNd15nPY9ibk5rynyxGHcI9JSMOsB/AnjCEffZtZAul/GlAh7IQRN3YW9OwTRfQSPRT1HtkE6QRveb1LhqQNwUZhrXagaK46xBgPHHnr/zuT1yhItOpzHFF/d7OFFy+imXHJ2qaxLC6Yqjb9z7lzFBd3iOVj93dPHtXfVusyYgIE40bKMmRHzCotQyP2QmbXHVGeepwPIaNYhVmL1+USWWzxTbR6CZCEv6eGxRQfP7pImAJT0niCgs9D723DVuawd9DXdX/zdr+Ni8/7JbtsWF8trZxqGoj0ftiXDGaHl1hyprmtRYrwqB8C80VgRofHhxBYqtFUhbKXvLiRWPliJTjYjRog9izGPKbv6S2feEusWsbiP9m0h53VHhyzPE49MEWnzaK8AnvhHzwJVoTXvMpIFN4F5HRMkra9GSjtM2hStkc2YdA12WpK9oy0Uv+IkF96FmEAGQsQYm7qz3Gka2s+GiJty7tF1CB8V4H37h0KBj3TpR81d0PBYaKUP0wrXcoq4Z2Rm/oGEX/iU1Z2gf1CeLHcoEKY+s0yEom/Ff8p3z6zpYOzdwI9ZFROFtC6l0i4sS3/xHdrEzrDsghVtBSNAACkY/va8kUCbLJAa+OyCTaJWhFjYwe300xq0K775TngJdBcrT+jWnXGmIjDaR4SCYavs3sfACwBtghwU=
