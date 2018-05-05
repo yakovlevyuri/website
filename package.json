@@ -6,7 +6,8 @@
   "author": "Yuri Yakovlev <contact@yakovlevyuri.com> (https://yakovlevyuri.com/)",
   "dependencies": {
     "babel-plugin-inline-dotenv": "^1.1.2",
-    "babel-plugin-transform-inline-environment-variables": "^0.4.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.1",
     "next": "^6.0.0",
     "nprogress": "^0.2.0",
     "react": "^16.3.2",
@@ -16,7 +17,6 @@
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
-    "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-flowtype": "^2.46.3",
@@ -33,11 +33,7 @@
     "alias": "now alias --token=$NOW_TOKEN",
     "clear-deployments": "now rm --safe --yes yakovlevyuri-com --token=$NOW_TOKEN",
     "eslint": "eslint .",
-    "flow": "flow",
+    "flow": "flow check --color=always",
     "test-ci": "yarn eslint && yarn flow"
-  },
-  "now": {
-    "name": "yakovlevyuri-com",
-    "alias": "yakovlevyuri.com"
   }
 }

@@ -1,0 +1,7 @@
+{
+  "name": "yakovlevyuri-com",
+  "alias": "yakovlevyuri.com",
+  "env": [
+    "$GA_TRACKING_ID"
+  ]
+}

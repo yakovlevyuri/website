@@ -13,13 +13,14 @@ Router.onRouteChangeError = () => NProgress.done();
 class Meta extends Component<null> {
   componentDidMount() {
     if (process.env.NODE_ENV === 'production') {
-      console.log(process.env.GA_TRACKING_ID);
       ReactGA.initialize(process.env.GA_TRACKING_ID);
       ReactGA.pageview(window.location.pathname + window.location.search);
     }
   }
 
   render() {
+    console.log(process.env.NODE_ENV);
+    console.log(process.env.GA_TRACKING_ID);
     return (
       <Fragment>
         <Head>
