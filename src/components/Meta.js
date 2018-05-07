@@ -1,63 +1,47 @@
 // @flow
 
-import React, { Fragment } from 'react';
+import React from 'react';
 import Head from 'next/head';
 
 type Props = {
+  title: string,
   description: string,
   keywords: string,
+  ogTitle: string,
+  ogType: string,
+  ogUrl: string,
+  ogImage: string,
+  ogDescription: string,
+  viewport: string,
+  faviconUrl: string,
 };
 
-const Meta = ({ description, keywords }: Props) => (
-  <Fragment>
-    <Head>
-      <title>Yuri Yakovlev &ndash; Full Stack JavaScript Developer</title>
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta property="og:site_name" content="https://yakovlevyuri.com" />
-      <meta
-        property="og:title"
-        content="Yuri Yakovlev's homepage on the internet"
-      />
-      <meta
-        property="og:description"
-        content="Full Stack JavaScript Developer based in Prague, Czechia"
-      />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://yakovlevyuri.com/" />
-      <meta
-        property="og:image"
-        content="https://yakovlevyuri.com/static/images/meta.jpg"
-      />
-      <meta property="fb:admins" content="1118014257" />
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no"
-      />
-      <meta name="theme-color" content="#000000" />
-      <link rel="shortcut icon" href="/static/images/favicon.ico" />
-    </Head>
+const Meta = ({
+  title,
+  description,
+  keywords,
+  ogTitle,
+  ogType,
+  ogUrl,
+  ogImage,
+  ogDescription,
+  viewport,
+  faviconUrl,
+}: Props) => (
+  <Head>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="viewport" content={viewport} />
 
-    <style jsx global>{`
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+    <meta property="og:title" content={ogTitle} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={ogUrl} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:description" content={ogDescription} />
 
-      body {
-        font: 13px Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-          serif;
-        height: 100%;
-      }
-
-      a {
-        color: #22bad9;
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-      }
-    `}</style>
-  </Fragment>
+    <link rel="shortcut icon" href={faviconUrl} />
+  </Head>
 );
 
 export default Meta;
