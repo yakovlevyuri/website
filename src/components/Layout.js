@@ -60,11 +60,6 @@ class Layout extends React.Component<Props> {
               serif;
             height: 100%;
           }
-
-          a {
-            color: #22bad9;
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-          }
         `}</style>
 
         <style jsx>{`

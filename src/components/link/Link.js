@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react';
+import React, { Fragment } from 'react';
 
 type Props = {
   url: string,
@@ -11,17 +11,33 @@ type Props = {
   onClick?: () => void,
 };
 
-const Link = ({ url, title, label, newWindow, className, onClick }: Props) => {
+const Link = ({
+  url,
+  title,
+  label,
+  newWindow,
+  className = '',
+  onClick,
+}: Props) => {
   return (
-    <a
-      href={url}
-      title={title}
-      {...(newWindow ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-      {...(className ? { className } : {})}
-      onClick={onClick}
-    >
-      {label}
-    </a>
+    <Fragment>
+      <a
+        href={url}
+        title={title}
+        {...(newWindow ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+        className={`link ${className}`}
+        onClick={onClick}
+      >
+        {label}
+      </a>
+
+      <style jsx>{`
+        a.link {
+          color: #22bad9;
+          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+      `}</style>
+    </Fragment>
   );
 };
 
