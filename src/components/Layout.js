@@ -31,7 +31,7 @@ class Layout extends React.Component<Props> {
     return (
       <React.Fragment>
         <Meta
-          description="Yuri Yakovlev &ndash; Full Stack JavaScript Developer based in Prague, Czechia"
+          description="Full Stack JavaScript Developer based in Prague, Czechia"
           keywords="personal website, frontend developer, javascript, Czechia, Prague"
         />
 
