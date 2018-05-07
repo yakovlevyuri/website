@@ -52,11 +52,13 @@ const Info = ({ name, position }: Props) => (
         font-size: 14px;
         font-weight: normal;
       }
+
       h2.h2 {
         color: #a5acb0;
         font-size: 13px;
         font-weight: normal;
       }
+
       .photo {
         width: 120px;
         height: 120px;

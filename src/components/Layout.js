@@ -45,7 +45,7 @@ class Layout extends React.Component<Props> {
           faviconUrl="/static/images/favicon.ico"
         />
 
-        <div className="home">{this.props.children}</div>
+        <React.Fragment>{this.props.children}</React.Fragment>
 
         <style jsx global>{`
           * {
@@ -59,19 +59,6 @@ class Layout extends React.Component<Props> {
               DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
               serif;
             height: 100%;
-          }
-        `}</style>
-
-        <style jsx>{`
-          .home {
-            top: -60px;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            overflow: hidden;
-            position: absolute;
-            align-items: center;
-            justify-content: center;
           }
         `}</style>
       </React.Fragment>
