@@ -1,6 +1,8 @@
 // @flow
 
 import React, { Fragment } from 'react';
+import { logEvent } from '../../utils/analytics';
+import Link from '../link/Link';
 
 type Props = {|
   name: string,
@@ -18,33 +20,31 @@ const Info = ({ name, position }: Props) => (
     <h2 className="h2">{position}</h2>
     <p>
       Live in Prague, work at&nbsp;
-      <a
-        href="https://kiwi.com"
+      <Link
+        url="https://kiwi.com"
         title="Kiwi.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Kiwi.com
-      </a>
+        label="Kiwi.com"
+        newWindow
+        onClick={() => logEvent('Link', 'Clicked', 'Current Work place')}
+      />
     </p>
     <p>
       Download My Résumé in{' '}
-      <a
-        href="/static/cv/yakovlev-yuri.pdf"
-        target="_blank"
-        className="disabled"
-        rel="noopener noreferrer"
-      >
-        JSON
-      </a>{' '}
+      <Link
+        url="/static/cv/yakovlev-yuri.pdf"
+        title="My Résumé in JSON response"
+        label="JSON"
+        newWindow
+        onClick={() => logEvent('Link', 'Clicked', 'JSON CV')}
+      />{' '}
       format<br />or find me on{' '}
-      <a
-        href="https://cz.linkedin.com/in/yakovlevyuri"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        LinkedIn
-      </a>
+      <Link
+        url="https://cz.linkedin.com/in/yakovlevyuri"
+        title="LinkedIn"
+        label="LinkedIn"
+        newWindow
+        onClick={() => logEvent('Link', 'Clicked', 'LinkedIn page')}
+      />
     </p>
 
     <style jsx>{`

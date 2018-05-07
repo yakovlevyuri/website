@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import Layout from '../src/components/layout/Layout';
+import Layout from '../src/components/Layout';
 import Info from '../src/components/info/Info';
 
 export default () => (
