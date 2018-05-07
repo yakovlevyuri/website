@@ -13,12 +13,17 @@ notifications:
     on_failure: always
 
 stages:
+  - test
   - build
   - name: deploy
     if: branch = master
 
 jobs:
   include:
+  - stage: test
+    script:
+    - yarn test-ci
+
   - stage: build
     script:
     - yarn build

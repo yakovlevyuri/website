@@ -1,9 +1,16 @@
 // @flow
 
 import * as React from 'react';
+import Router from 'next/router';
+import NProgress from 'nprogress';
 
 import { initGA, logPageView } from '../utils/analytics';
-import Meta from './meta';
+import Meta from './Meta';
+import config from '../../config';
+
+Router.onRouteChangeStart = () => NProgress.start();
+Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done();
 
 type Props = {
   children?: React.Node,
@@ -11,7 +18,7 @@ type Props = {
 
 class Layout extends React.Component<Props> {
   componentDidMount() {
-    if (process.env.NODE_ENV === 'production') {
+    if (config.NODE_ENV === 'production') {
       if (!window.GA_INITIALIZED) {
         initGA();
         window.GA_INITIALIZED = true;
@@ -23,7 +30,10 @@ class Layout extends React.Component<Props> {
   render() {
     return (
       <React.Fragment>
-        <Meta />
+        <Meta
+          description="Yuri Yakovlev &ndash; Full Stack JavaScript Developer based in Prague, Czechia"
+          keywords="personal website, frontend developer, javascript, Czechia, Prague"
+        />
 
         <div className="home">{this.props.children}</div>
 

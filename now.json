@@ -1,7 +1,10 @@
 {
   "name": "yakovlevyuri-com",
   "alias": "yakovlevyuri.com",
-  "env": [
-    "$GA_TRACKING_ID"
-  ]
+  "scale": {
+    "bru1": {
+      "min": 2,
+      "max": 3
+    }
+  }
 }

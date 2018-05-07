@@ -21,6 +21,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-flowtype": "^2.46.3",
     "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.7.0",
     "flow-bin": "^0.71.0",
     "now": "^11.1.7",
     "prettier": "^1.12.1"
@@ -29,7 +30,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy": "now -e NODE_ENV=production --token $NOW_TOKEN --npm",
+    "deploy": "now -e NODE_ENV=production -e GA_TRACKING_ID=$GA_TRACKING_ID --token $NOW_TOKEN --npm",
     "alias": "now alias --token=$NOW_TOKEN",
     "clear-deployments": "now rm --safe --yes yakovlevyuri-com --token=$NOW_TOKEN",
     "eslint": "eslint .",

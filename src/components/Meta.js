@@ -2,25 +2,18 @@
 
 import React, { Fragment } from 'react';
 import Head from 'next/head';
-import Router from 'next/router';
-import NProgress from 'nprogress';
 
-Router.onRouteChangeStart = () => NProgress.start();
-Router.onRouteChangeComplete = () => NProgress.done();
-Router.onRouteChangeError = () => NProgress.done();
+type Props = {
+  description: string,
+  keywords: string,
+};
 
-const Meta = () => (
+const Meta = ({ description, keywords }: Props) => (
   <Fragment>
     <Head>
       <title>Yuri Yakovlev &ndash; Full Stack JavaScript Developer</title>
-      <meta
-        name="description"
-        content="Yuri Yakovlev &ndash; Full Stack JavaScript Developer based in Prague, Czechia"
-      />
-      <meta
-        name="keywords"
-        content="Yuri Yakovlev, personal website, frontend developer, javascript, Czech Republic, Prague"
-      />
+      <meta name="description" content={description} />
+      <meta name="keywords" content={keywords} />
       <meta property="og:site_name" content="https://yakovlevyuri.com" />
       <meta
         property="og:title"

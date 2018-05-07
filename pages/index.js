@@ -5,7 +5,7 @@ import React from 'react';
 import Layout from '../src/components/Layout';
 import Info from '../src/components/info/Info';
 
-export default () => (
+const IndexPage = () => (
   <Layout>
     <div className="wrapper">
       <Info name="Yuri Yakovlev" position="Full Stack Javascript Developer" />
@@ -20,3 +20,5 @@ export default () => (
     `}</style>
   </Layout>
 );
+
+export default IndexPage;
