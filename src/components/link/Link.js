@@ -2,14 +2,14 @@
 
 import React, { Fragment } from 'react';
 
-type Props = {
+type Props = {|
   url: string,
   title: string,
   label: string,
   newWindow?: boolean,
   className?: string,
   onClick?: () => void,
-};
+|};
 
 const Link = ({
   url,
