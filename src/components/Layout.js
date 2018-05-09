@@ -52,6 +52,7 @@ class Layout extends React.Component<Props> {
           <div className="content">
             <React.Fragment>{this.props.children}</React.Fragment>
           </div>
+
           <Footer />
         </div>
 
@@ -64,6 +65,7 @@ class Layout extends React.Component<Props> {
             box-sizing: border-box;
             font-smoothing: antialiased;
             -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
             text-rendering: optimizeLegibility;
           }
 
@@ -73,7 +75,7 @@ class Layout extends React.Component<Props> {
           }
 
           body {
-            margin: 40px;
+            margin: 20px;
             font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
               DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
               serif;
@@ -88,14 +90,15 @@ class Layout extends React.Component<Props> {
           .wrapper {
             display: grid;
             grid-gap: 20px;
-            border: 10px solid yellow;
             grid-template-columns: repeat(3, 1rf);
-            grid-template-rows: 1fr 10fr 1fr;
+            grid-template-rows: 1fr 20fr 1fr;
             grid-template-areas:
               'header header header'
               '. content .'
               'footer footer footer';
             grid-auto-flow: dense;
+            width: calc(100vw - 40px);
+            height: calc(100vh - 40px);
 
             @media screen and (max-width: 820px) {
               grid-gap: 10px;
@@ -103,11 +106,16 @@ class Layout extends React.Component<Props> {
                 'header header header'
                 'content content content'
                 'footer footer footer';
+              width: calc(100vw - 20px);
+              height: calc(100vh - 20px);
             }
           }
 
           .content {
             grid-area: content;
+            text-align: center;
+            align-self: center;
+            justify-self: center;
           }
         `}</style>
       </React.Fragment>

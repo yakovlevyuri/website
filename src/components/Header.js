@@ -8,24 +8,27 @@ import Link from './link/Link';
 const Header = () => (
   <Fragment>
     <div className="header">
-      <span>
+      <p>
         (
         <Link
           url="https://github.com/yakovlevyuri/website"
           title="Source code on Github"
-          label="src"
+          label="source code"
           newWindow
           onClick={() => logEvent('Link', 'Clicked', 'Source code on Github')}
         />)
-      </span>
+      </p>
     </div>
 
     <style jsx>{`
       .header {
-        padding: 20px;
+        padding: 10px;
         text-align: right;
         grid-area: header;
-        grid-column-start: 3;
+      }
+
+      p {
+        font-size: 0.8em;
       }
     `}</style>
   </Fragment>
