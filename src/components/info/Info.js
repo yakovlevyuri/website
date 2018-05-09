@@ -49,14 +49,18 @@ const Info = ({ name, position }: Props) => (
 
     <style jsx>{`
       h1.h1 {
-        font-size: 14px;
+        font-size: 1em;
         font-weight: normal;
       }
 
       h2.h2 {
         color: #a5acb0;
-        font-size: 13px;
+        font-size: 0.9em;
         font-weight: normal;
+      }
+
+      p {
+        font-size: 0.9em;
       }
 
       .photo {
