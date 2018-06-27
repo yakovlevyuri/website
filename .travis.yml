@@ -17,8 +17,7 @@ stages:
   - test
   - build
   - name: deploy
-    if: branch = master
-    if: (type NOT pull_request) AND branch = master
+    if: type NOT IN (push, pull_request)
 
 jobs:
   include:
