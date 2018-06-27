@@ -1,3 +1,4 @@
+conditions: v1
 language: node_js
 node_js:
   - "node"
