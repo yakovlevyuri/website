@@ -8,7 +8,7 @@
     "babel-plugin-inline-dotenv": "^1.1.2",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-plugin-transform-inline-environment-variables": "^0.4.3",
-    "next": "^6.0.3",
+    "next": "^6.1.0",
     "node-sass": "^4.9.0",
     "nprogress": "^0.2.0",
     "react": "^16.4.1",
@@ -37,7 +37,7 @@
     "alias": "now alias --token=$NOW_TOKEN",
     "clear-deployments": "now rm --safe --yes yakovlevyuri-com --token=$NOW_TOKEN",
     "eslint": "eslint .",
-    "flow": "flow check --color=always",
+    "flow": "flow check --color=always --include-warnings",
     "test-ci": "yarn eslint && yarn flow"
   }
 }
