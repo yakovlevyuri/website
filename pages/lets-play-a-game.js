@@ -63,7 +63,14 @@ class GamePage extends Component<null> {
         </UL>
         <p>
           Checked every point above carefully and pretty sure that{' '}
-          <em>I’m the guy</em> and <em>you are that 1%</em>? Please drop me an{' '}
+          <em>I’m the guy</em> and <em>you are that 1%</em>? Here is my{' '}
+          <Link
+            url="/static/cv/yakovlev-yuri.pdf"
+            title="My Résumé in JSON response"
+            label="CV"
+            newWindow
+            onClick={() => logEvent('Link', 'Clicked', 'JSON CV')}
+          />. Please drop me an{' '}
           <Link
             url="mailto:contact@yakovlevyuri.com"
             title="Drop me an email"
