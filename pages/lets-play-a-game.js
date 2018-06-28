@@ -69,13 +69,12 @@ class GamePage extends Component<null> {
             title="My Résumé in JSON response"
             label="CV"
             newWindow
-            onClick={() => logEvent('Link', 'Clicked', 'JSON CV')}
+            onClick={() => logEvent('Link', 'Clicked', 'JSON CV from GamePage')}
           />. Please drop me an{' '}
           <Link
             url="mailto:contact@yakovlevyuri.com"
             title="Drop me an email"
             label="email"
-            newWindow
             onClick={() =>
               logEvent('Link', 'Clicked', 'Contact via email from GamePage')
             }
