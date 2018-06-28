@@ -3,22 +3,23 @@
 import * as React from 'react';
 import Router from 'next/router';
 import NProgress from 'nprogress';
+import App, { Container } from 'next/app';
 
-import { initGA, logPageView } from '../utils/analytics';
-import Meta from './Meta';
-import Header from './Header';
-import Footer from './Footer';
-import config from '../../config';
+import { initGA, logPageView } from '../src/utils/analytics';
+import Meta from '../src/components/Meta';
+import Header from '../src/components/Header';
+import Footer from '../src/components/Footer';
+import config from '../config';
 
 Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
 Router.onRouteChangeError = () => NProgress.done();
 
-type Props = {|
+type LayoutProps = {|
   children?: React.Node,
 |};
 
-class Layout extends React.Component<Props> {
+class Layout extends React.Component<LayoutProps> {
   componentDidMount() {
     if (config.NODE_ENV === 'production') {
       if (!window.GA_INITIALIZED) {
@@ -97,17 +98,18 @@ class Layout extends React.Component<Props> {
               '. content .'
               'footer footer footer';
             grid-auto-flow: dense;
-            width: calc(100vw - 40px);
-            height: calc(100vh - 40px);
+            width: calc(100vw - 20px);
+            height: calc(100vh - 20px);
 
-            @media screen and (max-width: 820px) {
+            @media screen and (min-width: 820px) {
               grid-gap: 10px;
               grid-template-areas:
                 'header header header'
                 'content content content'
                 'footer footer footer';
-              width: calc(100vw - 20px);
-              height: calc(100vh - 20px);
+
+              width: calc(100vw - 40px);
+              height: calc(100vh - 40px);
             }
           }
 
@@ -123,4 +125,15 @@ class Layout extends React.Component<Props> {
   }
 }
 
-export default Layout;
+export default class MyApp extends App {
+  render() {
+    const { Component, pageProps } = this.props;
+    return (
+      <Container>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </Container>
+    );
+  }
+}

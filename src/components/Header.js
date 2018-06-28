@@ -3,7 +3,7 @@
 import React, { Fragment } from 'react';
 
 import { logEvent } from '../utils/analytics';
-import Link from './link/Link';
+import Link from './post/Link';
 
 const Header = () => (
   <Fragment>
