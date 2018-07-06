@@ -8,13 +8,12 @@
     "babel-plugin-inline-dotenv": "^1.1.2",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
     "babel-plugin-transform-inline-environment-variables": "^0.4.3",
-    "next": "^6.1.0",
-    "node-sass": "^4.9.0",
+    "next": "^6.1.1",
+    "node-sass": "^4.9.1",
     "nprogress": "^0.2.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-ga": "^2.5.3",
-    "styled-jsx": "^2.2.7",
     "styled-jsx-plugin-sass": "^0.2.4"
   },
   "devDependencies": {
@@ -25,8 +24,8 @@
     "eslint-plugin-prettier": "^2.6.1",
     "eslint-plugin-react": "^7.10.0",
     "flow-bin": "^0.75.0",
-    "now": "^11.2.4",
-    "prettier": "^1.13.6"
+    "now": "^11.2.5",
+    "prettier": "^1.13.7"
   },
   "scripts": {
     "dev": "next",
