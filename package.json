@@ -33,7 +33,7 @@
     "start": "next start",
     "deploy": "now -e NODE_ENV=production -e GA_TRACKING_ID=$GA_TRACKING_ID --token $NOW_TOKEN --npm",
     "alias": "now alias --token=$NOW_TOKEN",
-    "clear-deployments": "now rm --safe --yes yakovlevyuri-com --token=$NOW_TOKEN",
+    "clear-deployments": "now rm --safe --yes mynameisyuri-com --token=$NOW_TOKEN",
     "eslint": "eslint .",
     "flow": "flow check --color=always --include-warnings",
     "test-ci": "yarn eslint && yarn flow"

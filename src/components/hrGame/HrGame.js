@@ -72,7 +72,7 @@ class HrGame extends Component<{}> {
             onClick={() => logEvent('Link', 'Clicked', 'JSON CV from GamePage')}
           />. Please drop me an{' '}
           <Link
-            url="mailto:contact@yakovlevyuri.com"
+            url="mailto:hr@ymynameisyuri.com"
             title="Drop me an email"
             label="email"
             onClick={() =>
