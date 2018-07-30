@@ -34,14 +34,14 @@ class Layout extends React.Component<LayoutProps> {
     return (
       <React.Fragment>
         <Meta
-          title="Yuri Yakovlev - Full Stack JavaScript Developer"
+          title="Hi, my name is Yuri and I'm a Full Stack JavaScript Developer"
           description="Yuri is a JavaScript anarchist. He doesn't move tickets in Jira
             and make mistakes in Pull Requests on purpose just to test colleagues."
           keywords="Personal website, Javascript, React.js, Redux, Apollo Client, GraphQL, Node.js"
-          ogTitle="Yuri Yakovlev - Full Stack JavaScript Developer"
+          ogTitle="Hi, my name is Yuri and I'm a Full Stack JavaScript Developer"
           ogType="website"
-          ogUrl="https://yakovlevyuri.com/"
-          ogImage="https://yakovlevyuri.com/static/images/meta.jpg"
+          ogUrl="https://mynameisyuri.com/"
+          ogImage="https://mynameisyuri.com/static/images/meta.jpg"
           ogDescription="Yuri is a JavaScript anarchist. He doesn't move tickets in Jira
             and make mistakes in Pull Requests on purpose just to test colleagues."
           viewport="width=device-width, initial-scale=1, shrink-to-fit=no"

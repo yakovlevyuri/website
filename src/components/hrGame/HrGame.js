@@ -10,10 +10,7 @@ class HrGame extends Component<{}> {
   render() {
     return (
       <div>
-        <p>
-          Welcome here! My name is Yuri and I’m a Fullstack JavaScript
-          Developer.
-        </p>
+        <p>Hi! My name is Yuri and I’m a Fullstack JavaScript Developer.</p>
         <p>
           Probably you were trying to offer me an interesting job opportunity
           and most likely I redirected you to this page.
@@ -70,7 +67,8 @@ class HrGame extends Component<{}> {
             label="CV"
             newWindow
             onClick={() => logEvent('Link', 'Clicked', 'JSON CV from GamePage')}
-          />. Please drop me an{' '}
+          />
+          . Please drop me an{' '}
           <Link
             url="mailto:hr@mynameisyuri.com"
             title="Drop me an email"

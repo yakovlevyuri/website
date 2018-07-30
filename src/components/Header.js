@@ -16,7 +16,8 @@ const Header = () => (
           label="source code"
           newWindow
           onClick={() => logEvent('Link', 'Clicked', 'Source code on Github')}
-        />)
+        />
+        )
       </p>
     </div>
 

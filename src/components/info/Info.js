@@ -37,7 +37,9 @@ const Info = ({ name, position }: Props) => (
         newWindow
         onClick={() => logEvent('Link', 'Clicked', 'JSON CV')}
       />{' '}
-      format<br />or find me on{' '}
+      format
+      <br />
+      or find me on{' '}
       <Link
         url="https://cz.linkedin.com/in/yakovlevyuri"
         title="LinkedIn"
