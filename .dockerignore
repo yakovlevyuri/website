@@ -1,0 +1,7 @@
+*
+!src
+!pages
+!static
+!package.json
+!yarn.lock
+!.babelrc

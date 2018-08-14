@@ -9,7 +9,7 @@ import { initGA, logPageView } from '../src/utils/analytics';
 import Meta from '../src/components/Meta';
 import Header from '../src/components/Header';
 import Footer from '../src/components/Footer';
-import config from '../config';
+import config from '../src/config';
 
 Router.onRouteChangeStart = () => NProgress.start();
 Router.onRouteChangeComplete = () => NProgress.done();
@@ -32,7 +32,7 @@ class Layout extends React.Component<LayoutProps> {
 
   render() {
     return (
-      <React.Fragment>
+      <html lang="en">
         <Meta
           title="Hi, my name is Yuri and I'm a Full Stack JavaScript Developer"
           description="Yuri is a JavaScript anarchist. He doesn't move tickets in Jira
@@ -120,7 +120,7 @@ class Layout extends React.Component<LayoutProps> {
             justify-self: center;
           }
         `}</style>
-      </React.Fragment>
+      </html>
     );
   }
 }

@@ -2,7 +2,7 @@
 
 import ReactGA from 'react-ga';
 
-import config from '../../config';
+import config from '../config';
 
 export const initGA = () => {
   ReactGA.initialize(config.GA_TRACKING_ID);
