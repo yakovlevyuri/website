@@ -1,4 +1,7 @@
 FROM mhart/alpine-node:10 as base
+
+ARG GA_TRACKING_ID
+
 WORKDIR /usr/src
 COPY package.json yarn.lock /usr/src/
 RUN yarn install
