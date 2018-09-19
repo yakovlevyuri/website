@@ -819,9 +819,9 @@
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.1.tgz#5c85d662f76fa1d34575766c5dcd6615abcd30d8"
 
-"@zeit/next-typescript@^1.1.1-canary.3":
-  version "1.1.1-canary.3"
-  resolved "https://registry.yarnpkg.com/@zeit/next-typescript/-/next-typescript-1.1.1-canary.3.tgz#103f69a5453bc7222a4e4d1bd43a381a4103aebc"
+"@zeit/next-typescript@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@zeit/next-typescript/-/next-typescript-1.1.1.tgz#0b0ddfbb13ca04cde52ac2718473f1b9c40ba0ee"
   dependencies:
     "@babel/preset-typescript" "^7.0.0"
 
@@ -2813,9 +2813,9 @@ neo-async@^2.5.0:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.2.tgz#489105ce7bc54e709d736b195f82135048c50fcc"
 
-next@^7.0.0-canary.20:
-  version "7.0.0-canary.20"
-  resolved "https://registry.yarnpkg.com/next/-/next-7.0.0-canary.20.tgz#43363883ef2f8276d9d45617003776cc8226ceb0"
+next@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/next/-/next-7.0.0.tgz#c919b325fbce21b6a1d6cd1cc0be148540e77bfd"
   dependencies:
     "@babel/core" "7.0.0"
     "@babel/plugin-proposal-class-properties" "7.0.0"
