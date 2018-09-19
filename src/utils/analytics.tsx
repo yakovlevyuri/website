@@ -1,5 +1,3 @@
-// @flow
-
 import ReactGA from 'react-ga';
 
 import config from '../config';
@@ -9,7 +7,8 @@ export const initGA = () => {
 };
 
 export const logPageView = () => {
-  console.log(`Logging pageview for ${window.location.pathname}`); // eslint-disable-line no-console
+  console.log(`Logging pageview for ${window.location.pathname}`); // tslint:disable-line:no-console
+
   ReactGA.set({ page: window.location.pathname });
   ReactGA.pageview(window.location.pathname);
 };
@@ -20,7 +19,7 @@ export const logEvent = (
   label: string = '',
 ) => {
   if (window.GA_INITIALIZED && category && action) {
-    // eslint-disable-next-line no-console
+    // tslint:disable-next-line:no-console
     console.log(
       `Logging event with category "${category}", action "${action}" and label "${label}"`,
     );

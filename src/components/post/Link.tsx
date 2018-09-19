@@ -1,15 +1,13 @@
-// @flow
-
 import React, { Fragment } from 'react';
 
-type Props = {|
-  url: string,
-  title: string,
-  label: string,
-  newWindow?: boolean,
-  className?: string,
-  onClick?: () => void,
-|};
+interface Props {
+  url: string;
+  title: string;
+  label: string;
+  newWindow?: boolean;
+  className?: string;
+  onClick?: () => void;
+}
 
 const Link = ({
   url,

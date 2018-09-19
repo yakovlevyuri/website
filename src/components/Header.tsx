@@ -1,5 +1,3 @@
-// @flow
-
 import React, { Fragment } from 'react';
 
 import { logEvent } from '../utils/analytics';

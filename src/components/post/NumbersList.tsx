@@ -1,10 +1,8 @@
-// @flow
-
 import * as React from 'react';
 
-type Props = {
-  children?: React.Node,
-};
+interface Props {
+  children?: JSX.Element[] | JSX.Element;
+}
 
 export const UL = ({ children }: Props) => (
   <ul>

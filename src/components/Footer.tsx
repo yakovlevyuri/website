@@ -1,5 +1,3 @@
-// @flow
-
 import React, { Fragment } from 'react';
 
 const Footer = () => (
@@ -19,10 +17,10 @@ const Footer = () => (
       p {
         font-size: 0.7em;
         text-align: center;
+      }
 
-        &:first-child {
-          margin-bottom: 10px;
-        }
+      p:first-child {
+        margin-bottom: 10px;
       }
     `}</style>
   </Fragment>

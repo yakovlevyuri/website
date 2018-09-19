@@ -1,13 +1,11 @@
-// @flow
-
 import React, { Component } from 'react';
 
-import Link from '../post/Link';
-import { UL, LI } from '../post/NumbersList';
 import { logEvent } from '../../utils/analytics';
+import Link from '../post/Link';
+import { LI, UL } from '../post/NumbersList';
 
-class HrGame extends Component<{}> {
-  render() {
+class HrGame extends Component {
+  public render() {
     return (
       <div>
         <p>Hi! My name is Yuri and I’m a Fullstack JavaScript Developer.</p>
@@ -43,19 +41,27 @@ class HrGame extends Component<{}> {
         </p>
         <UL>
           <LI>
-            I’m crazy in ❤️ with <em>JavaScript</em> and I’m not going to be a
-            Java/C#/Python/whatsoever hero for you or someone else.
+            <span>
+              I’m crazy in ❤️ with <em>JavaScript</em> and I’m not going to be a
+              Java/C#/Python/whatsoever hero for you or someone else.
+            </span>
           </LI>
           <LI>
-            Still using RESTful API? No God, please no. I prefer{' '}
-            <em>GraphQL + Node.js</em> bundle.
+            <span>
+              Still using RESTful API? No God, please no. I prefer{' '}
+              <em>GraphQL + Node.js</em> bundle.
+            </span>
           </LI>
           <LI>
-            What about client side? I like <em>React</em> and <em>Vue</em>.
+            <span>
+              What about client side? I like <em>React</em> and <em>Vue</em>.
+            </span>
           </LI>
           <LI>
-            I am also a huge fan of <em>Open Source</em> and I expect from my
-            future employer to share the same views as well.
+            <span>
+              I am also a huge fan of <em>Open Source</em> and I expect from my
+              future employer to share the same views as well.
+            </span>
           </LI>
         </UL>
         <p>
@@ -88,9 +94,10 @@ class HrGame extends Component<{}> {
             }
           />
         </p>
+
         <style jsx global>{`
-          .wrapper {
-            @media screen and (min-width: 820px) {
+          @media screen and (min-width: 820px) {
+            .wrapper {
               grid-template-columns: 1fr 550px 1fr;
               grid-template-areas:
                 'header header header'
@@ -107,6 +114,7 @@ class HrGame extends Component<{}> {
             margin-left: 20px !important;
           }
         `}</style>
+
         <style jsx>{`
           p {
             padding-bottom: 20px;

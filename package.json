@@ -5,26 +5,26 @@
   "license": "MIT",
   "author": "Yuri Yakovlev <contact@yakovlevyuri.com> (https://yakovlevyuri.com/)",
   "dependencies": {
+    "@zeit/next-typescript": "^1.1.1-canary.3",
     "dotenv-webpack": "^1.5.7",
-    "next": "^7.0.0-canary.2",
-    "node-sass": "^4.9.3",
+    "next": "^7.0.0-canary.20",
     "nprogress": "^0.2.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-ga": "^2.5.3",
-    "styled-jsx-plugin-sass": "^0.2.4"
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-ga": "^2.5.3"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.6",
-    "babel-plugin-transform-flow-strip-types": "^6.22.0",
-    "eslint": "^5.4.0",
-    "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-flowtype": "^2.50.0",
-    "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-react": "^7.11.1",
-    "flow-bin": "^0.79.0",
-    "now": "^11.3.13",
-    "prettier": "^1.14.2"
+    "@types/next": "^6.1.6",
+    "@types/nprogress": "^0.0.29",
+    "@types/react": "^16.4.14",
+    "@types/styled-jsx": "^2.2.5",
+    "husky": "^0.14.3",
+    "now": "^11.4.5",
+    "prettier": "^1.14.3",
+    "pretty-quick": "^1.7.0",
+    "tslint": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
+    "typescript": "^3.0.3"
   },
   "scripts": {
     "dev": "next",
@@ -33,8 +33,9 @@
     "deploy": "now --regions all --token $NOW_TOKEN",
     "alias": "now alias --token=$NOW_TOKEN",
     "clear-deployments": "now rm --safe --yes mynameisyuri-com --token=$NOW_TOKEN",
-    "lint": "eslint .",
-    "flow": "flow check --color=always --include-warnings",
-    "test-ci": "yarn lint && yarn flow"
+    "prettier": "prettier --write '{pages,src}/**/*.tsx'",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "test-ci": "yarn lint",
+    "precommit": "pretty-quick --staged"
   }
 }

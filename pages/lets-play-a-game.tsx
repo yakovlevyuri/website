@@ -1,5 +1,3 @@
-// @flow
-
 import React from 'react';
 
 import HrGame from '../src/components/hrGame/HrGame';

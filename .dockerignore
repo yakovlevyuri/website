@@ -2,6 +2,8 @@
 !src
 !pages
 !static
-!package.json
-!yarn.lock
 !.babelrc
+!yarn.lock
+!package.json
+!tsconfig.json
+!next.config.js

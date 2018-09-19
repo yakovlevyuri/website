@@ -1,13 +1,11 @@
-// @flow
-
 import React, { Fragment } from 'react';
 import { logEvent } from '../../utils/analytics';
 import Link from '../post/Link';
 
-type Props = {|
-  name: string,
-  position: string,
-|};
+interface Props {
+  name: string;
+  position: string;
+}
 
 const Info = ({ name, position }: Props) => (
   <Fragment>

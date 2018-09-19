@@ -1,17 +1,3 @@
 {
-  "presets": [
-    [
-      "next/babel",
-      {
-        "styled-jsx": {
-          "plugins": [
-            "styled-jsx-plugin-sass"
-          ]
-        }
-      }
-    ]
-  ],
-  "plugins": [
-    "transform-flow-strip-types"
-  ]
+  "presets": ["next/babel", "@zeit/next-typescript/babel"]
 }
