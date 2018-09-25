@@ -14,12 +14,12 @@
     "react-ga": "^2.5.3"
   },
   "devDependencies": {
-    "@types/next": "^6.1.6",
+    "@types/next": "^6.1.8",
     "@types/nprogress": "^0.0.29",
     "@types/react": "^16.4.14",
     "@types/styled-jsx": "^2.2.5",
-    "husky": "^0.14.3",
-    "now": "^12.0.0-canary.88",
+    "husky": "^1.0.0-rc.15",
+    "now": "^12.0.0-canary.89",
     "prettier": "^1.14.3",
     "pretty-quick": "^1.7.0",
     "tslint": "^5.11.0",
