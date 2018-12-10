@@ -1,9 +1,0 @@
-*
-!src
-!pages
-!static
-!.babelrc
-!yarn.lock
-!package.json
-!tsconfig.json
-!next.config.js

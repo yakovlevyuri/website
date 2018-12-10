@@ -1,4 +1,5 @@
 import App, { Container } from 'next/app';
+import Head from 'next/head';
 import Router from 'next/router';
 import NProgress from 'nprogress';
 import * as React from 'react';
@@ -15,6 +16,12 @@ class MyApp extends App {
 
     return (
       <Container>
+        <Head>
+          <title>
+            Hi, my name is Yuri and I'm a Full Stack JavaScript Developer
+          </title>
+        </Head>
+
         <Layout>
           <Component {...pageProps} />
         </Layout>

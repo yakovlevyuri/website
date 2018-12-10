@@ -2,7 +2,6 @@ import Document, { Head, Main, NextScript } from 'next/document';
 import * as React from 'react';
 
 interface Props {
-  title: string;
   description: string;
   keywords: string;
   ogTitle: string;
@@ -15,7 +14,6 @@ interface Props {
 }
 
 const Meta = ({
-  title,
   description,
   keywords,
   ogTitle,
@@ -27,7 +25,6 @@ const Meta = ({
   faviconUrl,
 }: Props) => (
   <Head>
-    <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
     <meta name="viewport" content={viewport} />
@@ -47,7 +44,6 @@ class MyDocument extends Document {
     return (
       <html lang="en">
         <Meta
-          title="Hi, my name is Yuri and I'm a Full Stack JavaScript Developer"
           description="Yuri is a JavaScript anarchist. He doesn't move tickets in Jira
             and make mistakes in Pull Requests on purpose just to test colleagues."
           keywords="Personal website, Javascript, React.js, Redux, Apollo Client, GraphQL, Node.js"

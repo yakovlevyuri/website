@@ -1,6 +1,5 @@
 import * as React from 'react';
 
-import config from '../config';
 import { initGA, logPageView } from '../utils/analytics';
 import Footer from './Footer';
 import Header from './Header';
@@ -17,7 +16,7 @@ declare global {
 
 class Layout extends React.Component<Props> {
   public componentDidMount() {
-    if (config.NODE_ENV === 'production') {
+    if (process.env.NODE_ENV === 'production') {
       if (!window.GA_INITIALIZED) {
         initGA();
         window.GA_INITIALIZED = true;

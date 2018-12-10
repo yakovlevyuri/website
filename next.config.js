@@ -1,23 +1,17 @@
-require('dotenv').config();
+const { PHASE_PRODUCTION_SERVER } =
+  process.env.NODE_ENV === 'development'
+    ? {}
+    : !process.env.NOW_REGION
+    ? require('next/constants')
+    : require('next-server/constants');
 
-const path = require('path');
-const withTypescript = require('@zeit/next-typescript');
-const Dotenv = require('dotenv-webpack');
+module.exports = (phase, { defaultConfig }) => {
+  if (phase === PHASE_PRODUCTION_SERVER) {
+    // Config used to run in production.
+    return {};
+  }
 
-module.exports = withTypescript({
-  webpack: config => {
-    config.plugins = config.plugins || [];
+  const withTypescript = require('@zeit/next-typescript');
 
-    config.plugins = [
-      ...config.plugins,
-
-      // Read the .env file
-      new Dotenv({
-        path: path.join(__dirname, '.env'),
-        systemvars: true,
-      }),
-    ];
-
-    return config;
-  },
-});
+  return withTypescript();
+};
