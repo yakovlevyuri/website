@@ -3,6 +3,10 @@
   "name": "mynameisyuri-com",
   "alias": "mynameisyuri.com",
   "builds": [
-      { "src": "next.config.js", "use": "@now/next" }
+    {
+      "src": "next.config.js",
+      "use": "@now/next",
+      "config": { "newPipeline": true }
+    }
   ]
 }
