@@ -17,6 +17,16 @@ const Info = ({ name, position }: Props) => (
     <h1 className="h1">{name}</h1>
     <h2 className="h2">{position}</h2>
     <p>
+      Live in Prague, work at&nbsp;
+      <Link
+        url="https://www.oaks-lab.com"
+        title="OAK'S LAB"
+        label="OAK'S LAB"
+        newWindow
+        onClick={() => logEvent('Link', 'Clicked', 'Current Work place')}
+      />
+    </p>
+    <p>
       Download My Résumé in{' '}
       <Link
         url="/static/cv/yakovlev-yuri.pdf"

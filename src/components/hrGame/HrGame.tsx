@@ -4,8 +4,14 @@ import { logEvent } from '../../utils/analytics';
 import Link from '../post/Link';
 import { LI, UL } from '../post/NumbersList';
 
-class HrGame extends Component {
+interface Props {
+  email: string;
+}
+
+class HrGame extends Component<Props> {
   public render() {
+    const { email } = this.props;
+
     return (
       <div>
         <p>Hi! My name is Yuri and I’m a Fullstack JavaScript Developer.</p>
@@ -23,7 +29,7 @@ class HrGame extends Component {
           I get literally tons of HR messages on{' '}
           <Link
             url="https://cz.linkedin.com/in/yakovlevyuri"
-            title="LinkedIn"
+            title="My LinkedIn"
             label="LinkedIn"
             newWindow
             onClick={() =>
@@ -74,25 +80,26 @@ class HrGame extends Component {
             newWindow
             onClick={() => logEvent('Link', 'Clicked', 'JSON CV from GamePage')}
           />
-          . Please drop me an{' '}
+          . Please drop me an email to{' '}
           <Link
-            url="mailto:hr@mynameisyuri.com"
-            title="Drop me an email"
-            label="email"
+            url={`mailto:${email}`}
+            title="My Email"
+            label={email}
             onClick={() =>
               logEvent('Link', 'Clicked', 'Contact via email from GamePage')
             }
           />{' '}
-          or{' '}
+          or send me a message on{' '}
           <Link
             url="https://t.me/yyakovlev"
-            title="I use telegram"
-            label="telegram message"
+            title="I use Telegram"
+            label="telegram"
             newWindow
             onClick={() =>
               logEvent('Link', 'Clicked', 'Contact via telegram from GamePage')
             }
           />
+          .
         </p>
 
         <style jsx global>{`
