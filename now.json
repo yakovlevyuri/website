@@ -2,11 +2,11 @@
   "version": 2,
   "name": "mynameisyuri-com",
   "alias": "mynameisyuri.com",
+  "scope": "yakovlevyuri",
   "builds": [
     {
       "src": "next.config.js",
-      "use": "@now/next",
-      "config": { "newPipeline": true }
+      "use": "@now/next"
     }
   ]
 }
