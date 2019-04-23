@@ -15,8 +15,6 @@ notifications:
 stages:
   - test
   - build
-  - name: deploy
-    if: (NOT type IN (pull_request)) AND (branch = master)
 
 jobs:
   include:
@@ -27,9 +25,3 @@ jobs:
   - stage: build
     script:
     - yarn build
-
-  - stage: deploy
-    script: yarn deploy
-    after_script:
-    - yarn alias
-    - yarn clear-deployments
