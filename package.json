@@ -28,13 +28,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "deploy": "now --token $NOW_TOKEN",
-    "alias": "now alias --token=$NOW_TOKEN",
-    "clear-deployments": "now rm --safe --yes mynameisyuri-com --token=$NOW_TOKEN",
-    "prettier": "prettier --write '{pages,src}/**/*.tsx'",
     "lint": "tsc --noEmit -p tsconfig.json && tslint -c tslint.json -p tsconfig.json",
     "lint:fix": "tslint -c tslint.json -p tsconfig.json --fix",
-    "test-ci": "yarn lint",
-    "precommit": "pretty-quick --staged"
+    "test-ci": "yarn lint"
   }
 }
