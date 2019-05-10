@@ -1,7 +1,5 @@
-import React, { Fragment } from 'react';
-
 const Footer = () => (
-  <Fragment>
+  <>
     <div className="footer">
       <p>
         {new Date().getFullYear()}. Website works until the last visitor leaves
@@ -23,7 +21,7 @@ const Footer = () => (
         margin-bottom: 10px;
       }
     `}</style>
-  </Fragment>
+  </>
 );
 
 export default Footer;

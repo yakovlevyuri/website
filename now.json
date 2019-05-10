@@ -1,11 +1,12 @@
 {
   "version": 2,
   "name": "mynameisyuri-com",
-  "alias": "mynameisyuri.com",
+  "alias": ["mynameisyuri.com", "www.mynameisyuri.com"],
   "scope": "yakovlevyuri",
+  "regions": ["all"],
   "builds": [
     {
-      "src": "next.config.js",
+      "src": "package.json",
       "use": "@now/next"
     }
   ]

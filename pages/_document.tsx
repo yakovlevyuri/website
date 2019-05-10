@@ -1,5 +1,4 @@
 import Document, { Head, Main, NextScript } from 'next/document';
-import * as React from 'react';
 
 interface Props {
   description: string;

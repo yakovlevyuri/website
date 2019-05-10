@@ -1,5 +1,3 @@
-import React, { Fragment } from 'react';
-
 interface Props {
   url: string;
   title: string;
@@ -18,7 +16,7 @@ const Link = ({
   onClick,
 }: Props) => {
   return (
-    <Fragment>
+    <>
       <a
         href={url}
         title={title}
@@ -35,7 +33,7 @@ const Link = ({
           -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         }
       `}</style>
-    </Fragment>
+    </>
   );
 };
 

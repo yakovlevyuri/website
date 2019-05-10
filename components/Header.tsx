@@ -1,10 +1,8 @@
-import React, { Fragment } from 'react';
-
 import { logEvent } from '../utils/analytics';
-import Link from './post/Link';
+import Link from './Link';
 
 const Header = () => (
-  <Fragment>
+  <>
     <div className="header">
       <p>
         (
@@ -30,7 +28,7 @@ const Header = () => (
         font-size: 0.8em;
       }
     `}</style>
-  </Fragment>
+  </>
 );
 
 export default Header;

@@ -2,17 +2,16 @@ import App, { Container } from 'next/app';
 import Head from 'next/head';
 import Router from 'next/router';
 import NProgress from 'nprogress';
-import * as React from 'react';
 
-Router.onRouteChangeStart = () => NProgress.start();
-Router.onRouteChangeComplete = () => NProgress.done();
-Router.onRouteChangeError = () => NProgress.done();
+Router.events.on('routeChangeStart', () => NProgress.start());
+Router.events.on('routeChangeComplete', () => NProgress.done());
+Router.events.on('routeChangeError', () => NProgress.done());
 
-import Layout from '../src/components/Layout';
+import Layout from '../components/Layout';
 
 class MyApp extends App {
   public render() {
-    const { Component, pageProps } = this.props;
+    const { Component } = this.props;
 
     return (
       <Container>
@@ -23,7 +22,7 @@ class MyApp extends App {
         </Head>
 
         <Layout>
-          <Component {...pageProps} />
+          <Component />
         </Layout>
 
         <style jsx global>{`
