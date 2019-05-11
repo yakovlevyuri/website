@@ -1,3 +1,5 @@
+import nanoid from 'nanoid/generate';
+
 import Link from '../components/Link';
 import { LI, UL } from '../components/NumbersList';
 import { logEvent } from '../utils/analytics';
@@ -122,7 +124,7 @@ const GamePage = ({ email }: Props) => (
 );
 
 GamePage.getInitialProps = () => {
-  return { email: 'kkk' };
+  return { email: `job-${nanoid('1234567890abcdef', 10)}@mynameisyuri.com` };
 };
 
 export default GamePage;

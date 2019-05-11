@@ -3020,10 +3020,10 @@ neo-async@^2.5.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
   integrity sha512-MFh0d/Wa7vkKO3Y3LlacqAEeHK0mckVqzDieUKTT+KGxi+zIpeVsFxymkIiRpbpDziHc290Xr9A1O4Om7otoRA==
 
-next-server@8.1.1-canary.26:
-  version "8.1.1-canary.26"
-  resolved "https://registry.yarnpkg.com/next-server/-/next-server-8.1.1-canary.26.tgz#9b53ef714b968d5f6e62e15ee8070c49a7b31e25"
-  integrity sha512-YYWFy7zKQkHFzC85mXCm9f4NkFWJTE+LKUMiJJPYtc3HF79dyPSAZbK0is8Lg0N7j7guqaaZysHdSU/jdoHrhw==
+next-server@8.1.1-canary.27:
+  version "8.1.1-canary.27"
+  resolved "https://registry.yarnpkg.com/next-server/-/next-server-8.1.1-canary.27.tgz#7d3a0ee6c2849aaf034ab14ca8dd42b187ac6af2"
+  integrity sha512-sdGXbm/2GNMRNfIT1s9oSLmAK1l8ZfKjUbz3xgm4kyRN32Shx8FsIaTrfeap5Fh2DgA6CyzV0ZXGwlF8iFIHyw==
   dependencies:
     amp-toolbox-optimizer "0.5.3"
     etag "1.8.1"
@@ -3036,10 +3036,10 @@ next-server@8.1.1-canary.26:
     send "0.16.1"
     url "0.11.0"
 
-next@^8.1.1-canary.26:
-  version "8.1.1-canary.26"
-  resolved "https://registry.yarnpkg.com/next/-/next-8.1.1-canary.26.tgz#809eb00a6ec4076f3cb33f770adf2c47929491c0"
-  integrity sha512-1d66a0tmMtpWx1H8eeS2a5LyLz0/0r9JKdHfzS+i7aHA28YzeJinchx9l0VrxVjjtwutx9dyC4cVaf0kkk3vIQ==
+next@^8.1.1-canary.27:
+  version "8.1.1-canary.27"
+  resolved "https://registry.yarnpkg.com/next/-/next-8.1.1-canary.27.tgz#99e2752179da2db013ed6f7ee322cce6277cef67"
+  integrity sha512-ycSPMSpZQOomRmR2Mgq3LtvFXuleXeDL5/5qcWnP5dyjHrtUHO6NK8yi2uXAim9vENTfrK6n4oCGjZ0dMNB+Hw==
   dependencies:
     "@babel/core" "7.1.2"
     "@babel/plugin-proposal-class-properties" "7.1.0"
@@ -3067,7 +3067,7 @@ next@^8.1.1-canary.26:
     launch-editor "2.2.1"
     loader-utils "1.1.0"
     mkdirp "0.5.1"
-    next-server "8.1.1-canary.26"
+    next-server "8.1.1-canary.27"
     prop-types "15.6.2"
     prop-types-exact "1.2.0"
     react-error-overlay "5.1.4"
@@ -3174,11 +3174,6 @@ normalize-path@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
-
-now@^15.0.6:
-  version "15.2.0"
-  resolved "https://registry.yarnpkg.com/now/-/now-15.2.0.tgz#3a66859d548a81d222140544a1d84f070a22573a"
-  integrity sha512-NAHziNTs2ptFizCvKHjSt69ixl7wG39Zf+hjnetM1ulMFc2jc++bDPPL1m62aQkCPbFwRmuxQtggW1i0/WRU7g==
 
 npm-bundled@^1.0.1:
   version "1.0.6"

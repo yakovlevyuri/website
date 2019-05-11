@@ -69,4 +69,8 @@ const IndexPage = () => (
   </>
 );
 
+IndexPage.getInitialProps = () => {
+  return {};
+};
+
 export default IndexPage;

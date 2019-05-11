@@ -11,7 +11,7 @@ import Layout from '../components/Layout';
 
 class MyApp extends App {
   public render() {
-    const { Component } = this.props;
+    const { Component, pageProps } = this.props;
 
     return (
       <Container>
@@ -22,7 +22,7 @@ class MyApp extends App {
         </Head>
 
         <Layout>
-          <Component />
+          <Component {...pageProps} />
         </Layout>
 
         <style jsx global>{`
