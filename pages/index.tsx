@@ -10,7 +10,6 @@ const IndexPage = () => (
     />
     <h1 className="h1">Yuri Yakovlev</h1>
     <h2 className="h2">Senior Full Stack Javascript Developer</h2>
-    <h3 className="h3">Mx10cdef5eea1ebcde67d2204c73c9ebb04b947311</h3>
     <p>
       Live in Prague, work at&nbsp;
       <Link
