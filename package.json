@@ -6,7 +6,7 @@
   "author": "Yuri Yakovlev <hi@mynameisyuri.com> (https://mynameisyuri.com/)",
   "dependencies": {
     "nanoid": "^2.0.3",
-    "next": "^8.1.1-canary.69",
+    "next": "^9.0.0",
     "nprogress": "^0.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
