@@ -1,3 +1,3 @@
 export default {
-  GA_TRACKING_ID: 'UA-52133798-1',
+  GA_TRACKING_ID: 'UA-134274102-2',
 };
