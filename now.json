@@ -1,13 +1,6 @@
 {
   "version": 2,
   "name": "mynameisyuri-com",
-  "alias": ["mynameisyuri.com", "www.mynameisyuri.com"],
   "scope": "yakovlevyuri",
-  "regions": ["all"],
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@now/next"
-    }
-  ]
+  "regions": ["all"]
 }
