@@ -3,11 +3,7 @@ import { logEvent } from '../utils/analytics';
 
 const IndexPage = () => (
   <>
-    <img
-      className="photo"
-      src="/static/images/photo.jpg"
-      alt="Yuri Yakovlev photo"
-    />
+    <img className="photo" src="/images/photo.jpg" alt="Yuri Yakovlev photo" />
     <h1 className="h1">Yuri Yakovlev</h1>
     <h2 className="h2">Senior Full Stack Javascript Developer</h2>
     <p>
@@ -23,7 +19,7 @@ const IndexPage = () => (
     <p>
       Download My Résumé in{' '}
       <Link
-        url="/static/cv/yakovlev-yuri.pdf"
+        url="/cv/yakovlev-yuri.pdf"
         title="My Résumé in JSON response"
         label="JSON"
         newWindow
@@ -68,9 +64,5 @@ const IndexPage = () => (
     `}</style>
   </>
 );
-
-IndexPage.getInitialProps = () => {
-  return {};
-};
 
 export default IndexPage;

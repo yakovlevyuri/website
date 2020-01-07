@@ -1,4 +1,4 @@
-import App, { Container } from 'next/app';
+import App from 'next/app';
 import Head from 'next/head';
 import Router from 'next/router';
 import NProgress from 'nprogress';
@@ -14,7 +14,7 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <Container>
+      <>
         <Head>
           <title>
             Hi, my name is Yuri and I'm a Full Stack JavaScript Developer
@@ -81,7 +81,7 @@ class MyApp extends App {
             transform: rotate(3deg) translate(0px, -4px);
           }
         `}</style>
-      </Container>
+      </>
     );
   }
 }

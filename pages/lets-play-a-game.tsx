@@ -67,7 +67,7 @@ const GamePage = ({ email }: Props) => (
       Checked every point above carefully and pretty sure that{' '}
       <em>I’m the guy</em> and <em>you are that 1%</em>? Here is my{' '}
       <Link
-        url="/static/cv/yakovlev-yuri.pdf"
+        url="/cv/yakovlev-yuri.pdf"
         title="My Résumé in JSON response"
         label="CV"
         newWindow

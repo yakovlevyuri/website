@@ -49,11 +49,11 @@ class MyDocument extends Document {
           ogTitle="Hi, my name is Yuri and I'm a Full Stack JavaScript Developer"
           ogType="website"
           ogUrl="https://mynameisyuri.com/"
-          ogImage="https://mynameisyuri.com/static/images/meta.jpg"
+          ogImage="https://mynameisyuri.com/images/meta.jpg"
           ogDescription="Yuri is a JavaScript anarchist. He doesn't move tickets in Jira
             and make mistakes in Pull Requests on purpose just to test colleagues."
           viewport="width=device-width, initial-scale=1, shrink-to-fit=no"
-          faviconUrl="/static/images/favicon.ico"
+          faviconUrl="/images/favicon.ico"
         />
         <body>
           <Main />
