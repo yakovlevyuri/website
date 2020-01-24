@@ -1,4 +1,3 @@
-import { logEvent } from '../utils/analytics';
 import Link from './Link';
 
 const Header = () => (
@@ -11,7 +10,6 @@ const Header = () => (
           title="Source code on Github"
           label="source code"
           newWindow
-          onClick={() => logEvent('Link', 'Clicked', 'Source code on Github')}
         />
         )
       </p>

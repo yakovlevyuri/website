@@ -1,3 +1,5 @@
+import { FC } from 'react';
+
 interface Props {
   url: string;
   title: string;
@@ -7,34 +9,32 @@ interface Props {
   onClick?: () => void;
 }
 
-const Link = ({
+const Link: FC<Props> = ({
   url,
   title,
   label,
   newWindow,
   className = '',
   onClick,
-}: Props) => {
-  return (
-    <>
-      <a
-        href={url}
-        title={title}
-        {...(newWindow ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-        className={`link ${className}`}
-        onClick={onClick}
-      >
-        {label}
-      </a>
+}) => (
+  <>
+    <a
+      href={url}
+      title={title}
+      {...(newWindow ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      className={`link ${className}`}
+      onClick={onClick}
+    >
+      {label}
+    </a>
 
-      <style jsx>{`
-        a.link {
-          color: #22bad9;
-          -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-        }
-      `}</style>
-    </>
-  );
-};
+    <style jsx>{`
+      a.link {
+        color: #22bad9;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      }
+    `}</style>
+  </>
+);
 
 export default Link;

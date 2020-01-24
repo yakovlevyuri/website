@@ -1,14 +1,14 @@
 import nanoid from 'nanoid/generate';
+import { NextPage } from 'next';
 
 import Link from '../components/Link';
 import { LI, UL } from '../components/NumbersList';
-import { logEvent } from '../utils/analytics';
 
 interface Props {
   email: string;
 }
 
-const GamePage = ({ email }: Props) => (
+const GamePage: NextPage<Props, {}> = ({ email }) => (
   <>
     <p>Hi! My name is Yuri and I’m a Fullstack JavaScript Developer.</p>
     <p>
@@ -27,7 +27,6 @@ const GamePage = ({ email }: Props) => (
         title="My LinkedIn"
         label="LinkedIn"
         newWindow
-        onClick={() => logEvent('Link', 'Clicked', 'LinkedIn from GamePage')}
       />{' '}
       and 99% of them are irrelevant. So I came up with the idea how to avoid
       that.
@@ -71,26 +70,15 @@ const GamePage = ({ email }: Props) => (
         title="My Résumé in JSON response"
         label="CV"
         newWindow
-        onClick={() => logEvent('Link', 'Clicked', 'JSON CV from GamePage')}
       />
       . Please drop me an email to{' '}
-      <Link
-        url={`mailto:${email}`}
-        title="My Email"
-        label={email}
-        onClick={() =>
-          logEvent('Link', 'Clicked', 'Contact via email from GamePage')
-        }
-      />{' '}
-      or send me a message on{' '}
+      <Link url={`mailto:${email}`} title="My Email" label={email} /> or send me
+      a message on{' '}
       <Link
         url="https://t.me/yyakovlev"
         title="I use Telegram"
         label="telegram"
         newWindow
-        onClick={() =>
-          logEvent('Link', 'Clicked', 'Contact via telegram from GamePage')
-        }
       />
       .
     </p>

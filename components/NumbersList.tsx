@@ -1,8 +1,6 @@
-interface Props {
-  children?: JSX.Element[] | JSX.Element;
-}
+import { FC } from 'react';
 
-export const UL = ({ children }: Props) => (
+export const UL: FC = ({ children }) => (
   <ul>
     {children}
 
@@ -16,7 +14,7 @@ export const UL = ({ children }: Props) => (
   </ul>
 );
 
-export const LI = ({ children }: Props) => (
+export const LI: FC = ({ children }) => (
   <li>
     {children}
 

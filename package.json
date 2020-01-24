@@ -5,31 +5,25 @@
   "license": "MIT",
   "author": "Yuri Yakovlev <hi@mynameisyuri.com> (https://mynameisyuri.com/)",
   "dependencies": {
-    "nanoid": "^2.1.9",
-    "next": "^9.2.0",
+    "nanoid": "^2.1.10",
+    "next": "^9.2.1",
     "nprogress": "^0.2.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-ga": "^2.7.0"
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "@types/nanoid": "^2.1.0",
-    "@types/node": "^13.1.7",
+    "@types/node": "^13.5.0",
     "@types/nprogress": "^0.2.0",
-    "@types/react": "^16.9.17",
-    "@types/react-dom": "^16.9.4",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
     "@types/styled-jsx": "^2.2.8",
     "prettier": "^1.19.1",
-    "tslint": "^5.20.1",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.5"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "lint": "tsc --noEmit -p tsconfig.json && tslint -c tslint.json -p tsconfig.json",
-    "lint:fix": "tslint -c tslint.json -p tsconfig.json --fix",
-    "test-ci": "yarn lint"
+    "start": "next start"
   }
 }

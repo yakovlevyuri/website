@@ -1,4 +1,5 @@
 import Document, { Head, Main, NextScript } from 'next/document';
+import { FC } from 'react';
 
 interface Props {
   description: string;
@@ -12,7 +13,7 @@ interface Props {
   faviconUrl: string;
 }
 
-const Meta = ({
+const Meta: FC<Props> = ({
   description,
   keywords,
   ogTitle,
@@ -22,7 +23,7 @@ const Meta = ({
   ogDescription,
   viewport,
   faviconUrl,
-}: Props) => (
+}) => (
   <Head>
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
@@ -58,6 +59,15 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+
+          <script
+            async
+            defer
+            src="https://cdn.simpleanalytics.io/hello.js"
+          ></script>
+          <noscript>
+            <img src="https://api.simpleanalytics.io/hello.gif" alt="" />
+          </noscript>
         </body>
       </html>
     );

@@ -1,7 +1,8 @@
-import Link from '../components/Link';
-import { logEvent } from '../utils/analytics';
+import { NextPage } from 'next';
 
-const IndexPage = () => (
+import Link from '../components/Link';
+
+const IndexPage: NextPage = () => (
   <>
     <img className="photo" src="/images/photo.jpg" alt="Yuri Yakovlev photo" />
     <h1 className="h1">Yuri Yakovlev</h1>
@@ -13,7 +14,6 @@ const IndexPage = () => (
         title="OAK'S LAB"
         label="OAK'S LAB"
         newWindow
-        onClick={() => logEvent('Link', 'Clicked', 'Current Work place')}
       />
     </p>
     <p>
@@ -23,7 +23,6 @@ const IndexPage = () => (
         title="My Résumé in JSON response"
         label="JSON"
         newWindow
-        onClick={() => logEvent('Link', 'Clicked', 'JSON CV')}
       />{' '}
       format
       <br />
@@ -33,7 +32,6 @@ const IndexPage = () => (
         title="LinkedIn"
         label="LinkedIn"
         newWindow
-        onClick={() => logEvent('Link', 'Clicked', 'LinkedIn page')}
       />
     </p>
 
