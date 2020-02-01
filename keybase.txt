@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/yyakovlev
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mynameisyuri.com
+  * I am yyakovlev (https://keybase.io/yyakovlev) on keybase.
+  * I have a public key ASAq4BZZkBKi7nET1kSZPr_a55_kzwWfuRVeHz4z3wbE3go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120345adfa6e5ae848d91dd4447d3ad3b4384c35fb098751feebb255ebffd3c654e0a",
+      "host": "keybase.io",
+      "kid": "01202ae016599012a2ee7113d644993ebfdae79fe4cf059fb9155e1f3e33df06c4de0a",
+      "uid": "0dcb99db78a45aff425c1147937eef19",
+      "username": "yyakovlev"
+    },
+    "merkle_root": {
+      "ctime": 1580519210,
+      "hash": "b7ec4265e9375ad62e69c4bd3d74c5a4eb5f50696fdf8618b12bf29f1d463c062e8ebb8c04e01157ab77255425d9e05ff9f781354825b1a8f4ba5a3ced5f1e8e",
+      "hash_meta": "85e3c69ed6b37dcb9a5c12c4be7afb61aa12d9c3f2207eee5125246f17f7ef99",
+      "seqno": 14442687
+    },
+    "service": {
+      "entropy": "BlrZ2VhlLa2Tw9R8+y16o3B6",
+      "hostname": "mynameisyuri.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1580519223,
+  "expire_in": 504576000,
+  "prev": "969a4bcaed90479a78243de9afaad7e95866af50edfb30db08bbe834243cfef7",
+  "seqno": 59,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgKuAWWZASou5xE9ZEmT6/2uef5M8Fn7kVXh8+M98GxN4Kp3BheWxvYWTESpcCO8QglppLyu2QR5p4JD3pr6rX6Vhmr1Dt+zDbCLvoNCQ8/vfEIPyTRauqKqJLz3dfQFFbuhh1gR8pWQ8JdTvxzdH02TL3AgHCo3NpZ8RAykGi0ZO7gKLmcNrvoBWvmTx9FK9cJXdxjaBpS1khsASwXbATqX+LyMlJlBFI6qx58OBvkx2f3U40n4BIwr8FCKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMjb5iaiNJaJVChvznzN/nWliBF+nPD0Q8aE6EwbNKOro3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/yyakovlev
+
+==================================================================
