@@ -10,7 +10,10 @@ interface Props {
 
 const GamePage: NextPage<Props, {}> = ({ email }) => (
   <>
-    <p>Hi! My name is Yuri and I’m a Fullstack JavaScript Developer.</p>
+    <p>
+      Hi! My name is Yuri and I’m a JavaScript Developer with more than{' '}
+      {new Date().getFullYear() - 2013} years of experience in the field.
+    </p>
     <p>
       Probably you were trying to offer me an interesting job opportunity and
       most likely I redirected you to this page.
@@ -33,7 +36,7 @@ const GamePage: NextPage<Props, {}> = ({ email }) => (
     </p>
     <p>
       <strong>
-        All I expect you to do is to meet only 4 criteria before you’re going to
+        All I expect you to do is to meet only 5 criteria before you’re going to
         offer me a new role:
       </strong>
     </p>
@@ -61,6 +64,11 @@ const GamePage: NextPage<Props, {}> = ({ email }) => (
           future employer to share the same views as well.
         </span>
       </LI>
+      <LI>
+        <span>
+          My rates are starting from <em>250 EUR/MD</em>.
+        </span>
+      </LI>
     </UL>
     <p>
       Checked every point above carefully and pretty sure that{' '}
@@ -82,7 +90,6 @@ const GamePage: NextPage<Props, {}> = ({ email }) => (
       />
       .
     </p>
-
     <style jsx global>{`
       @media screen and (min-width: 820px) {
         .wrapper {
@@ -102,7 +109,6 @@ const GamePage: NextPage<Props, {}> = ({ email }) => (
         margin-left: 20px !important;
       }
     `}</style>
-
     <style jsx>{`
       p {
         padding-bottom: 20px;
