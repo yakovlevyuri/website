@@ -1,9 +1,11 @@
 const Footer = () => (
   <>
     <div className="footer">
-      <p>
-        {new Date().getFullYear()}. Website works until the last visitor leaves
-      </p>
+      <p>{new Date().getFullYear()} Yuri Yakovlev</p>
+      <p>Company registration number (IČO): 076 05 901</p>
+      <p>VAT Reg No (DIČ): CZ8911274350</p>
+      <p>Czechia, Prague</p>
+      <p>The website works until the last visitor leaves.</p>
     </div>
 
     <style jsx>{`
@@ -15,10 +17,6 @@ const Footer = () => (
       p {
         font-size: 0.7em;
         text-align: center;
-      }
-
-      p:first-child {
-        margin-bottom: 10px;
       }
     `}</style>
   </>
