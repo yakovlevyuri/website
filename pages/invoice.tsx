@@ -1,14 +1,6 @@
-import nanoid from 'nanoid/generate';
 import { NextPage } from 'next';
 
-import Link from '../components/Link';
-import { LI, UL } from '../components/NumbersList';
-
-interface Props {
-  email: string;
-}
-
-const InvoicePage: NextPage<Props, {}> = ({ email }) => (
+const InvoicePage: NextPage = () => (
   <>
     <div className="card">
       <p>

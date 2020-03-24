@@ -1,14 +1,9 @@
-import nanoid from 'nanoid/generate';
 import { NextPage } from 'next';
 
 import Link from '../components/Link';
 import { LI, UL } from '../components/NumbersList';
 
-interface Props {
-  email: string;
-}
-
-const GamePage: NextPage<Props, {}> = ({ email }) => (
+const GamePage: NextPage = () => (
   <>
     <p>
       Hi! My name is Yuri and I’m a JavaScript Developer with more than{' '}
@@ -19,9 +14,9 @@ const GamePage: NextPage<Props, {}> = ({ email }) => (
       most likely I redirected you to this page.
     </p>
     <p>
-      First of all I would like to thank you for your interest in me as a
-      candidate, I appreciate that, I really do. Secondly I respect your time as
-      much as I respect mine so please let’s spend it as productive as possible.
+      First of all, I would like to thank you for your interest in me as a
+      candidate, I appreciate that. I do. Secondly, I respect your time as much
+      as I respect mine so please let’s spend it as productive as possible.
     </p>
     <p>
       I get literally tons of HR messages on{' '}
@@ -31,7 +26,7 @@ const GamePage: NextPage<Props, {}> = ({ email }) => (
         label="LinkedIn"
         newWindow
       />{' '}
-      and 99% of them are irrelevant. So I came up with the idea how to avoid
+      and 99% of them are irrelevant. So I came up with the idea of how to avoid
       that.
     </p>
     <p>
@@ -43,19 +38,20 @@ const GamePage: NextPage<Props, {}> = ({ email }) => (
     <UL>
       <LI>
         <span>
-          I’m crazy in ❤️ with <em>JavaScript</em> and I’m not going to be a
-          Java/C#/Python/whatsoever hero for you or someone else.
+          I’m crazy in ❤️ with <em>JavaScript/TypeScript</em> and I’m not going
+          to be a Java/C#/Python/{'${anyOtherLanguage}'} hero for you or someone
+          else.
         </span>
       </LI>
       <LI>
         <span>
-          Still using RESTful API? No God, please no. I prefer{' '}
-          <em>GraphQL + Node.js</em> bundle.
+          Making Java/C#/Python/{'${anyOtherLanguage}'} RESTful APIs? No God,
+          please no. I prefer <em>GraphQL + Node.js</em> bundle.
         </span>
       </LI>
       <LI>
         <span>
-          What about client side? I like <em>React</em> and <em>Vue</em>.
+          What about the client-side? I like <em>Reactjs</em>.
         </span>
       </LI>
       <LI>
@@ -66,10 +62,23 @@ const GamePage: NextPage<Props, {}> = ({ email }) => (
       </LI>
       <LI>
         <span>
-          My rates are starting from <em>250 EUR/MD</em>.
+          I work as an independent contractor only (see info in the footer). My
+          rates are starting from <em>300 EUR/MD</em>.
         </span>
       </LI>
+      <LI>
+        <span className="optional">optional but preferable</span>
+        <span>
+          I'm slowly transitioning from developer to a team lead. I know how to
+          mentor juniors, lead the projects and make successful products.
+        </span>
+      </LI>
+      <LI>
+        <span className="optional">optional but preferable</span>
+        <span>The company can do 70-100% remote.</span>
+      </LI>
     </UL>
+
     <p>
       Checked every point above carefully and pretty sure that{' '}
       <em>I’m the guy</em> and <em>you are that 1%</em>? Here is my{' '}
@@ -80,8 +89,12 @@ const GamePage: NextPage<Props, {}> = ({ email }) => (
         newWindow
       />
       . Please drop me an email to{' '}
-      <Link url={`mailto:${email}`} title="My Email" label={email} /> or send me
-      a message on{' '}
+      <Link
+        url="mailto:job@mynameisyuri.com"
+        title="My Email"
+        label="job@mynameisyuri.com"
+      />{' '}
+      or send me a message on{' '}
       <Link
         url="https://t.me/yyakovlev"
         title="I use Telegram"
@@ -90,6 +103,7 @@ const GamePage: NextPage<Props, {}> = ({ email }) => (
       />
       .
     </p>
+
     <style jsx global>{`
       @media screen and (min-width: 820px) {
         .wrapper {
@@ -108,7 +122,14 @@ const GamePage: NextPage<Props, {}> = ({ email }) => (
       ul {
         margin-left: 20px !important;
       }
+
+      .optional {
+        font-size: 0.75rem;
+        font-style: italic;
+        margin-right: 0.75rem;
+      }
     `}</style>
+
     <style jsx>{`
       p {
         padding-bottom: 20px;
@@ -116,9 +137,5 @@ const GamePage: NextPage<Props, {}> = ({ email }) => (
     `}</style>
   </>
 );
-
-GamePage.getInitialProps = () => {
-  return { email: `job-${nanoid('1234567890abcdef', 10)}@mynameisyuri.com` };
-};
 
 export default GamePage;
