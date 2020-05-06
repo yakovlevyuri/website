@@ -3,7 +3,7 @@ import Router from 'next/router';
 import NProgress from 'nprogress';
 import { AppPropsType } from 'next/dist/next-server/lib/utils';
 
-import Layout from '../components/Layout';
+import Layout from '@components/Layout';
 
 Router.events.on('routeChangeStart', () => NProgress.start());
 Router.events.on('routeChangeComplete', () => NProgress.done());

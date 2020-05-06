@@ -1,13 +1,13 @@
 import { NextPage } from 'next';
 
-import Link from '../components/Link';
+import Link from '@components/Link';
 
 const IndexPage: NextPage = () => (
   <>
     <img className="photo" src="/images/photo.jpg" alt="Yuri Yakovlev photo" />
     <h1 className="h1">Yuri Yakovlev</h1>
     <h2 className="h2">Senior Full Stack Javascript Developer</h2>
-    <p>
+    {/* <p>
       Live in Prague, work at&nbsp;
       <Link
         url="https://www.oaks-lab.com"
@@ -15,7 +15,7 @@ const IndexPage: NextPage = () => (
         label="OAK'S LAB"
         newWindow
       />
-    </p>
+    </p> */}
     <p>
       Download My Résumé in{' '}
       <Link

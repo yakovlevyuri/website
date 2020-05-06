@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 
-import Link from '../components/Link';
-import { LI, UL } from '../components/NumbersList';
+import Link from '@components/Link';
+import { LI, UL } from '@components/NumbersList';
 
 const GamePage: NextPage = () => (
   <>
@@ -78,6 +78,14 @@ const GamePage: NextPage = () => (
         <span>The company can do 70-100% remote.</span>
       </LI>
     </UL>
+
+    {/* 
+    <LI>
+      <span>
+        Не соответствуете, но планируете -- я с удовольствием помогу построить
+        новую систему на новых технологиях.
+      </span>
+    </LI> */}
 
     <p>
       Checked every point above carefully and pretty sure that{' '}
