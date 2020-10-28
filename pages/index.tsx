@@ -1,21 +1,28 @@
 import { NextPage } from 'next';
+import Image from 'next/image';
 
 import Link from '@components/Link';
 
 const IndexPage: NextPage = () => (
   <>
-    <img className="photo" src="/images/photo.jpg" alt="Yuri Yakovlev photo" />
+    <Image
+      className="photo"
+      src="/images/photo.jpg"
+      unsized
+      alt="Yuri Yakovlev"
+    />
+
     <h1 className="h1">Yuri Yakovlev</h1>
     <h2 className="h2">Senior Full Stack Javascript Developer</h2>
-    {/* <p>
+    <p>
       Live in Prague, work at&nbsp;
       <Link
-        url="https://www.oaks-lab.com"
-        title="OAK'S LAB"
-        label="OAK'S LAB"
+        url="https://www.livescore.com"
+        title="LiveScore"
+        label="LiveScore"
         newWindow
       />
-    </p> */}
+    </p>
     <p>
       Download My Résumé in{' '}
       <Link
@@ -35,7 +42,7 @@ const IndexPage: NextPage = () => (
       />
     </p>
 
-    <style jsx>{`
+    <style jsx global>{`
       h1.h1 {
         font-size: 1em;
         font-weight: normal;
